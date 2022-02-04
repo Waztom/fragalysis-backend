@@ -109,12 +109,12 @@ router.register("api/otscripts", OTScriptViewSet, "otscripts")
 urlpatterns = [
     url("upload/", UploadProject.as_view(), name="uploadproject"),
     url(
-        r"^validate_task/(?P<validate_task_id>.+)/$",
+        r"^validate_task/(?P<validate_cartask_id>.+)/$",
         ValidateTaskView.as_view(),
         name="validate_task",
     ),
     url(
-        r"^upload_task/(?P<upload_task_id>.+)/$",
+        r"^upload_task/(?P<upload_cartask_id>.+)/$",
         UploadTaskView.as_view(),
         name="upload_task",
     ),
