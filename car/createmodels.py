@@ -37,6 +37,7 @@ from car.models import (
 from car.utils import (
     getProduct,
     getProductSmiles,
+    canonSmiles,
     calculateMassFromMols,
     checkProceedingReactions,
     calculateMols,
@@ -52,46 +53,6 @@ from car.utils import (
 import logging
 
 logger = logging.getLogger(__name__)
-
-
-# def checkPreviousReactionProduct(
-#     reaction_id: int, smiles: str, returnqueryset: bool = False
-# ):
-#     """Checks if reactant is the product from a previous reaction
-
-#     Parameters
-#     ----------
-#     reaction_id: int
-#         The reactant's reaction, all previous reactions will be found
-#         using the method related with this reaction
-#     smiles: str
-#         The SMILES of the reactant to see search for if it was a product of a previous reaction
-#     returnqueryset: bool
-#         Optional paramater to return product queryset
-
-#     Returns
-#     -------
-#     previous_product_queryset: QuerySet[Product]
-#         Retuens the queryset if the returnqueryset exists and the retrunqueryset parameters
-#         is set to True.
-#     """
-
-#     reaction_obj = Reaction.objects.get(id=reaction_id)
-#     previous_product_queryset = (
-#         Method.objects.get(method_id=reaction_obj.method_id)
-#         .reactions.all()
-#         .filter(products__smiles=smiles)
-#     )
-#     if returnqueryset:
-#         if previous_product_queryset:
-#             return previous_product_queryset
-#         else:
-#             return False
-#     if not returnqueryset:
-#         if previous_product_queryset:
-#             return True
-#         else:
-#             return False
 
 
 def createProjectModel(project_info: dict) -> Tuple[int, str]:
@@ -173,7 +134,7 @@ def createTargetModel(
     target = Target()
     batch_obj = Batch.objects.get(id=batch_id)
     target.batch_id = batch_obj
-    target.smiles = smiles
+    target.smiles = canonSmiles(smiles=smiles)
     mols = calculateMols(target_concentration=concentration, target_volume=volume)
     mass = calculateMassFromMols(mols=mols, SMILES=smiles)
     target.mols = mols
@@ -290,7 +251,7 @@ def createPubChemInfoModel(compoundid: int, smiles: str, cas: str = None) -> obj
         The PubChem model object created
     """
     pubcheminfo = PubChemInfo()
-    pubcheminfo.smiles = smiles
+    pubcheminfo.smiles = canonSmiles(smiles=smiles)
     if cas:
         pubcheminfo.cas = cas
     pubcheminfo.compoundid = compoundid
@@ -321,7 +282,7 @@ def getPubChemInfo(smiles: str) -> object:
         Returns False if no Django PubChemInfo model instance found or
         PubChem DB entry found for the compound
     """
-
+    smiles = canonSmiles(smiles=smiles)
     pubcheminfoqueryset = PubChemInfo.objects.filter(smiles=smiles)
     if pubcheminfoqueryset:
         pubcheminfo = pubcheminfoqueryset[0]
@@ -355,7 +316,8 @@ def createProductModel(reaction_id: int, product_smiles: str):
     product_smiles: str
         The SMILES of the product
     """
-    # pubcheminfoobj = getPubChemInfo(smiles=product_smiles)
+    product_smiles = canonSmiles(smiles=product_smiles)
+    pubcheminfoobj = getPubChemInfo(smiles=product_smiles)
     product = Product()
     reaction_obj = Reaction.objects.get(id=reaction_id)
     product.reaction_id = reaction_obj
@@ -391,7 +353,8 @@ def createReactantModel(
     reactant_id: int
         The id of the reactant model object created
     """
-    # pubcheminfoobj = getPubChemInfo(smiles=reactant_smiles)
+    reactant_smiles = canonSmiles(smiles=reactant_smiles)
+    pubcheminfoobj = getPubChemInfo(smiles=reactant_smiles)
     reactant = Reactant()
     reaction_obj = Reaction.objects.get(id=reaction_id)
     reactant.reaction_id = reaction_obj
@@ -796,8 +759,6 @@ class CreateEncodedActionModels(object):
             calcvalue = action["content"]["material"]["quantity"]["value"]
             calcunit = action["content"]["material"]["quantity"]["unit"]
             concentration = action["content"]["material"]["concentration"]
-            # if not concentration:
-            #     concentration = 0
             solvent = action["content"]["material"]["solvent"]
             mol = Chem.MolFromSmiles(smiles)
             molecular_weight = Descriptors.ExactMolWt(mol)

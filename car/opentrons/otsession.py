@@ -922,37 +922,6 @@ class CreateOTSession(object):
 
         return groupedreactionquerysets
 
-    # def getGroupedReactionByRecipe(self, reactionclass: str, reactionqueryset: QuerySet[Reaction]) -> list:
-    #     """Group reactions by reaction recipe type
-
-    #     Parameters
-    #     ----------
-    #     reactionclass: str
-    #         The type of reaction eg. "Suzuki" to group recipes for
-    #     reactionqueryset: QuerySet[Reaction]
-    #         The reactions to group by reaction class
-
-    #     Returns
-    #     -------
-    #     groupedreactionbyrecipequerysets: list
-    #         The list of sublists of reaction querysets grouped by reaction recipe
-    #     """
-    #     reactionrecipes = self.getUniqueReactionRecipes(
-    #         reactionqueryset=reactionqueryset
-    #     )
-    #     groupedreactionbyrecipequerysets = []
-
-    #     for recipe in reactionrecipes:
-    #         reactionbyrecipequeryset = (
-    #             reactionqueryset.filter(reactionclass=reactionclass, recipe=recipe)
-    #             .distinct()
-    #             .order_by("recipe")
-    #         )
-    #         if reactionbyrecipequeryset:
-    #             groupedreactionbyrecipequerysets.append(reactionbyrecipequeryset)
-
-    #     return groupedreactionbyrecipequerysets
-
     def getMedianValue(self, values: list) -> float:
         medianvalue = median(values)
         return medianvalue
