@@ -19,7 +19,7 @@ from sentry_sdk.integrations.redis import RedisIntegration
 from sentry_sdk.integrations.excepthook import ExcepthookIntegration
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 if os.environ.get("DEBUG_FRAGALYSIS") == 'True':
     DEBUG = True
