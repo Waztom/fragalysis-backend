@@ -7,7 +7,6 @@ from rdkit import Chem
 
 from .recipebuilder.encodedrecipes import encoded_recipes
 from .utils import (
-    canonSmiles,
     getAddtionOrder,
     checkReactantSMARTS,
     combiChem,
@@ -62,7 +61,7 @@ class ValidateFile(object):
                 self.checkColumnNames(expected_column_names=expected_column_names)
             if self.validated:
                 self.target_smiles = [
-                    canonSmiles(smi.strip()) for smi in self.df["target-SMILES"]
+                    smi.strip() for smi in self.df["target-SMILES"]
                 ]
                 self.df["target-SMILES"] = self.target_smiles
                 self.checkSMILES(
@@ -70,10 +69,7 @@ class ValidateFile(object):
                     smiles=self.target_smiles,
                     smiles_type="target",
                 )
-                # if self.validated:
-                #     self.checkIsNumber(values=self.amounts)
-                # if self.validated:
-                #     self.checkIsString()
+
 
     def validateCustomChem(self):
         max_no_steps = max(self.df["no-steps"])
@@ -142,10 +138,6 @@ class ValidateFile(object):
                 product_smiles = self.df[
                     "reaction-product-smiles-{}".format(reaction_number)
                 ].tolist()
-                # reactant_1_SMILES = self.df[
-                #     "reactant-1-{}".format(reaction_number)
-                # ].tolist()
-                # reactant_1_SMILES = [smi.strip() for smi in reactant_1_SMILES]
                 
                 reactant_1_SMILES = [
                             reactant.strip()
@@ -153,7 +145,6 @@ class ValidateFile(object):
                             if str(reactant) != "nan"
                         ]
                
-                # reactant_2_SMILES = self.df["reactant-2-{}".format(reaction_number)]
                 reactant_2_SMILES = [
                             reactant.strip()
                             for reactant in self.df["reactant-2-{}".format(reaction_number)]
@@ -162,24 +153,12 @@ class ValidateFile(object):
                 if not reactant_2_SMILES:
                     reactant_2_SMILES = [""] * len(reactant_1_SMILES)
                 reactant_pair_smiles = list(zip(reactant_1_SMILES, reactant_2_SMILES))
-                # self.checkSMILES(
-                #     df_rows_index=self.index_df_rows,
-                #     smiles=reactant_pair_smiles,
-                #     smiles_type="reactant_pair",
-                # )
                 if self.validated:
                     reactant_pair_smiles_ordered, product_smiles = self.checkReaction(
                         reactant_pair_smiles=reactant_pair_smiles,
                         reaction_names=reaction_names,
                         product_smiles=product_smiles,
                     )
-
-                    # self.product_smiles = self.product_smiles + product_smiles
-                    # self.reactant_pair_smiles = (
-                    # self.reactant_pair_smiles + reactant_pair_smiles_ordered
-                    # )
-                    # self.reaction_names = self.reaction_names + reaction_names
-                    # self.reaction_recipes = self.reaction_recipes + reaction_recipes
                     if reaction_number == max_no_steps:
                         self.target_smiles = self.target_smiles + product_smiles
 
@@ -624,7 +603,6 @@ class ValidateFile(object):
                         reactant_SMILES=reactant_pair,
                         reaction_SMARTS=smarts,
                     )
-                    reactant_smis = [canonSmiles(smi) for smi in reactant_smis]
                     product_created_smiles.append(product_smi)
                     reactant_pair_smiles_ordered.append(reactant_smis)
             return reactant_pair_smiles_ordered, product_created_smiles
