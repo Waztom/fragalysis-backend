@@ -1339,7 +1339,7 @@ class CreateOTSession(object):
         """
         mols = row["concentration"] * row["amount-ul"] * 1e-6
         smiles = row["SMILES"]
-        mw = Descriptors.ExactMolWt(Chem.MolFromSmiles(smiles))
+        mw = Descriptors.MolWt(Chem.MolFromSmiles(smiles))
         massmg = mols * mw * 1e3
         return round(massmg, 2)
 

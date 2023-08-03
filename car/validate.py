@@ -60,16 +60,13 @@ class ValidateFile(object):
             if self.validated:
                 self.checkColumnNames(expected_column_names=expected_column_names)
             if self.validated:
-                self.target_smiles = [
-                    smi.strip() for smi in self.df["target-SMILES"]
-                ]
+                self.target_smiles = [smi.strip() for smi in self.df["target-SMILES"]]
                 self.df["target-SMILES"] = self.target_smiles
                 self.checkSMILES(
                     df_rows_index=self.index_df_rows,
                     smiles=self.target_smiles,
                     smiles_type="target",
                 )
-
 
     def validateCustomChem(self):
         max_no_steps = max(self.df["no-steps"])
@@ -138,18 +135,18 @@ class ValidateFile(object):
                 product_smiles = self.df[
                     "reaction-product-smiles-{}".format(reaction_number)
                 ].tolist()
-                
+
                 reactant_1_SMILES = [
-                            reactant.strip()
-                            for reactant in self.df["reactant-1-{}".format(reaction_number)]
-                            if str(reactant) != "nan"
-                        ]
-               
+                    reactant.strip()
+                    for reactant in self.df["reactant-1-{}".format(reaction_number)]
+                    if str(reactant) != "nan"
+                ]
+
                 reactant_2_SMILES = [
-                            reactant.strip()
-                            for reactant in self.df["reactant-2-{}".format(reaction_number)]
-                            if str(reactant) != "nan"
-                        ]
+                    reactant.strip()
+                    for reactant in self.df["reactant-2-{}".format(reaction_number)]
+                    if str(reactant) != "nan"
+                ]
                 if not reactant_2_SMILES:
                     reactant_2_SMILES = [""] * len(reactant_1_SMILES)
                 reactant_pair_smiles = list(zip(reactant_1_SMILES, reactant_2_SMILES))
@@ -157,6 +154,7 @@ class ValidateFile(object):
                     reactant_pair_smiles_ordered, product_smiles = self.checkReaction(
                         reactant_pair_smiles=reactant_pair_smiles,
                         reaction_names=reaction_names,
+                        reaction_recipes=reaction_recipes,
                         product_smiles=product_smiles,
                     )
                     if reaction_number == max_no_steps:
@@ -316,6 +314,7 @@ class ValidateFile(object):
                 self.amounts = self.amounts + amounts
                 self.nosteps = self.nosteps + no_steps
                 for reaction_number in reaction_numbers_group:
+                    print("The reaction number is {}".format(reaction_number))
                     reaction_combi_group_info = {}
                     if reaction_number == 1:
                         reactant_1_SMILES = [
@@ -343,10 +342,13 @@ class ValidateFile(object):
                             if str(reactant) != "nan"
                         ]
                         reactant_2_SMILES = product_smiles[:number_reactant_pair_smiles]
+                    print("The reactant 1 SMILES are {}".format(reactant_1_SMILES))
+                    print("The reactant 2 SMILES are {}".format(reactant_2_SMILES))
                     reactant_pair_smiles = combiChem(
                         reactant_1_SMILES=reactant_1_SMILES,
                         reactant_2_SMILES=reactant_2_SMILES,
                     )
+                    print(reactant_pair_smiles)
                     number_reactant_pair_smiles = len(reactant_pair_smiles)
                     if number_reactant_pair_smiles != no_targets:
                         reactant_pair_smiles = reactant_pair_smiles * (
@@ -361,9 +363,8 @@ class ValidateFile(object):
                     reactant_pair_smiles_ordered, product_smiles = self.checkReaction(
                         reactant_pair_smiles=reactant_pair_smiles,
                         reaction_names=reaction_names,
+                        reaction_recipes=reaction_recipes,
                     )
-                    print(reactant_pair_smiles)
-                    print(product_smiles)
                     if reaction_number == max_no_steps_combi_group:
                         self.target_smiles = self.target_smiles + product_smiles
                     reaction_combi_group_info[
@@ -416,7 +417,7 @@ class ValidateFile(object):
                             combi_group_info[
                                 "reaction-recipe-{}".format(reactionnumber)
                             ]
-                            for reactionnumber in reaction_numbers
+                            for reactionnumber in reaction_numbers_group
                         ]
                     )
                 )
@@ -569,15 +570,16 @@ class ValidateFile(object):
         self,
         reactant_pair_smiles: list,
         reaction_names: list[str],
+        reaction_recipes: list[str],
         product_smiles: list[str] = None,
     ):
         try:
             product_created_smiles = []
             reactant_pair_smiles_ordered = []
-            for index, (reactant_pair, reaction_name) in enumerate(
-                zip(reactant_pair_smiles, reaction_names)
+            for index, (reactant_pair, reaction_name, reaction_recipe) in enumerate(
+                zip(reactant_pair_smiles, reaction_names, reaction_recipes)
             ):
-                smarts = encoded_recipes[reaction_name]["recipes"]["standard"][
+                smarts = encoded_recipes[reaction_name]["recipes"][reaction_recipe][
                     "reactionSMARTS"
                 ]
                 product_mols = checkReactantSMARTS(

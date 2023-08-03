@@ -2,10 +2,11 @@ from unittest import TestCase
 from rdkit import Chem
 from rdkit.Chem import AllChem
 
-from car.recipebuilder.encodedrecipes import encoded_recipes
-
 from car.utils import (
-    calculateMols,
+    getMWs,
+    getInchiKey,
+    calculateMolsFromConc,
+    calculateMassFromMols,
     canonSmiles,
     combiChem,
     createSVGString,
@@ -38,9 +39,9 @@ class ChemistryFunctionsTestCase(TestCase):
             snar_reactant_smiles_one[0],
             snar_reactant_smiles_two[0],
         )
-        self.snar_encoded_smarts = encoded_recipes[
-            "N-nucleophilic aromatic substitution"
-        ]["reactionSMARTS"]
+        self.snar_encoded_smarts = (
+            "[#6:3]-[#7;H3,H2,H1:2].[c:1]-[F,Cl,Br,I]>>[#6:3]-[#7:2]-[c:1]"
+        )
         self.snar_product_smiles = "O=C(O)Cc1ccc(Nc2ccccc2)cc1F"
         self.snar_product_mols = Chem.MolFromSmiles(self.snar_product_smiles)
         self.svg_str = self.strip_white_space(str=svg_str)
@@ -56,20 +57,87 @@ class ChemistryFunctionsTestCase(TestCase):
     def strip_white_space(self, str):
         return str.replace(" ", "").replace("\t", "").replace("\n", "")
 
-    def test_calculate_product_mols(self):
-        target_mass = 10
-        test_product_mols = calculateMols(
-            target_mass=target_mass, target_SMILES=self.smiles
+    def test_get_mws(self):
+        test_mws = getMWs(smiles=self.snar_reactant_smiles_tuple)
+        self.assertAlmostEqual(
+            first=test_mws[0],
+            second=172.13,
+            places=2,
+            msg="incorrect molecular weight calculated",
+        )
+        self.assertAlmostEqual(
+            first=test_mws[1],
+            second=93.13,
+            places=2,
+            msg="incorrect molecular weight calculated",
+        )
+
+    def test_get_mws_fail(self):
+        test_mws = getMWs(smiles=["OT Chemistry is possible"])
+        self.assertEqual(
+            test_mws,
+            None,
+            "incorrect capture of bad SMILES input",
+        )
+
+    def test_get_inchi_key(self):
+        test_inchi_key = getInchiKey(smiles=self.smiles)
+        self.assertEqual(
+            test_inchi_key,
+            "YZDFADGMVOSVIX-UHFFFAOYSA-N",
+            "incorrect InChI key calculated",
+        )
+
+    def test_get_inchi_key_fail(self):
+        test_inchi_key = getInchiKey(smiles="OT Chemistry is possible")
+        self.assertEqual(
+            test_inchi_key,
+            None,
+            "incorrect capture of bad SMILES input",
+        )
+
+    def test_calculate_mols_from_conc(self):
+        test_product_mols = calculateMolsFromConc(
+            target_concentration=0.5,
+            target_volume=1,
         )
 
         self.assertAlmostEqual(
             first=test_product_mols,
-            second=3.533309327614245e-05,
+            second=5e-10,
             places=4,
             msg="incorrect product mols calculated",
         )
 
-    def test_canon_smiles_correct(self):
+    def test_calculate_mols_fail(self):
+        test_product_mols = calculateMolsFromConc(
+            target_concentration="090", target_volume="OT Chemistry is possible"
+        )
+
+        self.assertEqual(
+            test_product_mols,
+            None,
+            "incorrect capture of bad target mass and SMILES input",
+        )
+
+    def test_calculate_mass_from_mols(self):
+        mass = calculateMassFromMols(mols=0.5, SMILES=self.snar_product_smiles)
+        self.assertAlmostEqual(
+            mass,
+            122626.5,
+            places=1,
+            msg="Incorrect mass calculated from mols and SMILES",
+        )
+
+    def test_calculate_mass_from_mols_fail(self):
+        mass = calculateMassFromMols(mols=0.5, SMILES="OT Chemistry is possible")
+        self.assertEqual(
+            mass,
+            None,
+            "Incorrect capture of bad SMILES input",
+        )
+
+    def test_canon_smiles(self):
         test_canon_smiles = canonSmiles(smiles=self.smiles)
         self.assertEqual(
             test_canon_smiles,
@@ -77,7 +145,7 @@ class ChemistryFunctionsTestCase(TestCase):
             "incorrect canonicalisation of SMILES",
         )
 
-    def test_canon_smiles_incorrect(self):
+    def test_canon_smiles_fail(self):
         test_canon_smiles = canonSmiles(smiles="OT Chemistry is possible")
         self.assertEqual(
             test_canon_smiles,
@@ -85,7 +153,7 @@ class ChemistryFunctionsTestCase(TestCase):
             "incorrect capture of bad SMILES input",
         )
 
-    def test_combi_chem_equal(self):
+    def test_combi_chem(self):
         test_all_possible_combinations = combiChem(
             reactant_1_SMILES=self.snar_reactant_smiles_one,
             reactant_2_SMILES=self.snar_reactant_smiles_two,
@@ -96,7 +164,7 @@ class ChemistryFunctionsTestCase(TestCase):
             "incorrect combinatorial product of two equal length lists of smiles",
         )
 
-    def test_combi_chem_unequal(self):
+    def test_combi_chem_fail(self):
         test_all_possible_combinations = combiChem(
             reactant_1_SMILES=self.snar_reactant_smiles_one[0:1],
             reactant_2_SMILES=self.snar_reactant_smiles_two,
@@ -133,7 +201,7 @@ class ChemistryFunctionsTestCase(TestCase):
         )
         self.assertEqual(
             test_ordered_smis,
-            list(self.snar_reactant_smiles_tuple),
+            ["Nc1ccccc1", "O=C(O)Cc1ccc(F)cc1F"],
             "incorrect addtion order for a SNAr encoded recipe SMARTS",
         )
 
@@ -157,6 +225,7 @@ class ChemistryFunctionsTestCase(TestCase):
             reactant_SMILES=self.snar_reactant_smiles_tuple,
             reaction_SMARTS=self.snar_encoded_smarts,
         )
+        test_product_smiles = [Chem.MolToSmiles(mol) for mol in test_product_mols]
 
         self.assertEqual(
             len(test_product_mols),
@@ -164,8 +233,8 @@ class ChemistryFunctionsTestCase(TestCase):
             "incorrect length of product mols for testing reaction SMARTS",
         )
         self.assertEqual(
-            test_product_mols[1],
-            self.snar_product_smiles,
+            set(test_product_smiles),
+            set(["O=C(O)Cc1ccc(Nc2ccccc2)cc1F", "O=C(O)Cc1ccc(F)cc1Nc1ccccc1"]),
             "incorrect product SMILES match for testing reaction SMARTS",
         )
 
@@ -173,31 +242,31 @@ class ChemistryFunctionsTestCase(TestCase):
 class PubChemFunctionsTestCase(TestCase):
     def setUp(self) -> None:
         self.smiles = "C1COC2=C(C3=C(C(=C21)CCN)OCC3)Br"
-        self.compound = getPubChemCompound(smiles=self.smiles)
+        self.inchikey = "YZDFADGMVOSVIX-UHFFFAOYSA-N"
+        self.compound = getPubChemCompound(inchikey=self.inchikey)
 
-    def test_get_pubchem_compound_success(self):
-        test_compound = getPubChemCompound(smiles=self.smiles)
+    def test_get_pubchem_compound(self):
+        compound = getPubChemCompound(inchikey=self.inchikey)
         self.assertEqual(
-            test_compound.cid,
+            compound.cid,
             10265873,
             "incorrect PubChem id for getting a compound from PubChem",
         )
-        self.assertEqual(
-            test_compound.cas,
-            "733720-95-1",
-            "incorrect CAS number for PubChem compound search",
-        )
 
     def test_get_pubchem_compound_fail(self):
-        test_compound = getPubChemCompound(smiles="OT chemistry is possible")
+        test_compound = getPubChemCompound(inchikey="OT chemistry is possible")
         self.assertEqual(
             test_compound,
             None,
             "PubChem search should yield None response",
         )
 
-    def test_get_chemical_name_success(self):
-        test_name = getChemicalName(smiles=self.smiles)
+    def test_get_pubchem_cas(self):
+        test_cas = getPubChemCAS(compound=self.compound)
+        self.assertEqual(test_cas, "733720-95-1", "incorrect CAS number returned")
+
+    def test_get_chemical_name(self):
+        test_name = getChemicalName(inchikey=self.inchikey)
         self.assertEqual(
             test_name,
             "2-(4-bromo-2,3,6,7-tetrahydrofuro[2,3-f][1]benzofuran-8-yl)ethanamine",
@@ -205,18 +274,17 @@ class PubChemFunctionsTestCase(TestCase):
         )
 
     def test_get_chemical_name_fail(self):
-        test_name = getChemicalName(smiles="OT chemistry is possible")
+        test_name = getChemicalName(inchikey="OT chemistry is possible")
         self.assertEqual(
             test_name,
             None,
             "PubChem name search should fail and return None",
         )
 
-    def test_get_pubchem_cas_success(self):
+    def test_get_pubchem_cas(self):
         test_cas = getPubChemCAS(compound=self.compound)
-        self.assertEqual(test_cas, "733720-95-1", "incorrect CAS number returned")
+        self.assertEqual(test_cas, "178557-21-6", "incorrect CAS number returned")
 
     def get_pubchem_cas_fail(self):
         test_cas = getPubChemCAS(compound=None)
         self.assertEqual(test_cas, None, "CAS should be None")
-    

@@ -39,7 +39,7 @@ from .utils import (
     canonSmiles,
     calculateMassFromMols,
     checkProceedingReactions,
-    calculateMols,
+    calculateMolsFromConc,
     calculateMassFromMols,
     createSVGString,
     createReactionSVGString,
@@ -134,7 +134,9 @@ def createTargetModel(
     batch_obj = Batch.objects.get(id=batch_id)
     target.batch_id = batch_obj
     target.smiles = canonSmiles(smiles=smiles)
-    mols = calculateMols(target_concentration=concentration, target_volume=volume)
+    mols = calculateMolsFromConc(
+        target_concentration=concentration, target_volume=volume
+    )
     mass = calculateMassFromMols(mols=mols, SMILES=smiles)
     target.mols = mols
     target.concentration = concentration
@@ -755,7 +757,7 @@ class CreateEncodedActionModels(object):
             concentration = action["content"]["material"]["concentration"]
             solvent = action["content"]["material"]["solvent"]
             mol = Chem.MolFromSmiles(smiles)
-            molecular_weight = Descriptors.ExactMolWt(mol)
+            molecular_weight = Descriptors.MolWt(mol)
             add = AddAction()
             add.reaction_id = self.reaction_obj
             add.actionsession_id = actionsession_obj
@@ -825,7 +827,7 @@ class CreateEncodedActionModels(object):
             solvent = action["content"]["material"]["solvent"]
             smiles = self.productsmiles
             mol = Chem.MolFromSmiles(smiles)
-            molecular_weight = Descriptors.ExactMolWt(mol)
+            molecular_weight = Descriptors.MolWt(mol)
             extract = ExtractAction()
             extract.reaction_id = self.reaction_obj
             extract.actionsession_id = actionsession_obj
