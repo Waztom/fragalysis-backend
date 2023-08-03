@@ -332,6 +332,7 @@ class ValidateFile(object):
                             ]
                             if str(reactant) != "nan"
                         ]
+                        are_product_SMILES = False
 
                     if reaction_number > 1:
                         reactant_1_SMILES = [
@@ -347,6 +348,7 @@ class ValidateFile(object):
                     reactant_pair_smiles = combiChem(
                         reactant_1_SMILES=reactant_1_SMILES,
                         reactant_2_SMILES=reactant_2_SMILES,
+                        are_product_SMILES=are_product_SMILES
                     )
                     print(reactant_pair_smiles)
                     number_reactant_pair_smiles = len(reactant_pair_smiles)

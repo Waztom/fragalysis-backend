@@ -323,8 +323,8 @@ def createProductModel(reaction_id: int, product_smiles: str):
     reaction_obj = Reaction.objects.get(id=reaction_id)
     product.reaction_id = reaction_obj
     product.smiles = product_smiles
-    if pubcheminfoobj:
-        product.pubcheminfo_id = pubcheminfoobj
+    # if pubcheminfoobj:
+    #     product.pubcheminfo_id = pubcheminfoobj
     product_svg_string = createSVGString(product_smiles)
     product_svg_fn = default_storage.save(
         "productimages/.svg", ContentFile(product_svg_string)
@@ -354,14 +354,13 @@ def createReactantModel(
     reactant_id: int
         The id of the reactant model object created
     """
-    reactant_smiles = canonSmiles(smiles=reactant_smiles)
     pubcheminfoobj = getPubChemInfo(smiles=reactant_smiles)
     reactant = Reactant()
     reaction_obj = Reaction.objects.get(id=reaction_id)
     reactant.reaction_id = reaction_obj
     reactant.smiles = reactant_smiles
-    if pubcheminfoobj:
-        reactant.pubcheminfo_id = pubcheminfoobj
+    # if pubcheminfoobj:
+    #     reactant.pubcheminfo_id = pubcheminfoobj
     reactant.previousreactionproduct = previous_reaction_product
     reactant.save()
     return reactant.id
@@ -743,6 +742,9 @@ class CreateEncodedActionModels(object):
             fromplatetype = action["content"]["plates"]["fromplatetype"]
             toplatetype = action["content"]["plates"]["toplatetype"]
             if action["content"]["material"]["SMARTS"]:
+                # MUst fix this to match SMARTS with molecule vs just taking first reactant SMILES!!!!!!
+                # FIX!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                # Do not use reactant pair smiles here
                 smiles = self.reactant_pair_smiles[0]
                 del self.reactant_pair_smiles[0]
             if action["content"]["material"]["SMILES"]:

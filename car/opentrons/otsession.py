@@ -619,18 +619,18 @@ class CreateOTSession(object):
                 "type": "single",
                 "maxvolume": 300,
             },
-            {
-                "labware": "p300_multi_gen2",
-                "position": "left",
-                "type": "multi",
-                "maxvolume": 300,
-            },
-            {
-                "labware": "p10_multi",
-                "position": "left",
-                "type": "multi",
-                "maxvolume": 10,
-            },
+            # {
+            #     "labware": "p300_multi_gen2",
+            #     "position": "left",
+            #     "type": "multi",
+            #     "maxvolume": 300,
+            # },
+            # {
+            #     "labware": "p10_multi",
+            #     "position": "left",
+            #     "type": "multi",
+            #     "maxvolume": 10,
+            # },
         ]
         pipettetype = min(
             [
@@ -642,6 +642,9 @@ class CreateOTSession(object):
                 pipettevolume=x["maxvolume"], roundedvolumes=roundedvolumes
             ),
         )
+        print(self.actionsessiontype)
+        print(channeltype)
+        print(pipettetype)
         return pipettetype
 
     def getNumberTransfers(self, pipettevolume: int, roundedvolumes: list) -> int:
