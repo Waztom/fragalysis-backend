@@ -741,23 +741,24 @@ class CreateEncodedActionModels(object):
             actionnumber = action["actionnumber"]
             fromplatetype = action["content"]["plates"]["fromplatetype"]
             toplatetype = action["content"]["plates"]["toplatetype"]
-            if action["content"]["material"]["SMARTS"]:
+            materialinfo = action["content"]["material"]
+            if materialinfo["SMARTS"]:
                 # MUst fix this to match SMARTS with molecule vs just taking first reactant SMILES!!!!!!
                 # FIX!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                 # Do not use reactant pair smiles here
                 smiles = self.reactant_pair_smiles[0]
                 del self.reactant_pair_smiles[0]
-            if action["content"]["material"]["SMILES"]:
-                smiles = action["content"]["material"]["SMILES"]
+            if materialinfo["SMILES"]:
+                smiles = materialinfo["SMILES"]
             if (
-                not action["content"]["material"]["SMILES"]
-                and not action["content"]["material"]["SMARTS"]
+                not materialinfo["SMILES"]
+                and not materialinfo["SMARTS"]
             ):
                 smiles = self.productsmiles
-            calcvalue = action["content"]["material"]["quantity"]["value"]
-            calcunit = action["content"]["material"]["quantity"]["unit"]
-            concentration = action["content"]["material"]["concentration"]
-            solvent = action["content"]["material"]["solvent"]
+            calcvalue = materialinfo["quantity"]["value"]
+            calcunit = materialinfo["quantity"]["unit"]
+            concentration = materialinfo["concentration"]
+            solvent = materialinfo["solvent"]
             mol = Chem.MolFromSmiles(smiles)
             molecular_weight = Descriptors.MolWt(mol)
             add = AddAction()
@@ -779,13 +780,14 @@ class CreateEncodedActionModels(object):
                 add.solvent = solvent
             if calcunit == "moleq":
                 if not solvent and not concentration:
+
                     add.mass = self.calculateMass(
                         calcunit=calcunit,
                         calcvalue=calcvalue,
                         reactant_MW=molecular_weight,
                     )
-                if "density" in action["content"]["material"]:
-                    reactant_density = action["content"]["material"]["density"]
+                if "density" in materialinfo:
+                    reactant_density = materialinfo["density"]
                     add.volume = self.calculateVolume(
                         calcunit=calcunit,
                         calcvalue=calcvalue,
@@ -821,12 +823,13 @@ class CreateEncodedActionModels(object):
             actionnumber = action["actionnumber"]
             fromplatetype = action["content"]["plates"]["fromplatetype"]
             toplatetype = action["content"]["plates"]["toplatetype"]
-            calcvalue = action["content"]["material"]["quantity"]["value"]
-            calcunit = action["content"]["material"]["quantity"]["unit"]
-            concentration = action["content"]["material"]["concentration"]
+            materialinfo = action["content"]["material"]
+            calcvalue = materialinfo["quantity"]["value"]
+            calcunit = materialinfo["quantity"]["unit"]
+            concentration = materialinfo["concentration"]
             if not concentration:
                 concentration = 0
-            solvent = action["content"]["material"]["solvent"]
+            solvent = materialinfo["solvent"]
             smiles = self.productsmiles
             mol = Chem.MolFromSmiles(smiles)
             molecular_weight = Descriptors.MolWt(mol)
@@ -849,7 +852,7 @@ class CreateEncodedActionModels(object):
                 extract.solvent = solvent
             if calcunit == "moleq":
                 if not solvent:
-                    reactant_density = action["content"]["material"]["density"]
+                    reactant_density = materialinfo["density"]
                     extract.volume = self.calculateVolume(
                         calcunit=calcunit,
                         calcvalue=calcvalue,
@@ -863,11 +866,11 @@ class CreateEncodedActionModels(object):
                         conc_reagents=concentration,
                     )
                     extract.solvent = solvent
-            if "bottomlayerquantity" in action["content"]["material"]:
-                bottomlayercalcvalue = action["content"]["material"][
+            if "bottomlayerquantity" in materialinfo:
+                bottomlayercalcvalue = materialinfo[
                     "bottomlayerquantity"
                 ]["value"]
-                bottomlayercalcunit = action["content"]["material"][
+                bottomlayercalcunit = materialinfo[
                     "bottomlayerquantity"
                 ]["unit"]
                 extract.bottomlayervolume = self.calculateVolume(
