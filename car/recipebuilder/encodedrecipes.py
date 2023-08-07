@@ -3,11 +3,19 @@ Encoded recipes for generalised reactions
 concentration (mol/L)
 density (g/mL)
 """
+# Changing ammounts used
+# from car.models import Target
+# target_qs = Target.objects.filter(batch_id=88)
+# mol_update = target_qs[0].mols*2 # Multiply by ammount to increase by
+# for tar_obj in target_qs:
+#     tar_obj.mols=mol_update
+#     tar_obj.save()
+
 # Removing recipes
 # from car.models import OTBatchProtocol
 # from car.utils import getActionSessionQuerySet
 # from car.utils import getBatchReactions
-# batchid=83
+# batchid=88
 # reactions = getBatchReactions(batchid=batchid)
 # getActionSessionQuerySet(reaction_ids=reactions).delete()
 # OTBatchProtocol.objects.get(batch_id=batchid).delete()
@@ -25,7 +33,7 @@ density (g/mL)
 # for mw in mws:
 #     print(mw)
 # Addtion order in SMARTS is critical. Must check, should be adaptive for changingrecipes ie go with order in actions and not order
-# in SMARTS NB RA with Alice where had issues with amine vs aldehyde amounts 
+# in SMARTS NB RA with Alice where had issues with amine vs aldehyde amounts
 encoded_recipes = {
     "Amidation": {
         "intramolecular": True,
@@ -200,26 +208,8 @@ encoded_recipes = {
                                     "material": {
                                         "SMARTS": None,
                                         "SMILES": "CCOC(C)=O",
-                                        "quantity": {"value": 300, "unit": "ul"},
+                                        "quantity": {"value": 400, "unit": "ul"},
                                         "solvent": "EtOAc",
-                                        "density": None,
-                                        "concentration": None,
-                                    },
-                                },
-                            },
-                            {
-                                "type": "add",
-                                "actionnumber": 10,
-                                "content": {
-                                    "plates": {
-                                        "fromplatetype": "solvent",
-                                        "toplatetype": "reaction",
-                                    },
-                                    "material": {
-                                        "SMARTS": None,
-                                        "SMILES": "O.C(=O)(O)[O-].[Na+]",
-                                        "quantity": {"value": 250, "unit": "ul"},
-                                        "solvent": "satNaHCO3/H2O",
                                         "density": None,
                                         "concentration": None,
                                     },
@@ -234,7 +224,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 11,
+                                "actionnumber": 10,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 25, "unit": "degC"},
@@ -249,6 +239,24 @@ encoded_recipes = {
                         "sessionnumber": 5,
                         "actions": [
                             {
+                                "type": "add",
+                                "actionnumber": 11,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "O",
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": "H2O",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
                                 "type": "extract",
                                 "actionnumber": 12,
                                 "content": {
@@ -258,12 +266,12 @@ encoded_recipes = {
                                     },
                                     "material": {
                                         "bottomlayerquantity": {
-                                            "value": 250,
+                                            "value": 200,
                                             "unit": "ul",
                                         },
                                         "layer": "top",
                                         "SMILES": None,
-                                        "quantity": {"value": 280, "unit": "ul"},
+                                        "quantity": {"value": 380, "unit": "ul"},
                                         "solvent": None,
                                         "density": None,
                                         "concentration": None,
@@ -281,7 +289,7 @@ encoded_recipes = {
                                     "material": {
                                         "SMARTS": None,
                                         "SMILES": "CCOC(C)=O",
-                                        "quantity": {"value": 300, "unit": "ul"},
+                                        "quantity": {"value": 400, "unit": "ul"},
                                         "solvent": "EtOAc",
                                         "density": None,
                                         "concentration": None,
@@ -306,13 +314,39 @@ encoded_recipes = {
                                     },
                                     "material": {
                                         "bottomlayerquantity": {
-                                            "value": 250,
+                                            "value": 200,
                                             "unit": "ul",
                                         },
                                         "layer": "top",
                                         "SMILES": None,
-                                        "quantity": {"value": 280, "unit": "ul"},
+                                        "quantity": {"value": 380, "unit": "ul"},
                                         "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
+                    # Steps to add DMSO for analysis - needs to later be included as analysis session when it's working
+                    {
+                        "type": "workup",
+                        "driver": "robot",
+                        "sessionnumber": 6,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 16,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "C[S](C)=O",
+                                        "quantity": {"value": 40, "unit": "ul"},
+                                        "solvent": "DMSO",
                                         "density": None,
                                         "concentration": None,
                                     },

@@ -314,7 +314,6 @@ class ValidateFile(object):
                 self.amounts = self.amounts + amounts
                 self.nosteps = self.nosteps + no_steps
                 for reaction_number in reaction_numbers_group:
-                    print("The reaction number is {}".format(reaction_number))
                     reaction_combi_group_info = {}
                     if reaction_number == 1:
                         reactant_1_SMILES = [
@@ -343,14 +342,14 @@ class ValidateFile(object):
                             if str(reactant) != "nan"
                         ]
                         reactant_2_SMILES = product_smiles[:number_reactant_pair_smiles]
-                    print("The reactant 1 SMILES are {}".format(reactant_1_SMILES))
-                    print("The reactant 2 SMILES are {}".format(reactant_2_SMILES))
+                        are_product_SMILES = True
+
                     reactant_pair_smiles = combiChem(
                         reactant_1_SMILES=reactant_1_SMILES,
                         reactant_2_SMILES=reactant_2_SMILES,
-                        are_product_SMILES=are_product_SMILES
+                        are_product_SMILES=are_product_SMILES,
                     )
-                    print(reactant_pair_smiles)
+
                     number_reactant_pair_smiles = len(reactant_pair_smiles)
                     if number_reactant_pair_smiles != no_targets:
                         reactant_pair_smiles = reactant_pair_smiles * (

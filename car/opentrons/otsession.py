@@ -93,9 +93,9 @@ class CreateOTSession(object):
         """Calls the functions to create the appropriate action session"""
         actionSessionTypes = {
             "reaction": self.createReactionSession,
-            "workup1": self.createWorkUpSession,
-            "workup2": self.createWorkUpSession,
-            "workup3": self.createWorkUpSession,
+            "workup": self.createWorkUpSession,
+            # "workup2": self.createWorkUpSession,
+            # "workup3": self.createWorkUpSession,
             "analyse": self.createAnalyseSession,
         }
 
@@ -192,7 +192,8 @@ class CreateOTSession(object):
         self.solventmaterialsdf = self.getAddActionsMaterialDataFrame(
             productexists=False
         )
-        self.createSolventPlate(materialsdf=self.solventmaterialsdf, channel_scale=8)
+        print("Creating solvent plates for workup")
+        self.createSolventPlate(materialsdf=self.solventmaterialsdf)
         self.workupplatesneeded = self.getUniqueToPlates(
             actionsessionqueryset=self.actionsessionqueryset,
             platetypes=["workup1", "workup2", "workup3", "spefilter"],
@@ -619,18 +620,18 @@ class CreateOTSession(object):
                 "type": "single",
                 "maxvolume": 300,
             },
-            # {
-            #     "labware": "p300_multi_gen2",
-            #     "position": "left",
-            #     "type": "multi",
-            #     "maxvolume": 300,
-            # },
-            # {
-            #     "labware": "p10_multi",
-            #     "position": "left",
-            #     "type": "multi",
-            #     "maxvolume": 10,
-            # },
+            {
+                "labware": "p300_multi_gen2",
+                "position": "left",
+                "type": "multi",
+                "maxvolume": 300,
+            },
+            {
+                "labware": "p10_multi",
+                "position": "left",
+                "type": "multi",
+                "maxvolume": 10,
+            },
         ]
         pipettetype = min(
             [
@@ -663,12 +664,14 @@ class CreateOTSession(object):
         numbertransfers: int
             The number of tranfers required for the pipette type used
         """
+        print(roundedvolumes)
         numbertransfers = sum(
             [
                 round(volume / pipettevolume) if pipettevolume < volume else 1
                 for volume in roundedvolumes
             ]
         )
+        print(numbertransfers)
         return numbertransfers
 
     def getAddActionsDataFrame(
@@ -1898,13 +1901,11 @@ class CreateOTSession(object):
             platetype=platetype,
         )
 
-    def createSolventPlate(self, materialsdf: DataFrame, channel_scale: int = None):
+    def createSolventPlate(self, materialsdf: DataFrame):
         """Creates solvent plate/s for diluting reactants for reactions or analysis."""
         if not materialsdf.empty:
             solventdictslist = []
             materialsdf = materialsdf.groupby(["solvent"])["volume"].sum().to_frame()
-            if channel_scale:
-                materialsdf["volume"] = materialsdf["volume"] * channel_scale
             startinglabwareplatetype = self.getPlateType(
                 platetype="solvent", volumes=materialsdf["volume"]
             )
@@ -1923,11 +1924,13 @@ class CreateOTSession(object):
                     nowellsneededratio = totalvolume / (maxwellvolume - deadvolume)
                     frac, whole = math.modf(nowellsneededratio)
                     volumestoadd = [maxwellvolume for i in range(int(whole))]
+                    print("The volumes to add are {}".format(volumestoadd))
                     volumestoadd.append(frac * maxwellvolume + deadvolume)
                     for volumetoadd in volumestoadd:
                         indexwellavailable = self.getPlateWellIndexAvailable(
                             plateobj=plateobj
                         )
+                        print("The indexwellavailable is {}".format(indexwellavailable))
                         if type(indexwellavailable) == bool:
                             plateobj = self.createPlateModel(
                                 platetype="solvent",

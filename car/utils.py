@@ -886,7 +886,9 @@ def canonSmiles(smiles: str) -> str:
         print(e)
 
 
-def combiChem(reactant_1_SMILES: list, reactant_2_SMILES: list, are_product_SMILES: bool = False) -> list:
+def combiChem(
+    reactant_1_SMILES: list, reactant_2_SMILES: list, are_product_SMILES: bool = False
+) -> list:
     """Gets all possible combinations between two uneven lists of
        reactants
 
@@ -898,7 +900,7 @@ def combiChem(reactant_1_SMILES: list, reactant_2_SMILES: list, are_product_SMIL
         The second list of reactant two smiles
     are_product_SMILES: boolean
         Set to True if reactant_2_SMILES is list of products from
-        previous reaction step 
+        previous reaction step
 
     Returns
     -------
@@ -910,14 +912,14 @@ def combiChem(reactant_1_SMILES: list, reactant_2_SMILES: list, are_product_SMIL
     if len(reactant_1_SMILES) == 0:
         reactant_2_SMILES_canon = [canonSmiles(smi) for smi in reactant_2_SMILES]
         if not are_product_SMILES:
-            reactant_2_SMILES_canon = set(reactant_2_SMILES_canon)
+            reactant_2_SMILES_canon = list(dict.fromkeys(reactant_2_SMILES_canon))
         all_possible_combinations = list(
             itertools.product([""], reactant_2_SMILES_canon)
         )
     if len(reactant_2_SMILES) == 0:
         reactant_1_SMILES_canon = [canonSmiles(smi) for smi in reactant_1_SMILES]
         if not are_product_SMILES:
-            reactant_1_SMILES_canon = set(reactant_1_SMILES_canon)
+            reactant_1_SMILES_canon = list(dict.fromkeys(reactant_1_SMILES_canon))
         all_possible_combinations = list(
             itertools.product([""], reactant_1_SMILES_canon)
         )
@@ -925,9 +927,11 @@ def combiChem(reactant_1_SMILES: list, reactant_2_SMILES: list, are_product_SMIL
         reactant_1_SMILES_canon = [canonSmiles(smi) for smi in reactant_1_SMILES]
         reactant_2_SMILES_canon = [canonSmiles(smi) for smi in reactant_2_SMILES]
         if not are_product_SMILES:
-            reactant_2_SMILES_canon = set(reactant_2_SMILES_canon)
+            reactant_2_SMILES_canon = list(dict.fromkeys(reactant_2_SMILES_canon))
         all_possible_combinations = list(
-            itertools.product(set(reactant_1_SMILES_canon), reactant_2_SMILES_canon)
+            itertools.product(
+                list(dict.fromkeys(reactant_1_SMILES_canon)), reactant_2_SMILES_canon
+            )
         )
     return all_possible_combinations
 
