@@ -334,6 +334,7 @@ class OTWrite(object):
         pipetteobj: Pipette
             The pipette used for an OT session
         """
+        print(self.otsession_id)
         pipetteobj = Pipette.objects.get(otsession_id=self.otsession_id)
         return pipetteobj
 
@@ -581,7 +582,6 @@ class OTWrite(object):
                         plates = [
                             "reaction",
                             "workup1",
-                            "workup2",
                             "workup2",
                             "workup3",
                             "spefilter",
@@ -1305,8 +1305,9 @@ class OTWrite(object):
                 groupedreactionclassquerysets = self.getGroupedReactionByClassRecipe(
                     reactionqueryset=reactionqueryset
                 )
-                self.pickUpTip()
+                # self.pickUpTip()
                 for groupreactionclassqueryset in groupedreactionclassquerysets:
+                    self.pickUpTip()
                     actionsessiontype = "reaction"
                     reactionclass = groupreactionclassqueryset.values_list(
                         "reactionclass", flat=True

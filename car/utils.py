@@ -413,7 +413,7 @@ def getBatchTargetMWs(batch_id: int) -> list[float]:
     batchobj = Batch.objects.get(id=batch_id)
     targetqueryset = batchobj.targets.all()
     smiles = [targetobj.smiles for targetobj in targetqueryset]
-    target_MWs = [Descriptors.ExactMolWt(Chem.MolFromSmiles(smi)) for smi in smiles]
+    target_MWs = getMWs(smiles=smiles)
     return target_MWs
 
 
@@ -560,9 +560,7 @@ def getBatchReactionProductMWs(batch_id: int, reaction_number: int) -> list[floa
                     .order_by("id")
                     .values_list("smiles", flat=True)
                 )
-    product_MWs = [
-        Descriptors.ExactMolWt(Chem.MolFromSmiles(smi)) for smi in product_SMILES
-    ]
+    product_MWs = getMWs(smiles=product_SMILES)
     return product_MWs
 
 
@@ -780,35 +778,41 @@ def getMWs(smiles: list[str]) -> list[float]:
     ----------
     smiles: list[str]
         The SMILES to calculate molecular weights for
-
     Returns
     -------
     MWs: list[float]
         The list of molecular weights
     """
-
-    MWs = [Descriptors.ExactMolWt(Chem.MolFromSmiles(smi)) for smi in smiles]
-    return MWs
+    try:
+        MWs = [Descriptors.MolWt(Chem.MolFromSmiles(smi)) for smi in smiles]
+        return MWs
+    except Exception as e:
+        logger.info(inspect.stack()[0][3] + " yielded error: {}".format(e))
+        print(e)
 
 
 def getInchiKey(smiles: str) -> str:
-    """Gets the inchikeys of a list of compounds SMILES
+    """Gets the inchikey for a compound SMILES
 
     Parameters
     ----------
     smiles: str
-        The SMILES to convert to an inchikey
+        The SMILESs to convert to an inchikey
 
     Returns
     -------
     inchikeys: str
         The inchikeys
     """
-    inchikey = Chem.MolToInchiKey(Chem.MolFromSmiles(smiles))
-    return inchikey
+    try:
+        inchikey = Chem.MolToInchiKey(Chem.MolFromSmiles(smiles))
+        return inchikey
+    except Exception as e:
+        logger.info(inspect.stack()[0][3] + " yielded error: {}".format(e))
+        print(e)
 
 
-def calculateMols(target_concentration: float, target_volume: float) -> object:
+def calculateMolsFromConc(target_concentration: float, target_volume: float) -> object:
     """Function to calculate product mols of reaction using a target mass
 
     Parameters
@@ -823,8 +827,12 @@ def calculateMols(target_concentration: float, target_volume: float) -> object:
     product_moles: rdkit mol object
         The product mols
     """
-    target_mols = (target_volume / 1e6) * (target_concentration / 1e3)
-    return target_mols
+    try:
+        target_mols = (target_volume / 1e6) * (target_concentration / 1e3)
+        return target_mols
+    except Exception as e:
+        logger.info(inspect.stack()[0][3] + " yielded error: {}".format(e))
+        print(e)
 
 
 def calculateMassFromMols(mols: float, SMILES: str) -> object:
@@ -842,9 +850,13 @@ def calculateMassFromMols(mols: float, SMILES: str) -> object:
     mass: float
         The mass (mg) of the compound
     """
-    MW = Descriptors.ExactMolWt(Chem.MolFromSmiles(SMILES))
-    mass = (mols * MW) * 1e3
-    return mass
+    try:
+        MW = Descriptors.MolWt(Chem.MolFromSmiles(SMILES))
+        mass = (mols * MW) * 1e3
+        return mass
+    except Exception as e:
+        logger.info(inspect.stack()[0][3] + " yielded error: {}".format(e))
+        print(e)
 
 
 def canonSmiles(smiles: str) -> str:
@@ -862,16 +874,21 @@ def canonSmiles(smiles: str) -> str:
     status: bool
         Returns False if the input smiles could not be canonicalised
     """
+    try:
+        mol = Chem.MolFromSmiles(smiles)
+        if mol:
+            canon_smiles = Chem.MolToSmiles(mol)
+            return canon_smiles
+        else:
+            return False
+    except Exception as e:
+        logger.info(inspect.stack()[0][3] + " yielded error: {}".format(e))
+        print(e)
 
-    mol = Chem.MolFromSmiles(smiles)
-    if mol:
-        canon_smiles = Chem.MolToSmiles(mol)
-        return canon_smiles
-    else:
-        return False
 
-
-def combiChem(reactant_1_SMILES: list, reactant_2_SMILES: list) -> list:
+def combiChem(
+    reactant_1_SMILES: list, reactant_2_SMILES: list, are_product_SMILES: bool = False
+) -> list:
     """Gets all possible combinations between two uneven lists of
        reactants
 
@@ -881,6 +898,9 @@ def combiChem(reactant_1_SMILES: list, reactant_2_SMILES: list) -> list:
         The list of reactant one smiles
     reactant_2_SMILES: list
         The second list of reactant two smiles
+    are_product_SMILES: boolean
+        Set to True if reactant_2_SMILES is list of products from
+        previous reaction step
 
     Returns
     -------
@@ -890,20 +910,28 @@ def combiChem(reactant_1_SMILES: list, reactant_2_SMILES: list) -> list:
         as a list of tuples
     """
     if len(reactant_1_SMILES) == 0:
-        reactant_2_SMILES_canon = [canonSmiles(smi) for smi in reactant_1_SMILES]
+        reactant_2_SMILES_canon = [canonSmiles(smi) for smi in reactant_2_SMILES]
+        if not are_product_SMILES:
+            reactant_2_SMILES_canon = list(dict.fromkeys(reactant_2_SMILES_canon))
         all_possible_combinations = list(
-            itertools.product([""], set(reactant_2_SMILES_canon))
+            itertools.product([""], reactant_2_SMILES_canon)
         )
     if len(reactant_2_SMILES) == 0:
         reactant_1_SMILES_canon = [canonSmiles(smi) for smi in reactant_1_SMILES]
+        if not are_product_SMILES:
+            reactant_1_SMILES_canon = list(dict.fromkeys(reactant_1_SMILES_canon))
         all_possible_combinations = list(
-            itertools.product([""], set(reactant_1_SMILES_canon))
+            itertools.product([""], reactant_1_SMILES_canon)
         )
     if len(reactant_1_SMILES) != 0 and len(reactant_2_SMILES) != 0:
         reactant_1_SMILES_canon = [canonSmiles(smi) for smi in reactant_1_SMILES]
-        reactant_2_SMILES_canon = [canonSmiles(smi) for smi in reactant_1_SMILES]
+        reactant_2_SMILES_canon = [canonSmiles(smi) for smi in reactant_2_SMILES]
+        if not are_product_SMILES:
+            reactant_2_SMILES_canon = list(dict.fromkeys(reactant_2_SMILES_canon))
         all_possible_combinations = list(
-            itertools.product(reactant_1_SMILES, reactant_2_SMILES)
+            itertools.product(
+                list(dict.fromkeys(reactant_1_SMILES_canon)), reactant_2_SMILES_canon
+            )
         )
     return all_possible_combinations
 
@@ -921,14 +949,18 @@ def createSVGString(smiles: str) -> str:
     svg_string: string
         The SVG image string
     """
-    mol = Chem.MolFromSmiles(smiles)
-    drawer = Draw.rdMolDraw2D.MolDraw2DSVG(100, 50)
-    drawer.SetFontSize(8)
-    drawer.SetLineWidth(1)
-    drawer.DrawMolecule(mol)
-    drawer.FinishDrawing()
-    svg_string = drawer.GetDrawingText()
-    return svg_string
+    try:
+        mol = Chem.MolFromSmiles(smiles)
+        drawer = Draw.rdMolDraw2D.MolDraw2DSVG(100, 50)
+        drawer.SetFontSize(8)
+        drawer.SetLineWidth(1)
+        drawer.DrawMolecule(mol)
+        drawer.FinishDrawing()
+        svg_string = drawer.GetDrawingText()
+        return svg_string
+    except Exception as e:
+        logger.info(inspect.stack()[0][3] + " yielded error: {}".format(e))
+        print(e)
 
 
 def createReactionSVGString(smarts: str) -> str:
@@ -945,11 +977,15 @@ def createReactionSVGString(smarts: str) -> str:
     svg_string: string
         The SVG image string of the SMARTS pattern
     """
-    drawer = Draw.rdMolDraw2D.MolDraw2DSVG(900, 200)
-    drawer.DrawReaction(smarts)
-    drawer.FinishDrawing()
-    svg_string = drawer.GetDrawingText()
-    return svg_string
+    try:
+        drawer = Draw.rdMolDraw2D.MolDraw2DSVG(900, 200)
+        drawer.DrawReaction(smarts)
+        drawer.FinishDrawing()
+        svg_string = drawer.GetDrawingText()
+        return svg_string
+    except Exception as e:
+        logger.info(inspect.stack()[0][3] + " yielded error: {}".format(e))
+        print(e)
 
 
 def getAddtionOrder(
@@ -1060,28 +1096,6 @@ def checkReactantSMARTS(reactant_SMILES: tuple, reaction_SMARTS: str) -> list:
         return None
 
 
-def getPubChemCAS(compound: object) -> str:
-    """Get CAS identifier for PubChem compound synonyms
-
-    Parameters
-    ----------
-    compound: object
-        A PuBChem compound object
-
-    Returns
-    -------
-    cas: str
-        The CAS id of the compound
-    """
-    synonyms = compound.synonyms
-    if synonyms:
-        for syn in synonyms:
-            match = re.match("(\d{1,7}-\d{1,2}-\d)", syn)
-            if match:
-                cas = match.group(1)
-                return cas
-
-
 def getPubChemCompound(inchikey: str) -> object:
     """Searches PubChem for compound using inchi key
 
@@ -1110,7 +1124,32 @@ def getPubChemCompound(inchikey: str) -> object:
                 inchikey, e
             )
         )
-        return None
+
+
+def getPubChemCAS(compound: object) -> str:
+    """Get CAS identifier for PubChem compound synonyms
+
+    Parameters
+    ----------
+    compound: object
+        A PuBChem compound object
+
+    Returns
+    -------
+    cas: str
+        The CAS id of the compound
+    """
+    try:
+        synonyms = compound.synonyms
+        if synonyms:
+            for syn in synonyms:
+                match = re.match("(\d{1,7}-\d{1,2}-\d)", syn)
+                if match:
+                    cas = match.group(1)
+                    return cas
+    except Exception as e:
+        logger.info(inspect.stack()[0][3] + " yielded error: {}".format(e))
+        print(e)
 
 
 def getChemicalName(inchikey: str) -> str:
@@ -1141,4 +1180,3 @@ def getChemicalName(inchikey: str) -> str:
         print(
             "Pubchempy could not convert SMILES to a IUPAC name with error {}".format(e)
         )
-        return None

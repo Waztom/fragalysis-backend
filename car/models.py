@@ -263,9 +263,9 @@ class ActionSession(models.Model):
     class Type(models.TextChoices):
         reaction = "reaction"
         stir = "stir"
-        workup1 = "workup1"
-        workup2 = "workup2"
-        workup3 = "workup3"
+        workup = "workup"
+        # workup2 = "workup2"
+        # workup3 = "workup3"
         analyse = "analyse"
 
     class Driver(models.TextChoices):
