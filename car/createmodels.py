@@ -750,10 +750,7 @@ class CreateEncodedActionModels(object):
                 del self.reactant_pair_smiles[0]
             if materialinfo["SMILES"]:
                 smiles = materialinfo["SMILES"]
-            if (
-                not materialinfo["SMILES"]
-                and not materialinfo["SMARTS"]
-            ):
+            if not materialinfo["SMILES"] and not materialinfo["SMARTS"]:
                 smiles = self.productsmiles
             calcvalue = materialinfo["quantity"]["value"]
             calcunit = materialinfo["quantity"]["unit"]
@@ -867,12 +864,8 @@ class CreateEncodedActionModels(object):
                     )
                     extract.solvent = solvent
             if "bottomlayerquantity" in materialinfo:
-                bottomlayercalcvalue = materialinfo[
-                    "bottomlayerquantity"
-                ]["value"]
-                bottomlayercalcunit = materialinfo[
-                    "bottomlayerquantity"
-                ]["unit"]
+                bottomlayercalcvalue = materialinfo["bottomlayerquantity"]["value"]
+                bottomlayercalcunit = materialinfo["bottomlayerquantity"]["unit"]
                 extract.bottomlayervolume = self.calculateVolume(
                     calcunit=bottomlayercalcunit,
                     calcvalue=bottomlayercalcvalue,

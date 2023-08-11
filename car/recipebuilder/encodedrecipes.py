@@ -40,7 +40,9 @@ encoded_recipes = {
         "recipes": {
             "standard": {
                 "yield": 85,
-                "reactionSMARTS": "[#6:1](=[#8:2])-[#8].[#7;H3,H2,H1:3]>>[#6:1](=[#8:2])-[#7:3]",
+                "reactionSMARTS": [
+                    "[#6:1](=[#8:2])-[#8].[#7;H3,H2,H1:3]>>[#6:1](=[#8:2])-[#7:3]"
+                ],
                 "references": None,
                 "actionsessions": [
                     {
@@ -468,7 +470,9 @@ encoded_recipes = {
         "recipes": {
             "standard": {
                 "yield": 85,
-                "reactionSMARTS": "[#7;H2,H1:3].[#6:1](=[#8:2])-[#17]>>[#6:1](=[#8:2])-[#7:3]",
+                "reactionSMARTS": [
+                    "[#7;H2,H1:3].[#6:1](=[#8:2])-[#17]>>[#6:1](=[#8:2])-[#7:3]"
+                ],
                 "referencess": None,
                 "actionsessions": [
                     {
@@ -699,7 +703,7 @@ encoded_recipes = {
         "recipes": {
             "standard": {
                 "yield": 70,
-                "reactionSMARTS": "[#7:2].[c:3]-[F,I,Br,Cl]>>[#7:2]-[c:3]",
+                "reactionSMARTS": ["[#7:2].[c:3]-[F,I,Br,Cl]>>[#7:2]-[c:3]"],
                 "references": "https://doi.org/10.1021/acs.oprd.0c00018",
                 "actionsessions": [
                     {
@@ -963,7 +967,7 @@ encoded_recipes = {
         "recipes": {
             "standard": {
                 "yield": 70,
-                "reactionSMARTS": "[#7:2]-[#6]=[#8].[c:3]-[F,I,Br,Cl]>>[#7:2]-[c:3]",
+                "reactionSMARTS": ["[#7:2]-[#6]=[#8].[c:3]-[F,I,Br,Cl]>>[#7:2]-[c:3]"],
                 "references": "https://doi.org/10.1021/acs.oprd.0c00018",
                 "actionsessions": [
                     {
@@ -1227,7 +1231,7 @@ encoded_recipes = {
         "recipes": {
             "standard": {
                 "yield": 70,
-                "reactionSMARTS": "[c:1]-[#8:2].[c:3]-[F,I,Br,Cl]>>[#8:2]-[c:3]",
+                "reactionSMARTS": ["[c:1]-[#8:2].[c:3]-[F,I,Br,Cl]>>[#8:2]-[c:3]"],
                 "references": "https://doi.org/10.1021/acs.oprd.0c00018",
                 "actionsessions": [
                     {
@@ -1491,7 +1495,9 @@ encoded_recipes = {
         "recipes": {
             "standard": {
                 "yield": 80,
-                "reactionSMARTS": "[#6:1](=[#8:2])-[#8].[#7;H3,H2,H1:3]>>[#6:1](=[#8:2])-[#7:3]",
+                "reactionSMARTS": [
+                    "[#6:1](=[#8:2])-[#8].[#7;H3,H2,H1:3]>>[#6:1](=[#8:2])-[#7:3]"
+                ],
                 "references": ["https://doi.org/10.3390/molecules25051040"],
                 "actionsessions": [
                     {
@@ -1728,7 +1734,7 @@ encoded_recipes = {
         "recipes": {
             "standard": {
                 "yield": 70,
-                "reactionSMARTS": "[c:1]-[#8;H:2].[#6]-[#8:3]>>[c:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": ["[c:1]-[#8;H:2].[#6]-[#8:3]>>[c:1]-[#8:2]-[#6:3]"],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -2015,7 +2021,7 @@ encoded_recipes = {
         "recipes": {
             "standard": {
                 "yield": 70,
-                "reactionSMARTS": "[c:1]-[#7:2].[#6]-[#8:3]>>[c:1]-[#7:2]-[#6:3]",
+                "reactionSMARTS": ["[c:1]-[#7:2].[#6]-[#8:3]>>[c:1]-[#7:2]-[#6:3]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -2302,7 +2308,9 @@ encoded_recipes = {
         "recipes": {
             "standard": {
                 "yield": 90,
-                "reactionSMARTS": "[#6:3]-[#7;H3,H2,H1:2].[c:1]-[F,Cl,Br,I]>>[#6:3]-[#7:2]-[c:1]",
+                "reactionSMARTS": [
+                    "[#6:3]-[#7;H3,H2,H1:2].[c:1]-[F,Cl,Br,I]>>[#6:3]-[#7:2]-[c:1]"
+                ],
                 "references": None,
                 "actionsessions": [
                     {
@@ -2615,7 +2623,9 @@ encoded_recipes = {
             },
             "standard-NMP": {
                 "yield": 90,
-                "reactionSMARTS": "[#6:3]-[#7;H3,H2,H1:2].[c:1]-[F,Cl,Br,I]>>[#6:3]-[#7:2]-[c:1]",
+                "reactionSMARTS": [
+                    "[#6:3]-[#7;H3,H2,H1:2].[c:1]-[F,Cl,Br,I]>>[#6:3]-[#7:2]-[c:1]"
+                ],
                 "references": None,
                 "actionsessions": [
                     {
@@ -2706,7 +2716,7 @@ encoded_recipes = {
         "recipes": {
             "standard": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:2]-[F,Cl,Br,I].[#7;H1,H2,H3:1]>>[#7:1]-[#6:2]",
+                "reactionSMARTS": ["[#6:2]-[F,Cl,Br,I].[#7;H1,H2,H3:1]>>[#7:1]-[#6:2]"],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -2976,7 +2986,7 @@ encoded_recipes = {
         "recipes": {
             "standard": {
                 "yield": 70,
-                "reactionSMARTS": "[#7;H3,H2,H1:3].[#6:2](=[#8])>>[#6:2]-[#7:3]",
+                "reactionSMARTS": ["[#7;H3,H2,H1:3].[#6:2](=[#8])>>[#6:2]-[#7:3]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -3345,7 +3355,7 @@ encoded_recipes = {
         "recipes": {
             "standard": {
                 "yield": 70,
-                "reactionSMARTS": "[CH:1].[c:2]-[Cl,Br,I]>>[C:1]-[c:2]",
+                "reactionSMARTS": ["[CH:1].[c:2]-[Cl,Br,I]>>[C:1]-[c:2]"],
                 "references": [
                     "https://pubs.rsc.org/en/content/articlelanding/2008/cc/b810928a#!",
                     "https://pubs.acs.org/doi/pdf/10.1021/ol035632f",
@@ -3570,7 +3580,7 @@ encoded_recipes = {
                 ],
                 "NMP": {
                     "yield": 70,
-                    "reactionSMARTS": "[CH:1].[c:2]-[Cl,Br,I]>>[C:1]-[c:2]",
+                    "reactionSMARTS": ["[CH:1].[c:2]-[Cl,Br,I]>>[C:1]-[c:2]"],
                     "references": [
                         "https://pubs.rsc.org/en/content/articlelanding/2008/cc/b810928a#!",
                         "https://pubs.acs.org/doi/pdf/10.1021/ol035632f",
@@ -3817,7 +3827,7 @@ encoded_recipes = {
         "recipes": {
             "standard": {
                 "yield": 75,
-                "reactionSMARTS": "[c:1]-[F,Cl,Br,I].[#6:2]-[B]>>[c:1]-[#6:2]",
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[#6:2]-[B]>>[c:1]-[#6:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -4081,7 +4091,9 @@ encoded_recipes = {
         "recipes": {
             "standard": {
                 "yield": 75,
-                "reactionSMARTS": "[#16:5](=[#8])(=[#8:7])-[#17].[#6]-[#7;H2,H1:2]>>[#16:5](=[#8])(=[#8:7])-[#7:2]",
+                "reactionSMARTS": [
+                    "[#16:5](=[#8])(=[#8:7])-[#17].[#6]-[#7;H2,H1:2]>>[#16:5](=[#8])(=[#8:7])-[#7:2]"
+                ],
                 "references": None,
                 "actionsessions": [
                     {
@@ -4271,7 +4283,9 @@ encoded_recipes = {
                     },
                 ],
                 "DMA": {
-                    "reactionSMARTS": "[#16:5](=[#8])(=[#8:7])-[#17].[#6]-[#7;H2,H1:2]>>[#16:5](=[#8])(=[#8:7])-[#7:2]",
+                    "reactionSMARTS": [
+                        "[#16:5](=[#8])(=[#8:7])-[#17].[#6]-[#7;H2,H1:2]>>[#16:5](=[#8])(=[#8:7])-[#7:2]"
+                    ],
                     "references": None,
                     "actionsessions": [
                         {
@@ -4478,7 +4492,9 @@ encoded_recipes = {
         "recipes": {
             "standard": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -4797,7 +4813,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-OPT": {
                 "yield": 77,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "Recipe from WE DoE investigation",
                 "actionsessions": [
                     {
@@ -4883,7 +4901,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-1": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -4969,7 +4989,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-2": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -5055,7 +5077,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-3": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -5144,7 +5168,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-4": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -5230,7 +5256,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-5": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -5316,7 +5344,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-6": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -5405,7 +5435,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-7": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -5491,7 +5523,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-8": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -5577,7 +5611,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-9": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -5666,7 +5702,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-10": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -5752,7 +5790,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-11": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -5838,7 +5878,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-12": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -5927,7 +5969,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-13": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -6013,7 +6057,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-14": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -6099,7 +6145,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-15": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -6188,7 +6236,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-16": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -6274,7 +6324,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-17": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -6360,7 +6412,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-18": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -6449,7 +6503,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-19": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -6535,7 +6591,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-20": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -6621,7 +6679,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-21": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -6710,7 +6770,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-22": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -6796,7 +6858,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-23": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -6882,7 +6946,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-24": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -6971,7 +7037,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-25": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -7057,7 +7125,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-26": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -7143,7 +7213,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-27": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -7232,7 +7304,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-28": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -7318,7 +7392,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-29": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -7404,7 +7480,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-30": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -7493,7 +7571,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-31": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -7579,7 +7659,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-32": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -7665,7 +7747,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-33": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -7754,7 +7838,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-34": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -7840,7 +7926,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-35": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -7926,7 +8014,9 @@ encoded_recipes = {
             },
             "SHIP1-WE-36": {
                 "yield": 70,
-                "reactionSMARTS": "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]",
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
                 "references": "To do",
                 "actionsessions": [
                     {
@@ -8020,7 +8110,9 @@ encoded_recipes = {
         "recipes": {
             "standard": {
                 "yield": 85,
-                "reactionSMARTS": "[#7:2]>>[#7:2]-[#6:1](=[#8])-[#8]-[#6](-[#6])(-[#6])(-[#6])",
+                "reactionSMARTS": [
+                    "[#7:2]>>[#7:2]-[#6:1](=[#8])-[#8]-[#6](-[#6])(-[#6])(-[#6])"
+                ],
                 "references": None,
                 "actionsessions": [
                     {
@@ -8218,7 +8310,9 @@ encoded_recipes = {
         "recipes": {
             "standard": {
                 "yield": 100,
-                "reactionSMARTS": "[#7:2]-[#6](=[#8])-[#8]-[#6](-[#6])(-[#6])(-[#6])>>[#7:2]",
+                "reactionSMARTS": [
+                    "[#7:2]-[#6](=[#8])-[#8]-[#6](-[#6])(-[#6])(-[#6])>>[#7:2]"
+                ],
                 "references": None,
                 "actionsessions": [
                     {
@@ -8347,13 +8441,15 @@ encoded_recipes = {
             },
         },
     },
-
     "Boc-TBS deprotection": {
         "intramolecular": False,
         "recipes": {
             "standard": {
                 "yield": 100,
-                "reactionSMARTS": ["[#7:2]-[#6](=[#8])-[#8]-[#6](-[#6])(-[#6])(-[#6])>>[#7:2]","[#6:1]-[#8:2]-[#14]([#6H3])([#6H3])-[#6]([#6H3])([#6H3])([#6H3])>>[#6:1]-[#8:2]-[#1]"],
+                "reactionSMARTS": [
+                    "[#7:2]-[#6](=[#8])-[#8]-[#6](-[#6])(-[#6])(-[#6])>>[#7:2]",
+                    "[#6:1]-[#8:2]-[#14]([#6H3])([#6H3])-[#6]([#6H3])([#6H3])([#6H3])>>[#6:1]-[#8:2]-[#1]",
+                ],
                 "references": None,
                 "actionsessions": [
                     {
@@ -8426,7 +8522,9 @@ encoded_recipes = {
         "recipes": {
             "standard": {
                 "yield": 100,
-                "reactionSMARTS": "[#6:1](=[#8:2])-[#8:3][#6H1,#6H2,#6H3]>>[#6:1](=[#8:2])-[#8H:3]",
+                "reactionSMARTS": [
+                    "[#6:1](=[#8:2])-[#8:3][#6H1,#6H2,#6H3]>>[#6:1](=[#8:2])-[#8H:3]"
+                ],
                 "references": None,
                 "actionsessions": [
                     {
@@ -8553,7 +8651,9 @@ encoded_recipes = {
             },
             "half-eq-lioh": {
                 "yield": 100,
-                "reactionSMARTS": "[#6:1](=[#8:2])-[#8:3][#6H1,#6H2,#6H3]>>[#6:1](=[#8:2])-[#8H:3]",
+                "reactionSMARTS": [
+                    "[#6:1](=[#8:2])-[#8:3][#6H1,#6H2,#6H3]>>[#6:1](=[#8:2])-[#8H:3]"
+                ],
                 "references": None,
                 "actionsessions": [
                     {
@@ -8685,7 +8785,9 @@ encoded_recipes = {
         "recipes": {
             "standard": {
                 "yield": 70,
-                "reactionSMARTS": "[c:2]-[F,Cl,Br,I].[CX3;H2:1]>>[c:2]-[CX3;H1:1]",  # SMARTS for terminal alkenes only
+                "reactionSMARTS": [
+                    "[c:2]-[F,Cl,Br,I].[CX3;H2:1]>>[c:2]-[CX3;H1:1]"
+                ],  # SMARTS for terminal alkenes only
                 "references": ["Platinum Metals Rev., 1999, 43, (4), 138"],
                 "actionsessions": [
                     {
