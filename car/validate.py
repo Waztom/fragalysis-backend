@@ -72,7 +72,7 @@ class ValidateFile(object):
         max_no_steps = max(self.df["no-steps"])
         reaction_numbers = list(range(1, max_no_steps + 1))
         expected_groupby_column_names = [
-            "groupbycolumn-{}".format(reaction_number)
+            "reaction-groupby-column-{}".format(reaction_number)
             for reaction_number in reaction_numbers
         ]
         expected_reactant_1_column_names = [
@@ -132,9 +132,11 @@ class ValidateFile(object):
             all_reaction_info = {}
             for reaction_number in reaction_numbers:
                 reaction_info = {}
-                reaction_groupby_column = self.df[
-                    "groupbycolumn-{}".format(reaction_number)
-                ].tolist()
+                reaction_groupby_column = (
+                    self.df["reaction-groupby-column-{}".format(reaction_number)]
+                    .apply(bool)
+                    .tolist()
+                )
                 reaction_names = self.df[
                     "reaction-name-{}".format(reaction_number)
                 ].tolist()
