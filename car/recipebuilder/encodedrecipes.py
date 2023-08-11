@@ -23,7 +23,7 @@ density (g/mL)
 # Finding plate reactions and MWS
 # from car.models import Plate
 # from car.utils import getMWs
-# plate_id=2395
+# plate_id=2584
 # plate = Plate.objects.get(id=plate_id)
 # wells = plate.well_set.all().order_by("id")
 # smiles = wells.values_list("smiles", flat=True)
@@ -8343,6 +8343,80 @@ encoded_recipes = {
                     #         },
                     #     ],
                     # },
+                ],
+            },
+        },
+    },
+
+    "Boc-TBS deprotection": {
+        "intramolecular": False,
+        "recipes": {
+            "standard": {
+                "yield": 100,
+                "reactionSMARTS": ["[#7:2]-[#6](=[#8])-[#8]-[#6](-[#6])(-[#6])(-[#6])>>[#7:2]","[#6:1]-[#8:2]-[#14]([#6H3])([#6H3])-[#6]([#6H3])([#6H3])([#6H3])>>[#6:1]-[#8:2]-[#1]"],
+                "references": None,
+                "actionsessions": [
+                    {
+                        "type": "reaction",
+                        "driver": "robot",
+                        "sessionnumber": 1,
+                        "intermolecular": {
+                            "actions": [
+                                {
+                                    "type": "add",
+                                    "actionnumber": 1,
+                                    "content": {
+                                        "plates": {
+                                            "fromplatetype": "startingmaterial",
+                                            "toplatetype": "reaction",
+                                        },
+                                        "material": {
+                                            "SMARTS": [
+                                                "[#7:2]-[#6:1](=[#8])-[#8]-[#6](-[#6])(-[#6])(-[#6])"
+                                            ],
+                                            "SMILES": None,
+                                            "quantity": {"value": 1, "unit": "moleq"},
+                                            "solvent": "MeOH",
+                                            "concentration": 0.5,
+                                        },
+                                    },
+                                },
+                                {
+                                    "type": "add",
+                                    "actionnumber": 2,
+                                    "content": {
+                                        "plates": {
+                                            "fromplatetype": "startingmaterial",
+                                            "toplatetype": "reaction",
+                                        },
+                                        "material": {
+                                            "SMARTS": None,
+                                            "SMILES": "Cl",
+                                            "quantity": {"value": 2.0, "unit": "moleq"},
+                                            "solvent": "Dioxane",
+                                            "concentration": 4,
+                                        },
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        "type": "stir",
+                        "driver": "human",
+                        "sessionnumber": 2,
+                        "actions": [
+                            {
+                                "type": "stir",
+                                "actionnumber": 3,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "temperature": {"value": 25, "unit": "degC"},
+                                    "duration": {"value": 12, "unit": "hours"},
+                                },
+                            },
+                        ],
+                    },
                 ],
             },
         },

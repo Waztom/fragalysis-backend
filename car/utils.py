@@ -992,7 +992,7 @@ def getAddtionOrder(
     product_smi: str, reactant_SMILES: tuple, reaction_SMARTS: str
 ) -> list:
     """Gets reactant pair addition order as SMILES that yields the expected
-       prodcut via the reaction SMARTS pattern
+       product via the reaction SMARTS pattern
 
     Parameters
     ----------
@@ -1000,8 +1000,8 @@ def getAddtionOrder(
         The product SMILES
     reactant_SMILES_pair: tuple
         The reactant SMILES pair for a reaction
-    reaction_SMARTS: str
-        The reaction SMARTS pattern
+    reaction_SMARTS: lits
+        The reaction SMARTS pattern. List for multiple SMARTS patterns/reaction transformations.
 
     Returns
     -------
@@ -1010,36 +1010,37 @@ def getAddtionOrder(
     status: None
         None if no order can create the input product
     """
-    rxn = AllChem.ReactionFromSmarts(reaction_SMARTS)
-    reactant_mols = [Chem.MolFromSmiles(smi) for smi in reactant_SMILES if smi != ""]
+    if len(reaction_SMARTS) == 1:
+        rxn = AllChem.ReactionFromSmarts(reaction_SMARTS)
+        reactant_mols = [Chem.MolFromSmiles(smi) for smi in reactant_SMILES if smi != ""]
 
-    if len(reactant_mols) == 1:
-        ordered_smis = [smi for smi in reactant_SMILES if smi != ""]
+        if len(reactant_mols) == 1:
+            ordered_smis = [smi for smi in reactant_SMILES if smi != ""]
 
-    if len(reactant_mols) > 1:
-        for reactant_permutation in list(itertools.permutations(reactant_mols)):
-            try:
-                products = rxn.RunReactants(reactant_permutation)
-                product_mols = [product[0] for product in products]
-                if not product_mols:
-                    continue  # reactants were in wrong order so no product
-            except Exception as e:
-                logger.info(inspect.stack()[0][3] + " yielded error: {}".format(e))
-                print(e)
-                print(reactant_permutation)
-                continue
-            product_smis = [Chem.MolToSmiles(m) for m in product_mols if m is not None]
-            if product_smi in product_smis:
-                ordered_smis = [Chem.MolToSmiles(m) for m in reactant_permutation]
-    if "ordered_smis" in locals():
-        return ordered_smis
-    else:
-        print(reaction_SMARTS)
-        print(reactant_SMILES)
-        return None
+        if len(reactant_mols) > 1:
+            for reactant_permutation in list(itertools.permutations(reactant_mols)):
+                try:
+                    products = rxn.RunReactants(reactant_permutation)
+                    product_mols = [product[0] for product in products]
+                    if not product_mols:
+                        continue  # reactants were in wrong order so no product
+                except Exception as e:
+                    logger.info(inspect.stack()[0][3] + " yielded error: {}".format(e))
+                    print(e)
+                    print(reactant_permutation)
+                    continue
+                product_smis = [Chem.MolToSmiles(m) for m in product_mols if m is not None]
+                if product_smi in product_smis:
+                    ordered_smis = [Chem.MolToSmiles(m) for m in reactant_permutation]
+        if "ordered_smis" in locals():
+            return ordered_smis
+        else:
+            print(reaction_SMARTS)
+            print(reactant_SMILES)
+            return None
 
 
-def checkReactantSMARTS(reactant_SMILES: tuple, reaction_SMARTS: str) -> list:
+def checkReactantSMARTS(reactant_SMILES: tuple, reaction_SMARTS: list) -> list:
     """Checks if reactant pair can produce a product
 
     Parameters
@@ -1056,44 +1057,64 @@ def checkReactantSMARTS(reactant_SMILES: tuple, reaction_SMARTS: str) -> list:
     status: None
         Returns None if no product mols are formed
     """
-    rxn = AllChem.ReactionFromSmarts(reaction_SMARTS)
     reactant_mols = [Chem.MolFromSmiles(smi) for smi in reactant_SMILES if smi != ""]
 
-    if len(reactant_mols) == 1:
-        try:
-            products = rxn.RunReactants(reactant_mols)
-            product_mols = [product[0] for product in products]
-            if product_mols:
-                product_smiles = set([Chem.MolToSmiles(mol) for mol in product_mols])
-                product_mols = [Chem.MolFromSmiles(smi) for smi in product_smiles]
-        except Exception as e:
-            logger.info(inspect.stack()[0][3] + " yielded error: {}".format(e))
-            print(e)
-
-    if len(reactant_mols) > 1:
-        for reactant_permutation in list(itertools.permutations(reactant_mols)):
+    if len(reaction_SMARTS) == 1:
+        SMARTS_pattern = reaction_SMARTS[0]
+        rxn = AllChem.ReactionFromSmarts(SMARTS_pattern)
+        if len(reactant_mols) == 1:
             try:
-                products = rxn.RunReactants(reactant_permutation)
+                products = rxn.RunReactants(reactant_mols)
                 product_mols = [product[0] for product in products]
                 if product_mols:
-                    product_smiles = set(
-                        [Chem.MolToSmiles(mol) for mol in product_mols]
-                    )
+                    product_smiles = set([Chem.MolToSmiles(mol) for mol in product_mols])
                     product_mols = [Chem.MolFromSmiles(smi) for smi in product_smiles]
-                    break
-                if not product_mols:
-                    continue  # reactants were in wrong order so no product
             except Exception as e:
                 logger.info(inspect.stack()[0][3] + " yielded error: {}".format(e))
                 print(e)
-                print(reactant_permutation)
-                continue
-    if "product_mols" in locals():
-        return product_mols
-    else:
-        print(reaction_SMARTS)
-        print(reactant_SMILES)
-        return None
+
+        if len(reactant_mols) > 1:
+            for reactant_permutation in list(itertools.permutations(reactant_mols)):
+                try:
+                    products = rxn.RunReactants(reactant_permutation)
+                    product_mols = [product[0] for product in products]
+                    if product_mols:
+                        product_smiles = set(
+                            [Chem.MolToSmiles(mol) for mol in product_mols]
+                        )
+                        product_mols = [Chem.MolFromSmiles(smi) for smi in product_smiles]
+                        break
+                    if not product_mols:
+                        continue  # reactants were in wrong order so no product
+                except Exception as e:
+                    logger.info(inspect.stack()[0][3] + " yielded error: {}".format(e))
+                    print(e)
+                    print(reactant_permutation)
+                    continue
+        if "product_mols" in locals():
+            return product_mols
+        else:
+            print(SMARTS_pattern)
+            print(reactant_SMILES)
+            return None
+        
+    if len(reaction_SMARTS) != 1:
+        if len(reactant_mols) == 1:
+            try: 
+                for SMARTS_pattern in reaction_SMARTS:
+                    if not "product_mols" in locals():
+                        products = rxn.RunReactants(reactant_mols)
+                    if "product_mols" in locals():
+                        products = rxn.RunReactants(product_mols[-1])
+                    product_mols = [product[0] for product in products]
+                if product_mol:
+                        product_smiles = set([Chem.MolToSmiles(mol) for mol in product_mols])
+                        product_mols = [Chem.MolFromSmiles(smi) for smi in product_smiles]
+            except Exception as e:
+                logger.info(inspect.stack()[0][3] + " yielded error: {}".format(e))
+                print(e)
+        
+
 
 
 def getPubChemCompound(inchikey: str) -> object:
