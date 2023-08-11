@@ -188,6 +188,7 @@ def createReactionModel(
     reaction_smarts: str,
     reaction_temperature: float = None,
     reaction_recipe: str = None,
+    groubycolumn: bool = None,
 ) -> int:
     """Creates a Django reaction object - a chemical reaction
 
@@ -207,6 +208,8 @@ def createReactionModel(
         The opotional reaction temperature
     reaction_recipe: str
         The optional (if found in encoded recipes) type of encoded recipe used to execute the reaction
+    groubycolumn: bool
+        The optional (if found in encoded recipes) column to group the encoded recipe by
 
     Returns
     -------
@@ -223,6 +226,8 @@ def createReactionModel(
         reaction.temperature = reaction_temperature
     if reaction_recipe:
         reaction.recipe = reaction_recipe
+    if groubycolumn:
+        reaction.groubycolumn = groubycolumn
     reaction_svg_string = createReactionSVGString(reaction_smarts)
     reaction_svg_fn = default_storage.save(
         "reactionimages/" + reaction_class + ".svg", ContentFile(reaction_svg_string)
@@ -750,10 +755,7 @@ class CreateEncodedActionModels(object):
                 del self.reactant_pair_smiles[0]
             if materialinfo["SMILES"]:
                 smiles = materialinfo["SMILES"]
-            if (
-                not materialinfo["SMILES"]
-                and not materialinfo["SMARTS"]
-            ):
+            if not materialinfo["SMILES"] and not materialinfo["SMARTS"]:
                 smiles = self.productsmiles
             calcvalue = materialinfo["quantity"]["value"]
             calcunit = materialinfo["quantity"]["unit"]
@@ -867,12 +869,8 @@ class CreateEncodedActionModels(object):
                     )
                     extract.solvent = solvent
             if "bottomlayerquantity" in materialinfo:
-                bottomlayercalcvalue = materialinfo[
-                    "bottomlayerquantity"
-                ]["value"]
-                bottomlayercalcunit = materialinfo[
-                    "bottomlayerquantity"
-                ]["unit"]
+                bottomlayercalcvalue = materialinfo["bottomlayerquantity"]["value"]
+                bottomlayercalcunit = materialinfo["bottomlayerquantity"]["unit"]
                 extract.bottomlayervolume = self.calculateVolume(
                     calcunit=bottomlayercalcunit,
                     calcvalue=bottomlayercalcvalue,

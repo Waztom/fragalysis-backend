@@ -71,6 +71,10 @@ class ValidateFile(object):
     def validateCustomChem(self):
         max_no_steps = max(self.df["no-steps"])
         reaction_numbers = list(range(1, max_no_steps + 1))
+        expected_groupby_column_names = [
+            "groupbycolumn-{}".format(reaction_number)
+            for reaction_number in reaction_numbers
+        ]
         expected_reactant_1_column_names = [
             "reactant-1-{}".format(reaction_number)
             for reaction_number in reaction_numbers
@@ -99,6 +103,7 @@ class ValidateFile(object):
                 "amount-required-uL",
                 "batch-tag",
             ]
+            + expected_groupby_column_names
             + expected_reactant_1_column_names
             + expected_reactant_2_column_names
             + expected_product_column_names
@@ -121,11 +126,15 @@ class ValidateFile(object):
             self.target_smiles = []
             self.product_smiles = []
             self.reactant_pair_smiles = []
+            self.reaction_groupby_column = []
             self.reaction_names = []
             self.reaction_recipes = []
             all_reaction_info = {}
             for reaction_number in reaction_numbers:
                 reaction_info = {}
+                reaction_groupby_column = self.df[
+                    "groupbycolumn-{}".format(reaction_number)
+                ].tolist()
                 reaction_names = self.df[
                     "reaction-name-{}".format(reaction_number)
                 ].tolist()
@@ -159,7 +168,9 @@ class ValidateFile(object):
                     )
                     if reaction_number == max_no_steps:
                         self.target_smiles = self.target_smiles + product_smiles
-
+                    reaction_info[
+                        "reaction-groupby-column-{}".format(reaction_number)
+                    ] = reaction_groupby_column
                     reaction_info[
                         "reaction-name-{}".format(reaction_number)
                     ] = reaction_names
@@ -194,6 +205,16 @@ class ValidateFile(object):
                     ]
                 )
             )
+            reaction_groupby_column = list(
+                zip(
+                    *[
+                        all_reaction_info[
+                            "reaction-groupby-column-{}".format(reactionnumber)
+                        ]
+                        for reactionnumber in reaction_numbers
+                    ]
+                )
+            )
             reaction_names = list(
                 zip(
                     *[
@@ -213,6 +234,9 @@ class ValidateFile(object):
 
             self.product_smiles = self.product_smiles + products
             self.reactant_pair_smiles = self.reactant_pair_smiles + reactant_pair_smiles
+            self.reaction_groupby_column = (
+                self.reaction_groupby_column + reaction_groupby_column
+            )
             self.reaction_names = self.reaction_names + reaction_names
             self.reaction_recipes = self.reaction_recipes + reaction_recipes
 
@@ -224,6 +248,7 @@ class ValidateFile(object):
             self.df["amount-required-uL"] = self.amounts
             self.df["no-steps"] = self.nosteps
             self.df["reactant-pair-smiles"] = self.reactant_pair_smiles
+            self.df["reaction-groupby-column"] = self.reaction_groupby_column
             self.df["reaction-name"] = self.reaction_names
             self.df["reaction-recipe"] = self.reaction_recipes
             self.df["product-smiles"] = self.product_smiles

@@ -134,9 +134,9 @@ class Reaction(models.Model):
     )
     reactionclass = models.CharField(max_length=255)
     recipe = models.CharField(max_length=50, default="standard")
+    groupbycolumn = models.BooleanField(default=True)
     number = models.IntegerField()
     intramolecular = models.BooleanField(default=False)
-    # recipetype = models.CharField(max_length=50, null=True)
     temperature = models.IntegerField(default=25)
     image = models.FileField(
         upload_to="reactionimages/",
