@@ -902,15 +902,20 @@ class CreateOTSession(object):
                     notgroupbycolumnreactionqueryset = reactionclassqueryset.filter(
                         groupbycolumn=False
                     )
-                    groupbycolumnreactionqueryset = reactionclassqueryset.filter(
-                        groupbycolumn=True
-                    )
                     if notgroupbycolumnreactionqueryset:
                         groupedreactionquerysets.append(
                             notgroupbycolumnreactionqueryset
                         )
+                    groupbycolumnreactionqueryset = reactionclassqueryset.filter(
+                        groupbycolumn=True
+                    )
                     if groupbycolumnreactionqueryset:
-                        groupedreactionquerysets.append(groupbycolumnreactionqueryset)
+                        for reactionrecipe in reactionrecipes:
+                            reactionbyrecipequeryset = reactionclassqueryset.filter(
+                                recipe=reactionrecipe
+                            )
+                            groupedreactionquerysets.append(reactionbyrecipequeryset)
+                        # groupedreactionquerysets.append(groupbycolumnreactionqueryset)
                     # workuptypes = (
                     #     ActionSession.objects.filter(
                     #         reaction_id__in=reactionclassqueryset,
