@@ -436,6 +436,158 @@ def uploadCustomReaction(validate_output):
                 target_volume,
                 no_steps,
                 reactant_pair_smiles_tuples,
+                reaction_groupby_column_tuples,
+                reaction_name_tuples,
+                reaction_recipe_tuples,
+                reaction_product_smiles_tuples,
+            ) in zip(
+                group["target-names"],
+                group["target-SMILES"],
+                group["concentration-required-mM"],
+                group["amount-required-uL"],
+                group["no-steps"],
+                group["reactant-pair-smiles"],
+                group["reaction-groupby-column"],
+                group["reaction-name"],
+                group["reaction-recipe"],
+                group["product-smiles"],
+            ):
+                target_id = createTargetModel(
+                    batch_id=batch_id,
+                    name=target_name,
+                    smiles=target_smiles,
+                    concentration=target_concentration,
+                    volume=target_volume,
+                )
+                method_id = createMethodModel(
+                    target_id=target_id,
+                    nosteps=no_steps,
+                    otchem=True,
+                )
+
+                for (
+                    index,
+                    reactant_pair_smiles,
+                    reaction_groupby_column,
+                    reaction_name,
+                    reaction_recipe,
+                    reaction_product_smiles,
+                ) in zip(
+                    count(),
+                    reactant_pair_smiles_tuples,
+                    reaction_groupby_column_tuples,
+                    reaction_name_tuples,
+                    reaction_recipe_tuples,
+                    reaction_product_smiles_tuples,
+                ):
+                    reaction_smarts = AllChem.ReactionFromSmarts(
+                        "{}>>{}".format(
+                            ".".join(reactant_pair_smiles), reaction_product_smiles
+                        ),
+                        useSmiles=True,
+                    )
+                    # Need to move this to OT session - this will enable changing reaction temps in recipes
+                    # and not have to upload again...
+                    reaction_temperature = [
+                        actionsession["actions"][0]["content"]["temperature"]["value"]
+                        for actionsession in encoded_recipes[reaction_name]["recipes"][
+                            reaction_recipe
+                        ]["actionsessions"]
+                        if actionsession["type"] == "stir"
+                    ][0]
+
+                    reaction_id = createReactionModel(
+                        method_id=method_id,
+                        reaction_class=reaction_name,
+                        reaction_number=index + 1,
+                        intramolecular=False,
+                        reaction_recipe=reaction_recipe,
+                        reaction_temperature=reaction_temperature,
+                        reaction_smarts=reaction_smarts,
+                        groupby_column=reaction_groupby_column,
+                    )
+
+                    createProductModel(
+                        reaction_id=reaction_id,
+                        product_smiles=reaction_product_smiles,
+                    )
+
+                    for reactant_smi in reactant_pair_smiles:
+                        previousreactionqueryset = checkPreviousReactionProducts(
+                            reaction_id=reaction_id,
+                            smiles=reactant_smi,
+                        )
+                        if previousreactionqueryset:
+                            reactant_id = createReactantModel(
+                                reaction_id=reaction_id,
+                                reactant_smiles=reactant_smi,
+                                previous_reaction_product=True,
+                            )
+                            createCatalogEntryModel(
+                                reactant_id=reactant_id,
+                                previous_reaction_product=True,
+                            )
+
+                        if not previousreactionqueryset:
+                            reactant_id = createReactantModel(
+                                reaction_id=reaction_id,
+                                reactant_smiles=reactant_smi,
+                                previous_reaction_product=False,
+                            )
+                            #### Creating catalog entries takes very long!
+                            createCatalogEntryModel(
+                                reactant_id=reactant_id,
+                                previous_reaction_product=False,
+                                lab_inventory=True,
+                            )
+                            catalog_entries = getExactSearch(smiles=reactant_smi)
+                            if "results" in catalog_entries:
+                                for catalog_entry in catalog_entries["results"]:
+                                    createCatalogEntryModel(
+                                        catalog_entry=catalog_entry,
+                                        reactant_id=reactant_id,
+                                        previous_reaction_product=False,
+                                    )
+
+    delete_tmp_file(csv_fp)
+
+    return validate_dict, validated, project_info
+
+
+@shared_task
+def uploadCombiCustomReaction(validate_output):
+    (
+        _,
+        validate_dict,
+        validated,
+        project_info,
+        csv_fp,
+        uploaded_dict,
+    ) = validate_output
+    uploaded_df = pd.DataFrame(uploaded_dict)
+
+    if not validated:
+        delete_tmp_file(csv_fp)
+        return (validate_dict, validated, project_info)
+
+    if validated:
+        project_id = createProjectModel(project_info)
+        project_info["project_id"] = project_id
+
+        grouped_targets = uploaded_df.groupby("batch-tag")
+        for batchtag, group in grouped_targets:
+            batch_id = createBatchModel(
+                project_id=project_id,
+                batchtag=batchtag,
+            )
+
+            for (
+                target_name,
+                target_smiles,
+                target_concentration,
+                target_volume,
+                no_steps,
+                reactant_pair_smiles_tuples,
                 reaction_name_tuples,
                 reaction_recipe_tuples,
                 reaction_product_smiles_tuples,

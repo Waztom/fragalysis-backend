@@ -883,29 +883,45 @@ class OTWrite(object):
                 if len(reactionrecipes) == 1:
                     groupedreactionquerysets.append(reactionclassqueryset)
                 if len(reactionrecipes) > 1:
-                    workuptypes = (
-                        ActionSession.objects.filter(
-                            reaction_id__in=reactionclassqueryset,
-                            type__in=["workup1", "workup2", "workup3"],
-                        )
-                        .distinct()
-                        .values_list("type", flat=True)
-                        .order_by("type")
+                    notgroupbycolumnreactionqueryset = reactionclassqueryset.filter(
+                        groupbycolumn=False
                     )
-                    if len(workuptypes) <= 1:
-                        groupedreactionquerysets.append(reactionclassqueryset)
-                    if len(workuptypes) > 1:
-                        for workuptype in workuptypes:
-                            reactionbyworkuptypequeryset = (
-                                reactionclassqueryset.filter(
-                                    actionsessions__type=workuptype
-                                )
-                                .distinct()
-                                .order_by("id")
+                    if notgroupbycolumnreactionqueryset:
+                        groupedreactionquerysets.append(
+                            notgroupbycolumnreactionqueryset
+                        )
+                    groupbycolumnreactionqueryset = reactionclassqueryset.filter(
+                        groupbycolumn=True
+                    )
+                    if groupbycolumnreactionqueryset:
+                        for reactionrecipe in reactionrecipes:
+                            reactionbyrecipequeryset = groupbycolumnreactionqueryset.filter(
+                                recipe=reactionrecipe
                             )
-                            groupedreactionquerysets.append(
-                                reactionbyworkuptypequeryset
-                            )
+                            groupedreactionquerysets.append(reactionbyrecipequeryset)
+                    # workuptypes = (
+                    #     ActionSession.objects.filter(
+                    #         reaction_id__in=reactionclassqueryset,
+                    #         type__in=["workup1", "workup2", "workup3"],
+                    #     )
+                    #     .distinct()
+                    #     .values_list("type", flat=True)
+                    #     .order_by("type")
+                    # )
+                    # if len(workuptypes) <= 1:
+                    #     groupedreactionquerysets.append(reactionclassqueryset)
+                    # if len(workuptypes) > 1:
+                    #     for workuptype in workuptypes:
+                    #         reactionbyworkuptypequeryset = (
+                    #             reactionclassqueryset.filter(
+                    #                 actionsessions__type=workuptype
+                    #             )
+                    #             .distinct()
+                    #             .order_by("id")
+                    #         )
+                    #         groupedreactionquerysets.append(
+                    #             reactionbyworkuptypequeryset
+                    #         )
 
         return groupedreactionquerysets
 

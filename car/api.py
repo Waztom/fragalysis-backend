@@ -14,6 +14,7 @@ from car.tasks import (
     validateFileUpload,
     uploadManifoldReaction,
     uploadCustomReaction,
+    uploadCombiCustomReaction,
     createOTScript,
     canonicalizeSmiles,
 )
@@ -288,7 +289,7 @@ class ProjectViewSet(viewsets.ModelViewSet):
                         project_info=project_info,
                         validate_only=False,
                     )
-                    | uploadCustomReaction.s()
+                    | uploadCombiCustomReaction.s()
                 ).apply_async()
 
         data = {"task_id": task.id}

@@ -691,13 +691,15 @@ def checkProceedingReactions(reaction_id: int) -> QuerySet[Reaction]:
     return proceedingreactionqueryset
 
 
-def getReactionYields(reactionclasslist: list) -> list[int]:
+def getReactionYields(reactionclasslist: list, recipelist) -> list[int]:
     """Gets the reaction yields
 
     Parameters
     ----------
     reactionclasslist: list
         The reaction classes to find yields for
+    recipelist: list
+        The list of recipes to find yields for
 
     Returns
     -------
@@ -705,8 +707,8 @@ def getReactionYields(reactionclasslist: list) -> list[int]:
         Returns the reaction yields eg. 0.80
     """
     reactionyields = [
-        (encoded_recipes[reactionclass]["recipes"]["standard"]["yield"] / 100)
-        for reactionclass in reactionclasslist
+        (encoded_recipes[reactionclass]["recipes"][recipe]["yield"] / 100)
+        for reactionclass, recipe in zip(reactionclasslist, recipelist)
     ]
     return reactionyields
 
