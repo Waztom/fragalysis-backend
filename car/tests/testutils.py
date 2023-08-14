@@ -39,9 +39,9 @@ class ChemistryFunctionsTestCase(TestCase):
             snar_reactant_smiles_one[0],
             snar_reactant_smiles_two[0],
         )
-        self.snar_encoded_smarts = (
+        self.snar_encoded_smarts = [
             "[#6:3]-[#7;H3,H2,H1:2].[c:1]-[F,Cl,Br,I]>>[#6:3]-[#7:2]-[c:1]"
-        )
+        ]
         self.snar_product_smiles = "O=C(O)Cc1ccc(Nc2ccccc2)cc1F"
         self.snar_product_mols = Chem.MolFromSmiles(self.snar_product_smiles)
         self.svg_str = self.strip_white_space(str=svg_str)
@@ -53,6 +53,30 @@ class ChemistryFunctionsTestCase(TestCase):
             )
         )
         self.reaction_svg_str = self.strip_white_space(svg_reaction_str)
+        self.boc_tbs_reaction_smarts = [
+            "[#7:2]-[#6](=[#8])-[#8]-[#6](-[#6])(-[#6])(-[#6])>>[#7:2]",
+            "[#6:1]-[#8:2]-[#14]([#6H3])([#6H3])-[#6]([#6H3])([#6H3])([#6H3])>>[#6:1]-[#8:2]-[#1]",
+        ]
+        self.boc_tbs_reactant_smiles = (
+            "CC(C)(C)OC(=O)NC(CCN)C(=O)Nc1ccccc1Cc1cccc2c(cc(C)nc12)CO[Si](C)(C)C(C)(C)C",
+            "",
+        )
+        self.boc_tbs_product_smiles = [
+            "Cc1cc(CO[Si](C)(C)C(C)(C)C)c2cccc(Cc3ccccc3NC(=O)C(N)CCN)c2n1",
+            "[H]OCc1cc(C)nc2c(Cc3ccccc3NC(=O)C(N)CCN)cccc12",
+        ]
+        self.ester_double_reaction_smarts = [
+            "[#6:1](=[#8:2])-[#8:3][#6H1,#6H2,#6H3]>>[#6:1](=[#8:2])-[#8H:3]",
+            "[#6:1](=[#8:2])-[#8:3][#6H1,#6H2,#6H3]>>[#6:1](=[#8:2])-[#8H:3]",
+        ]
+        self.ester_double_reactant_smiles = (
+            "O=C(N[C@H](Cc1cccc2ccc(C)nc21)C(=O)OC)c1cc([NH]n1)C(=O)OC",
+            "",
+        )
+        self.ester_double_product_smiles = [
+            "COC(=O)c1cc(C(=O)N[C@H](Cc2cccc3ccc(C)nc23)C(=O)O)n[nH]1",
+            "Cc1ccc2cccc(C[C@@H](NC(=O)c3cc(C(=O)O)[nH]n3)C(=O)O)c2n1",
+        ]
 
     def strip_white_space(self, str):
         return str.replace(" ", "").replace("\t", "").replace("\n", "")
@@ -235,6 +259,40 @@ class ChemistryFunctionsTestCase(TestCase):
         self.assertEqual(
             set(test_product_smiles),
             set(["O=C(O)Cc1ccc(Nc2ccccc2)cc1F", "O=C(O)Cc1ccc(F)cc1Nc1ccccc1"]),
+            "incorrect product SMILES match for testing reaction SMARTS",
+        )
+
+    def test_more_one_reaction_smarts_success_boc_tbs(self):
+        test_product_mols = checkReactantSMARTS(
+            reactant_SMILES=self.boc_tbs_reactant_smiles,
+            reaction_SMARTS=self.boc_tbs_reaction_smarts,
+        )
+        test_product_smiles = [Chem.MolToSmiles(mol) for mol in test_product_mols]
+        self.assertEqual(
+            len(test_product_mols),
+            2,
+            "incorrect length of product mols for testing reaction SMARTS",
+        )
+        self.assertEqual(
+            set(test_product_smiles),
+            set(self.boc_tbs_product_smiles),
+            "incorrect product SMILES match for testing reaction SMARTS",
+        )
+
+    def test_more_one_reaction_smarts_success_double_ester(self):
+        test_product_mols = checkReactantSMARTS(
+            reactant_SMILES=self.ester_double_reactant_smiles,
+            reaction_SMARTS=self.ester_double_reaction_smarts,
+        )
+        test_product_smiles = [Chem.MolToSmiles(mol) for mol in test_product_mols]
+        self.assertEqual(
+            len(test_product_mols),
+            2,
+            "incorrect length of product mols for testing reaction SMARTS",
+        )
+        self.assertEqual(
+            set(test_product_smiles),
+            set(self.ester_double_product_smiles),
             "incorrect product SMILES match for testing reaction SMARTS",
         )
 
