@@ -895,7 +895,7 @@ class OTWrite(object):
                     )
                     if groupbycolumnreactionqueryset:
                         for reactionrecipe in reactionrecipes:
-                            reactionbyrecipequeryset = reactionclassqueryset.filter(
+                            reactionbyrecipequeryset = groupbycolumnreactionqueryset.filter(
                                 recipe=reactionrecipe
                             )
                             groupedreactionquerysets.append(reactionbyrecipequeryset)
