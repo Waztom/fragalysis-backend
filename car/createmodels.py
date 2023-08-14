@@ -323,8 +323,8 @@ def createProductModel(reaction_id: int, product_smiles: str):
     reaction_obj = Reaction.objects.get(id=reaction_id)
     product.reaction_id = reaction_obj
     product.smiles = product_smiles
-    # if pubcheminfoobj:
-    #     product.pubcheminfo_id = pubcheminfoobj
+    if pubcheminfoobj:
+        product.pubcheminfo_id = pubcheminfoobj
     product_svg_string = createSVGString(product_smiles)
     product_svg_fn = default_storage.save(
         "productimages/.svg", ContentFile(product_svg_string)
@@ -359,8 +359,8 @@ def createReactantModel(
     reaction_obj = Reaction.objects.get(id=reaction_id)
     reactant.reaction_id = reaction_obj
     reactant.smiles = reactant_smiles
-    # if pubcheminfoobj:
-    #     reactant.pubcheminfo_id = pubcheminfoobj
+    if pubcheminfoobj:
+        reactant.pubcheminfo_id = pubcheminfoobj
     reactant.previousreactionproduct = previous_reaction_product
     reactant.save()
     return reactant.id
@@ -750,10 +750,7 @@ class CreateEncodedActionModels(object):
                 del self.reactant_pair_smiles[0]
             if materialinfo["SMILES"]:
                 smiles = materialinfo["SMILES"]
-            if (
-                not materialinfo["SMILES"]
-                and not materialinfo["SMARTS"]
-            ):
+            if not materialinfo["SMILES"] and not materialinfo["SMARTS"]:
                 smiles = self.productsmiles
             calcvalue = materialinfo["quantity"]["value"]
             calcunit = materialinfo["quantity"]["unit"]
@@ -867,12 +864,8 @@ class CreateEncodedActionModels(object):
                     )
                     extract.solvent = solvent
             if "bottomlayerquantity" in materialinfo:
-                bottomlayercalcvalue = materialinfo[
-                    "bottomlayerquantity"
-                ]["value"]
-                bottomlayercalcunit = materialinfo[
-                    "bottomlayerquantity"
-                ]["unit"]
+                bottomlayercalcvalue = materialinfo["bottomlayerquantity"]["value"]
+                bottomlayercalcunit = materialinfo["bottomlayerquantity"]["unit"]
                 extract.bottomlayervolume = self.calculateVolume(
                     calcunit=bottomlayercalcunit,
                     calcvalue=bottomlayercalcvalue,

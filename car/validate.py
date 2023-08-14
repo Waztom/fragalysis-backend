@@ -599,7 +599,7 @@ class ValidateFile(object):
                     if product_smiles:
                         product_mol = Chem.MolFromSmiles(product_smiles[index])
                     else:
-                        product_mol = product_mols[0]
+                        product_mol = product_mols[-1]
                     product_smi = Chem.MolToSmiles(product_mol)
                     reactant_smis = getAddtionOrder(
                         product_smi=product_smi,
