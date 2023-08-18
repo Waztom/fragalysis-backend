@@ -641,6 +641,8 @@ class ValidateFile(object):
             logger.info(inspect.stack()[0][3] + " yielded error: {}".format(e))
             self.add_warning(
                 field="check_reaction",
-                warning_string="Reaction check failed with error: {} for reaction: {}, recipe: {}, reactant pair: {} ".format(e, reaction_name, reaction_recipe,reactant_pair),
+                warning_string="Reaction check failed with error: {} for reaction: {}, recipe: {}, reactant pair: {} ".format(
+                    e, reaction_name, reaction_recipe, reactant_pair
+                ),
             )
             self.validated = False

@@ -94,8 +94,6 @@ class CreateOTSession(object):
         actionSessionTypes = {
             "reaction": self.createReactionSession,
             "workup": self.createWorkUpSession,
-            # "workup2": self.createWorkUpSession,
-            # "workup3": self.createWorkUpSession,
             "analyse": self.createAnalyseSession,
         }
 
@@ -911,34 +909,12 @@ class CreateOTSession(object):
                     )
                     if groupbycolumnreactionqueryset:
                         for reactionrecipe in reactionrecipes:
-                            reactionbyrecipequeryset = groupbycolumnreactionqueryset.filter(
-                                recipe=reactionrecipe
+                            reactionbyrecipequeryset = (
+                                groupbycolumnreactionqueryset.filter(
+                                    recipe=reactionrecipe
+                                )
                             )
                             groupedreactionquerysets.append(reactionbyrecipequeryset)
-                        # groupedreactionquerysets.append(groupbycolumnreactionqueryset)
-                    # workuptypes = (
-                    #     ActionSession.objects.filter(
-                    #         reaction_id__in=reactionclassqueryset,
-                    #         type__in=["workup1", "workup2", "workup3"],
-                    #     )
-                    #     .distinct()
-                    #     .values_list("type", flat=True)
-                    #     .order_by("type")
-                    # )
-                    # if len(workuptypes) <= 1:
-                    #     groupedreactionquerysets.append(reactionclassqueryset)
-                    # if len(workuptypes) > 1:
-                    #     for workuptype in workuptypes:
-                    #         reactionbyworkuptypequeryset = (
-                    #             reactionclassqueryset.filter(
-                    #                 actionsessions__type=workuptype
-                    #             )
-                    #             .distinct()
-                    #             .order_by("id")
-                    #         )
-                    #         groupedreactionquerysets.append(
-                    #             reactionbyworkuptypequeryset
-                    #         )
 
         return groupedreactionquerysets
 
