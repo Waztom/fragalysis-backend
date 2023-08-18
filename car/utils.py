@@ -1018,7 +1018,7 @@ def getAddtionOrder(
     reactant_mols = [Chem.MolFromSmiles(smi) for smi in reactant_SMILES if smi != ""]
 
     if len(reactant_mols) == 1:
-        ordered_smis = [smi for smi in reactant_SMILES if smi != ""]
+        ordered_smis = [canonSmiles(smi) for smi in reactant_SMILES if smi != ""]
 
     if len(reactant_mols) > 1:
         for reactant_permutation in list(itertools.permutations(reactant_mols)):

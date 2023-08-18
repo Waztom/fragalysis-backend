@@ -188,7 +188,7 @@ def createReactionModel(
     reaction_smarts: str,
     reaction_temperature: float = None,
     reaction_recipe: str = None,
-    groupby_column: bool = None,
+    groupby_column: bool = True,
 ) -> int:
     """Creates a Django reaction object - a chemical reaction
 
@@ -209,7 +209,7 @@ def createReactionModel(
     reaction_recipe: str
         The optional (if found in encoded recipes) type of encoded recipe used to execute the reaction
     grouby_column: bool
-        The optional (if found in encoded recipes) column to group the encoded recipe by
+        Set to True (default) to group reactions in columns by recipe type
 
     Returns
     -------
@@ -226,8 +226,7 @@ def createReactionModel(
         reaction.temperature = reaction_temperature
     if reaction_recipe:
         reaction.recipe = reaction_recipe
-    if groupby_column:
-        reaction.groupbycolumn = groupby_column
+    reaction.groupbycolumn = groupby_column
     reaction_svg_string = createReactionSVGString(reaction_smarts)
     reaction_svg_fn = default_storage.save(
         "reactionimages/" + reaction_class + ".svg", ContentFile(reaction_svg_string)
