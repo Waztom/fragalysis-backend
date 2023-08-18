@@ -638,6 +638,12 @@ class ValidateFile(object):
             return reactant_pair_smiles_ordered, product_created_smiles
 
         except Exception as e:
+            logger.info(
+                inspect.stack()[0][3]
+                + "Reaction check failed with error: {} for reaction: {}, recipe: {}, reactant pair: {} ".format(
+                    e, reaction_name, reaction_recipe, reactant_pair
+                ),
+            )
             logger.info(inspect.stack()[0][3] + " yielded error: {}".format(e))
             self.add_warning(
                 field="check_reaction",
