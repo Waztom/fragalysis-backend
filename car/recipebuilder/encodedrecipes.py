@@ -15,7 +15,7 @@ density (g/mL)
 # from car.models import OTBatchProtocol
 # from car.utils import getActionSessionQuerySet
 # from car.utils import getBatchReactions
-# batchid=97
+# batchid=102
 # reactions = getBatchReactions(batchid=batchid)
 # getActionSessionQuerySet(reaction_ids=reactions).delete()
 # OTBatchProtocol.objects.get(batch_id=batchid).delete()
@@ -2794,116 +2794,116 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    # {
-                    #     "type": "workup",
-                    #     "driver": "robot",
-                    #     "sessionnumber": 3,
-                    #     "actions": [
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 5,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "solvent",
-                    #                     "toplatetype": "reaction",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": "CC#N",
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": "ACN",
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #     ],
-                    # },
-                    # {
-                    #     "type": "stir",
-                    #     "driver": "human",
-                    #     "sessionnumber": 4,
-                    #     "actions": [
-                    #         {
-                    #             "type": "stir",
-                    #             "actionnumber": 6,
-                    #             "content": {
-                    #                 "platetype": "reaction",
-                    #                 "temperature": {"value": 25, "unit": "degC"},
-                    #                 "duration": {"value": 1, "unit": "hours"},
-                    #             },
-                    #         },
-                    #     ],
-                    # },
-                    # {
-                    #     "type": "workup",
-                    #     "driver": "robot",
-                    #     "sessionnumber": 5,
-                    #     "actions": [
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 7,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "reaction",
-                    #                     "toplatetype": "spefilter",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": None,
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": None,
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 8,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "solvent",
-                    #                     "toplatetype": "reaction",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": "CC#N",
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": "ACN",
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "mix",
-                    #             "actionnumber": 9,
-                    #             "content": {
-                    #                 "platetype": "reaction",
-                    #                 "repetitions": {"value": 3},
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 10,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "reaction",
-                    #                     "toplatetype": "spefilter",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": None,
-                    #                     "quantity": {"value": 300, "unit": "ul"},
-                    #                     "solvent": None,
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #     ],
-                    # },
+                    {
+                        "type": "workup",
+                        "driver": "robot",
+                        "sessionnumber": 3,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 5,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "stir",
+                        "driver": "human",
+                        "sessionnumber": 4,
+                        "actions": [
+                            {
+                                "type": "stir",
+                                "actionnumber": 6,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "temperature": {"value": 25, "unit": "degC"},
+                                    "duration": {"value": 1, "unit": "hours"},
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "workup",
+                        "driver": "robot",
+                        "sessionnumber": 5,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 7,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "reaction",
+                                        "toplatetype": "spefilter",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 8,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "mix",
+                                "actionnumber": 9,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "repetitions": {"value": 3},
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 10,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "reaction",
+                                        "toplatetype": "spefilter",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,
+                                        "quantity": {"value": 300, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
                 ],
             },
             "SOCS2A-htr-2": {
@@ -2990,116 +2990,116 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    # {
-                    #     "type": "workup",
-                    #     "driver": "robot",
-                    #     "sessionnumber": 3,
-                    #     "actions": [
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 5,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "solvent",
-                    #                     "toplatetype": "reaction",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": "CC#N",
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": "ACN",
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #     ],
-                    # },
-                    # {
-                    #     "type": "stir",
-                    #     "driver": "human",
-                    #     "sessionnumber": 4,
-                    #     "actions": [
-                    #         {
-                    #             "type": "stir",
-                    #             "actionnumber": 6,
-                    #             "content": {
-                    #                 "platetype": "reaction",
-                    #                 "temperature": {"value": 25, "unit": "degC"},
-                    #                 "duration": {"value": 1, "unit": "hours"},
-                    #             },
-                    #         },
-                    #     ],
-                    # },
-                    # {
-                    #     "type": "workup",
-                    #     "driver": "robot",
-                    #     "sessionnumber": 5,
-                    #     "actions": [
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 7,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "reaction",
-                    #                     "toplatetype": "spefilter",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": None,
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": None,
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 8,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "solvent",
-                    #                     "toplatetype": "reaction",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": "CC#N",
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": "ACN",
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "mix",
-                    #             "actionnumber": 9,
-                    #             "content": {
-                    #                 "platetype": "reaction",
-                    #                 "repetitions": {"value": 3},
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 10,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "reaction",
-                    #                     "toplatetype": "spefilter",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": None,
-                    #                     "quantity": {"value": 300, "unit": "ul"},
-                    #                     "solvent": None,
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #     ],
-                    # },
+                    {
+                        "type": "workup",
+                        "driver": "robot",
+                        "sessionnumber": 3,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 5,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "stir",
+                        "driver": "human",
+                        "sessionnumber": 4,
+                        "actions": [
+                            {
+                                "type": "stir",
+                                "actionnumber": 6,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "temperature": {"value": 25, "unit": "degC"},
+                                    "duration": {"value": 1, "unit": "hours"},
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "workup",
+                        "driver": "robot",
+                        "sessionnumber": 5,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 7,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "reaction",
+                                        "toplatetype": "spefilter",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 8,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "mix",
+                                "actionnumber": 9,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "repetitions": {"value": 3},
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 10,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "reaction",
+                                        "toplatetype": "spefilter",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,
+                                        "quantity": {"value": 300, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
                 ],
             },
             "SOCS2A-htr-3": {
@@ -3186,116 +3186,116 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    # {
-                    #     "type": "workup",
-                    #     "driver": "robot",
-                    #     "sessionnumber": 3,
-                    #     "actions": [
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 5,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "solvent",
-                    #                     "toplatetype": "reaction",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": "CC#N",
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": "ACN",
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #     ],
-                    # },
-                    # {
-                    #     "type": "stir",
-                    #     "driver": "human",
-                    #     "sessionnumber": 4,
-                    #     "actions": [
-                    #         {
-                    #             "type": "stir",
-                    #             "actionnumber": 6,
-                    #             "content": {
-                    #                 "platetype": "reaction",
-                    #                 "temperature": {"value": 25, "unit": "degC"},
-                    #                 "duration": {"value": 1, "unit": "hours"},
-                    #             },
-                    #         },
-                    #     ],
-                    # },
-                    # {
-                    #     "type": "workup",
-                    #     "driver": "robot",
-                    #     "sessionnumber": 5,
-                    #     "actions": [
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 7,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "reaction",
-                    #                     "toplatetype": "spefilter",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": None,
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": None,
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 8,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "solvent",
-                    #                     "toplatetype": "reaction",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": "CC#N",
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": "ACN",
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "mix",
-                    #             "actionnumber": 9,
-                    #             "content": {
-                    #                 "platetype": "reaction",
-                    #                 "repetitions": {"value": 3},
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 10,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "reaction",
-                    #                     "toplatetype": "spefilter",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": None,
-                    #                     "quantity": {"value": 300, "unit": "ul"},
-                    #                     "solvent": None,
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #     ],
-                    # },
+                    {
+                        "type": "workup",
+                        "driver": "robot",
+                        "sessionnumber": 3,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 5,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "stir",
+                        "driver": "human",
+                        "sessionnumber": 4,
+                        "actions": [
+                            {
+                                "type": "stir",
+                                "actionnumber": 6,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "temperature": {"value": 25, "unit": "degC"},
+                                    "duration": {"value": 1, "unit": "hours"},
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "workup",
+                        "driver": "robot",
+                        "sessionnumber": 5,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 7,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "reaction",
+                                        "toplatetype": "spefilter",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 8,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "mix",
+                                "actionnumber": 9,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "repetitions": {"value": 3},
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 10,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "reaction",
+                                        "toplatetype": "spefilter",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,
+                                        "quantity": {"value": 300, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
                 ],
             },
         },
@@ -5755,116 +5755,159 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    # {
-                    #     "type": "workup",
-                    #     "driver": "robot",
-                    #     "sessionnumber": 3,
-                    #     "actions": [
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 6,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "solvent",
-                    #                     "toplatetype": "reaction",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": "CC#N",
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": "ACN",
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #     ],
-                    # },
-                    # {
-                    #     "type": "stir",
-                    #     "driver": "human",
-                    #     "sessionnumber": 4,
-                    #     "actions": [
-                    #         {
-                    #             "type": "stir",
-                    #             "actionnumber": 7,
-                    #             "content": {
-                    #                 "platetype": "reaction",
-                    #                 "temperature": {"value": 25, "unit": "degC"},
-                    #                 "duration": {"value": 1, "unit": "hours"},
-                    #             },
-                    #         },
-                    #     ],
-                    # },
-                    # {
-                    #     "type": "workup",
-                    #     "driver": "robot",
-                    #     "sessionnumber": 5,
-                    #     "actions": [
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 8,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "reaction",
-                    #                     "toplatetype": "spefilter",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": None,
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": None,
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 9,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "solvent",
-                    #                     "toplatetype": "reaction",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": "CC#N",
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": "ACN",
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "mix",
-                    #             "actionnumber": 10,
-                    #             "content": {
-                    #                 "platetype": "reaction",
-                    #                 "repetitions": {"value": 3},
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 11,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "reaction",
-                    #                     "toplatetype": "spefilter",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": None,
-                    #                     "quantity": {"value": 300, "unit": "ul"},
-                    #                     "solvent": None,
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #     ],
-                    # },
+                    {
+                        "type": "workup",
+                        "driver": "robot",
+                        "sessionnumber": 3,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 6,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "stir",
+                        "driver": "human",
+                        "sessionnumber": 4,
+                        "actions": [
+                            {
+                                "type": "stir",
+                                "actionnumber": 7,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "temperature": {"value": 25, "unit": "degC"},
+                                    "duration": {"value": 1, "unit": "hours"},
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "workup",
+                        "driver": "robot",
+                        "sessionnumber": 5,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 8,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "reaction",
+                                        "toplatetype": "spefilter",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 9,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "mix",
+                                "actionnumber": 10,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "repetitions": {"value": 3},
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 11,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "reaction",
+                                        "toplatetype": "spefilter",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,
+                                        "quantity": {"value": 300, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "analyse",
+                        "driver": "robot",
+                        "sessionnumber": 6,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 12,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "spefilter",
+                                        "toplatetype": "lcms",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,  # Product of reaction
+                                        "quantity": {"value": 1, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 13,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "lcms",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 100, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
                 ],
             },
             "SOCS2A-suz-2": {
@@ -5969,116 +6012,159 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    # {
-                    #     "type": "workup",
-                    #     "driver": "robot",
-                    #     "sessionnumber": 3,
-                    #     "actions": [
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 6,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "solvent",
-                    #                     "toplatetype": "reaction",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": "CC#N",
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": "ACN",
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #     ],
-                    # },
-                    # {
-                    #     "type": "stir",
-                    #     "driver": "human",
-                    #     "sessionnumber": 4,
-                    #     "actions": [
-                    #         {
-                    #             "type": "stir",
-                    #             "actionnumber": 7,
-                    #             "content": {
-                    #                 "platetype": "reaction",
-                    #                 "temperature": {"value": 25, "unit": "degC"},
-                    #                 "duration": {"value": 1, "unit": "hours"},
-                    #             },
-                    #         },
-                    #     ],
-                    # },
-                    # {
-                    #     "type": "workup",
-                    #     "driver": "robot",
-                    #     "sessionnumber": 5,
-                    #     "actions": [
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 8,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "reaction",
-                    #                     "toplatetype": "spefilter",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": None,
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": None,
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 9,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "solvent",
-                    #                     "toplatetype": "reaction",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": "CC#N",
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": "ACN",
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "mix",
-                    #             "actionnumber": 10,
-                    #             "content": {
-                    #                 "platetype": "reaction",
-                    #                 "repetitions": {"value": 3},
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 11,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "reaction",
-                    #                     "toplatetype": "spefilter",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": None,
-                    #                     "quantity": {"value": 300, "unit": "ul"},
-                    #                     "solvent": None,
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #     ],
-                    # },
+                    {
+                        "type": "workup",
+                        "driver": "robot",
+                        "sessionnumber": 3,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 6,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "stir",
+                        "driver": "human",
+                        "sessionnumber": 4,
+                        "actions": [
+                            {
+                                "type": "stir",
+                                "actionnumber": 7,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "temperature": {"value": 25, "unit": "degC"},
+                                    "duration": {"value": 1, "unit": "hours"},
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "workup",
+                        "driver": "robot",
+                        "sessionnumber": 5,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 8,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "reaction",
+                                        "toplatetype": "spefilter",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 9,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "mix",
+                                "actionnumber": 10,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "repetitions": {"value": 3},
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 11,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "reaction",
+                                        "toplatetype": "spefilter",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,
+                                        "quantity": {"value": 300, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "analyse",
+                        "driver": "robot",
+                        "sessionnumber": 6,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 12,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "spefilter",
+                                        "toplatetype": "lcms",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,  # Product of reaction
+                                        "quantity": {"value": 1, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 13,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "lcms",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 100, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
                 ],
             },
             "SOCS2A-suz-3": {
@@ -6183,116 +6269,159 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    # {
-                    #     "type": "workup",
-                    #     "driver": "robot",
-                    #     "sessionnumber": 3,
-                    #     "actions": [
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 6,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "solvent",
-                    #                     "toplatetype": "reaction",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": "CC#N",
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": "ACN",
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #     ],
-                    # },
-                    # {
-                    #     "type": "stir",
-                    #     "driver": "human",
-                    #     "sessionnumber": 4,
-                    #     "actions": [
-                    #         {
-                    #             "type": "stir",
-                    #             "actionnumber": 7,
-                    #             "content": {
-                    #                 "platetype": "reaction",
-                    #                 "temperature": {"value": 25, "unit": "degC"},
-                    #                 "duration": {"value": 1, "unit": "hours"},
-                    #             },
-                    #         },
-                    #     ],
-                    # },
-                    # {
-                    #     "type": "workup",
-                    #     "driver": "robot",
-                    #     "sessionnumber": 5,
-                    #     "actions": [
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 8,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "reaction",
-                    #                     "toplatetype": "spefilter",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": None,
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": None,
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 9,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "solvent",
-                    #                     "toplatetype": "reaction",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": "CC#N",
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": "ACN",
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "mix",
-                    #             "actionnumber": 10,
-                    #             "content": {
-                    #                 "platetype": "reaction",
-                    #                 "repetitions": {"value": 3},
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 11,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "reaction",
-                    #                     "toplatetype": "spefilter",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": None,
-                    #                     "quantity": {"value": 300, "unit": "ul"},
-                    #                     "solvent": None,
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #     ],
-                    # },
+                    {
+                        "type": "workup",
+                        "driver": "robot",
+                        "sessionnumber": 3,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 6,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "stir",
+                        "driver": "human",
+                        "sessionnumber": 4,
+                        "actions": [
+                            {
+                                "type": "stir",
+                                "actionnumber": 7,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "temperature": {"value": 25, "unit": "degC"},
+                                    "duration": {"value": 1, "unit": "hours"},
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "workup",
+                        "driver": "robot",
+                        "sessionnumber": 5,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 8,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "reaction",
+                                        "toplatetype": "spefilter",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 9,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "mix",
+                                "actionnumber": 10,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "repetitions": {"value": 3},
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 11,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "reaction",
+                                        "toplatetype": "spefilter",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,
+                                        "quantity": {"value": 300, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "analyse",
+                        "driver": "robot",
+                        "sessionnumber": 6,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 12,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "spefilter",
+                                        "toplatetype": "lcms",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,  # Product of reaction
+                                        "quantity": {"value": 1, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 13,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "lcms",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 100, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
                 ],
             },
             "SOCS2A-suz-4": {
@@ -6397,116 +6526,159 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    # {
-                    #     "type": "workup",
-                    #     "driver": "robot",
-                    #     "sessionnumber": 3,
-                    #     "actions": [
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 6,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "solvent",
-                    #                     "toplatetype": "reaction",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": "CC#N",
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": "ACN",
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #     ],
-                    # },
-                    # {
-                    #     "type": "stir",
-                    #     "driver": "human",
-                    #     "sessionnumber": 4,
-                    #     "actions": [
-                    #         {
-                    #             "type": "stir",
-                    #             "actionnumber": 7,
-                    #             "content": {
-                    #                 "platetype": "reaction",
-                    #                 "temperature": {"value": 25, "unit": "degC"},
-                    #                 "duration": {"value": 1, "unit": "hours"},
-                    #             },
-                    #         },
-                    #     ],
-                    # },
-                    # {
-                    #     "type": "workup",
-                    #     "driver": "robot",
-                    #     "sessionnumber": 5,
-                    #     "actions": [
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 8,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "reaction",
-                    #                     "toplatetype": "spefilter",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": None,
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": None,
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 9,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "solvent",
-                    #                     "toplatetype": "reaction",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": "CC#N",
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": "ACN",
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "mix",
-                    #             "actionnumber": 10,
-                    #             "content": {
-                    #                 "platetype": "reaction",
-                    #                 "repetitions": {"value": 3},
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 11,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "reaction",
-                    #                     "toplatetype": "spefilter",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": None,
-                    #                     "quantity": {"value": 300, "unit": "ul"},
-                    #                     "solvent": None,
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #     ],
-                    # },
+                    {
+                        "type": "workup",
+                        "driver": "robot",
+                        "sessionnumber": 3,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 6,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "stir",
+                        "driver": "human",
+                        "sessionnumber": 4,
+                        "actions": [
+                            {
+                                "type": "stir",
+                                "actionnumber": 7,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "temperature": {"value": 25, "unit": "degC"},
+                                    "duration": {"value": 1, "unit": "hours"},
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "workup",
+                        "driver": "robot",
+                        "sessionnumber": 5,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 8,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "reaction",
+                                        "toplatetype": "spefilter",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 9,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "mix",
+                                "actionnumber": 10,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "repetitions": {"value": 3},
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 11,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "reaction",
+                                        "toplatetype": "spefilter",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,
+                                        "quantity": {"value": 300, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "analyse",
+                        "driver": "robot",
+                        "sessionnumber": 6,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 12,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "spefilter",
+                                        "toplatetype": "lcms",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,  # Product of reaction
+                                        "quantity": {"value": 1, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 13,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "lcms",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 100, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
                 ],
             },
             "SOCS2A-suz-5": {
@@ -6611,116 +6783,159 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    # {
-                    #     "type": "workup",
-                    #     "driver": "robot",
-                    #     "sessionnumber": 3,
-                    #     "actions": [
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 6,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "solvent",
-                    #                     "toplatetype": "reaction",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": "CC#N",
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": "ACN",
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #     ],
-                    # },
-                    # {
-                    #     "type": "stir",
-                    #     "driver": "human",
-                    #     "sessionnumber": 4,
-                    #     "actions": [
-                    #         {
-                    #             "type": "stir",
-                    #             "actionnumber": 7,
-                    #             "content": {
-                    #                 "platetype": "reaction",
-                    #                 "temperature": {"value": 25, "unit": "degC"},
-                    #                 "duration": {"value": 1, "unit": "hours"},
-                    #             },
-                    #         },
-                    #     ],
-                    # },
-                    # {
-                    #     "type": "workup",
-                    #     "driver": "robot",
-                    #     "sessionnumber": 5,
-                    #     "actions": [
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 8,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "reaction",
-                    #                     "toplatetype": "spefilter",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": None,
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": None,
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 9,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "solvent",
-                    #                     "toplatetype": "reaction",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": "CC#N",
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": "ACN",
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "mix",
-                    #             "actionnumber": 10,
-                    #             "content": {
-                    #                 "platetype": "reaction",
-                    #                 "repetitions": {"value": 3},
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 11,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "reaction",
-                    #                     "toplatetype": "spefilter",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": None,
-                    #                     "quantity": {"value": 300, "unit": "ul"},
-                    #                     "solvent": None,
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #     ],
-                    # },
+                    {
+                        "type": "workup",
+                        "driver": "robot",
+                        "sessionnumber": 3,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 6,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "stir",
+                        "driver": "human",
+                        "sessionnumber": 4,
+                        "actions": [
+                            {
+                                "type": "stir",
+                                "actionnumber": 7,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "temperature": {"value": 25, "unit": "degC"},
+                                    "duration": {"value": 1, "unit": "hours"},
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "workup",
+                        "driver": "robot",
+                        "sessionnumber": 5,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 8,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "reaction",
+                                        "toplatetype": "spefilter",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 9,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "mix",
+                                "actionnumber": 10,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "repetitions": {"value": 3},
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 11,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "reaction",
+                                        "toplatetype": "spefilter",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,
+                                        "quantity": {"value": 300, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "analyse",
+                        "driver": "robot",
+                        "sessionnumber": 6,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 12,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "spefilter",
+                                        "toplatetype": "lcms",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,  # Product of reaction
+                                        "quantity": {"value": 1, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 13,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "lcms",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 100, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
                 ],
             },
             "SOCS2A-suz-6": {
@@ -6825,116 +7040,159 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    # {
-                    #     "type": "workup",
-                    #     "driver": "robot",
-                    #     "sessionnumber": 3,
-                    #     "actions": [
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 6,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "solvent",
-                    #                     "toplatetype": "reaction",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": "CC#N",
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": "ACN",
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #     ],
-                    # },
-                    # {
-                    #     "type": "stir",
-                    #     "driver": "human",
-                    #     "sessionnumber": 4,
-                    #     "actions": [
-                    #         {
-                    #             "type": "stir",
-                    #             "actionnumber": 7,
-                    #             "content": {
-                    #                 "platetype": "reaction",
-                    #                 "temperature": {"value": 25, "unit": "degC"},
-                    #                 "duration": {"value": 1, "unit": "hours"},
-                    #             },
-                    #         },
-                    #     ],
-                    # },
-                    # {
-                    #     "type": "workup",
-                    #     "driver": "robot",
-                    #     "sessionnumber": 5,
-                    #     "actions": [
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 8,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "reaction",
-                    #                     "toplatetype": "spefilter",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": None,
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": None,
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 9,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "solvent",
-                    #                     "toplatetype": "reaction",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": "CC#N",
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": "ACN",
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "mix",
-                    #             "actionnumber": 10,
-                    #             "content": {
-                    #                 "platetype": "reaction",
-                    #                 "repetitions": {"value": 3},
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 11,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "reaction",
-                    #                     "toplatetype": "spefilter",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": None,
-                    #                     "quantity": {"value": 300, "unit": "ul"},
-                    #                     "solvent": None,
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #     ],
-                    # },
+                    {
+                        "type": "workup",
+                        "driver": "robot",
+                        "sessionnumber": 3,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 6,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "stir",
+                        "driver": "human",
+                        "sessionnumber": 4,
+                        "actions": [
+                            {
+                                "type": "stir",
+                                "actionnumber": 7,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "temperature": {"value": 25, "unit": "degC"},
+                                    "duration": {"value": 1, "unit": "hours"},
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "workup",
+                        "driver": "robot",
+                        "sessionnumber": 5,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 8,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "reaction",
+                                        "toplatetype": "spefilter",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 9,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "mix",
+                                "actionnumber": 10,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "repetitions": {"value": 3},
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 11,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "reaction",
+                                        "toplatetype": "spefilter",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,
+                                        "quantity": {"value": 300, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "analyse",
+                        "driver": "robot",
+                        "sessionnumber": 6,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 12,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "spefilter",
+                                        "toplatetype": "lcms",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,  # Product of reaction
+                                        "quantity": {"value": 1, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 13,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "lcms",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 100, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
                 ],
             },
             "SOCS2A-suz-7": {
@@ -7039,116 +7297,159 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    # {
-                    #     "type": "workup",
-                    #     "driver": "robot",
-                    #     "sessionnumber": 3,
-                    #     "actions": [
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 6,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "solvent",
-                    #                     "toplatetype": "reaction",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": "CC#N",
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": "ACN",
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #     ],
-                    # },
-                    # {
-                    #     "type": "stir",
-                    #     "driver": "human",
-                    #     "sessionnumber": 4,
-                    #     "actions": [
-                    #         {
-                    #             "type": "stir",
-                    #             "actionnumber": 7,
-                    #             "content": {
-                    #                 "platetype": "reaction",
-                    #                 "temperature": {"value": 25, "unit": "degC"},
-                    #                 "duration": {"value": 1, "unit": "hours"},
-                    #             },
-                    #         },
-                    #     ],
-                    # },
-                    # {
-                    #     "type": "workup",
-                    #     "driver": "robot",
-                    #     "sessionnumber": 5,
-                    #     "actions": [
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 8,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "reaction",
-                    #                     "toplatetype": "spefilter",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": None,
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": None,
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 9,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "solvent",
-                    #                     "toplatetype": "reaction",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": "CC#N",
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": "ACN",
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "mix",
-                    #             "actionnumber": 10,
-                    #             "content": {
-                    #                 "platetype": "reaction",
-                    #                 "repetitions": {"value": 3},
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 11,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "reaction",
-                    #                     "toplatetype": "spefilter",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": None,
-                    #                     "quantity": {"value": 300, "unit": "ul"},
-                    #                     "solvent": None,
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #     ],
-                    # },
+                    {
+                        "type": "workup",
+                        "driver": "robot",
+                        "sessionnumber": 3,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 6,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "stir",
+                        "driver": "human",
+                        "sessionnumber": 4,
+                        "actions": [
+                            {
+                                "type": "stir",
+                                "actionnumber": 7,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "temperature": {"value": 25, "unit": "degC"},
+                                    "duration": {"value": 1, "unit": "hours"},
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "workup",
+                        "driver": "robot",
+                        "sessionnumber": 5,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 8,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "reaction",
+                                        "toplatetype": "spefilter",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 9,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "mix",
+                                "actionnumber": 10,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "repetitions": {"value": 3},
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 11,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "reaction",
+                                        "toplatetype": "spefilter",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,
+                                        "quantity": {"value": 300, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "analyse",
+                        "driver": "robot",
+                        "sessionnumber": 6,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 12,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "spefilter",
+                                        "toplatetype": "lcms",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,  # Product of reaction
+                                        "quantity": {"value": 1, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 13,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "lcms",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 100, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
                 ],
             },
             "SOCS2A-suz-8": {
@@ -7253,116 +7554,159 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    # {
-                    #     "type": "workup",
-                    #     "driver": "robot",
-                    #     "sessionnumber": 3,
-                    #     "actions": [
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 6,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "solvent",
-                    #                     "toplatetype": "reaction",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": "CC#N",
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": "ACN",
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #     ],
-                    # },
-                    # {
-                    #     "type": "stir",
-                    #     "driver": "human",
-                    #     "sessionnumber": 4,
-                    #     "actions": [
-                    #         {
-                    #             "type": "stir",
-                    #             "actionnumber": 7,
-                    #             "content": {
-                    #                 "platetype": "reaction",
-                    #                 "temperature": {"value": 25, "unit": "degC"},
-                    #                 "duration": {"value": 1, "unit": "hours"},
-                    #             },
-                    #         },
-                    #     ],
-                    # },
-                    # {
-                    #     "type": "workup",
-                    #     "driver": "robot",
-                    #     "sessionnumber": 5,
-                    #     "actions": [
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 8,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "reaction",
-                    #                     "toplatetype": "spefilter",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": None,
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": None,
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 9,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "solvent",
-                    #                     "toplatetype": "reaction",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": "CC#N",
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": "ACN",
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "mix",
-                    #             "actionnumber": 10,
-                    #             "content": {
-                    #                 "platetype": "reaction",
-                    #                 "repetitions": {"value": 3},
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 11,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "reaction",
-                    #                     "toplatetype": "spefilter",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": None,
-                    #                     "quantity": {"value": 300, "unit": "ul"},
-                    #                     "solvent": None,
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #     ],
-                    # },
+                    {
+                        "type": "workup",
+                        "driver": "robot",
+                        "sessionnumber": 3,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 6,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "stir",
+                        "driver": "human",
+                        "sessionnumber": 4,
+                        "actions": [
+                            {
+                                "type": "stir",
+                                "actionnumber": 7,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "temperature": {"value": 25, "unit": "degC"},
+                                    "duration": {"value": 1, "unit": "hours"},
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "workup",
+                        "driver": "robot",
+                        "sessionnumber": 5,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 8,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "reaction",
+                                        "toplatetype": "spefilter",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 9,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "mix",
+                                "actionnumber": 10,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "repetitions": {"value": 3},
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 11,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "reaction",
+                                        "toplatetype": "spefilter",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,
+                                        "quantity": {"value": 300, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "analyse",
+                        "driver": "robot",
+                        "sessionnumber": 6,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 12,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "spefilter",
+                                        "toplatetype": "lcms",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,  # Product of reaction
+                                        "quantity": {"value": 1, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 13,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "lcms",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 100, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
                 ],
             },
             "SOCS2A-suz-9": {
@@ -7467,116 +7811,159 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    # {
-                    #     "type": "workup",
-                    #     "driver": "robot",
-                    #     "sessionnumber": 3,
-                    #     "actions": [
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 6,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "solvent",
-                    #                     "toplatetype": "reaction",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": "CC#N",
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": "ACN",
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #     ],
-                    # },
-                    # {
-                    #     "type": "stir",
-                    #     "driver": "human",
-                    #     "sessionnumber": 4,
-                    #     "actions": [
-                    #         {
-                    #             "type": "stir",
-                    #             "actionnumber": 7,
-                    #             "content": {
-                    #                 "platetype": "reaction",
-                    #                 "temperature": {"value": 25, "unit": "degC"},
-                    #                 "duration": {"value": 1, "unit": "hours"},
-                    #             },
-                    #         },
-                    #     ],
-                    # },
-                    # {
-                    #     "type": "workup",
-                    #     "driver": "robot",
-                    #     "sessionnumber": 5,
-                    #     "actions": [
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 8,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "reaction",
-                    #                     "toplatetype": "spefilter",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": None,
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": None,
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 9,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "solvent",
-                    #                     "toplatetype": "reaction",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": "CC#N",
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": "ACN",
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "mix",
-                    #             "actionnumber": 10,
-                    #             "content": {
-                    #                 "platetype": "reaction",
-                    #                 "repetitions": {"value": 3},
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 11,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "reaction",
-                    #                     "toplatetype": "spefilter",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": None,
-                    #                     "quantity": {"value": 300, "unit": "ul"},
-                    #                     "solvent": None,
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #     ],
-                    # },
+                    {
+                        "type": "workup",
+                        "driver": "robot",
+                        "sessionnumber": 3,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 6,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "stir",
+                        "driver": "human",
+                        "sessionnumber": 4,
+                        "actions": [
+                            {
+                                "type": "stir",
+                                "actionnumber": 7,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "temperature": {"value": 25, "unit": "degC"},
+                                    "duration": {"value": 1, "unit": "hours"},
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "workup",
+                        "driver": "robot",
+                        "sessionnumber": 5,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 8,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "reaction",
+                                        "toplatetype": "spefilter",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 9,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "mix",
+                                "actionnumber": 10,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "repetitions": {"value": 3},
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 11,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "reaction",
+                                        "toplatetype": "spefilter",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,
+                                        "quantity": {"value": 300, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "analyse",
+                        "driver": "robot",
+                        "sessionnumber": 6,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 12,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "spefilter",
+                                        "toplatetype": "lcms",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,  # Product of reaction
+                                        "quantity": {"value": 1, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 13,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "lcms",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 100, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
                 ],
             },
             "SOCS2A-suz-10": {
@@ -7681,116 +8068,159 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    # {
-                    #     "type": "workup",
-                    #     "driver": "robot",
-                    #     "sessionnumber": 3,
-                    #     "actions": [
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 6,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "solvent",
-                    #                     "toplatetype": "reaction",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": "CC#N",
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": "ACN",
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #     ],
-                    # },
-                    # {
-                    #     "type": "stir",
-                    #     "driver": "human",
-                    #     "sessionnumber": 4,
-                    #     "actions": [
-                    #         {
-                    #             "type": "stir",
-                    #             "actionnumber": 7,
-                    #             "content": {
-                    #                 "platetype": "reaction",
-                    #                 "temperature": {"value": 25, "unit": "degC"},
-                    #                 "duration": {"value": 1, "unit": "hours"},
-                    #             },
-                    #         },
-                    #     ],
-                    # },
-                    # {
-                    #     "type": "workup",
-                    #     "driver": "robot",
-                    #     "sessionnumber": 5,
-                    #     "actions": [
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 8,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "reaction",
-                    #                     "toplatetype": "spefilter",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": None,
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": None,
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 9,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "solvent",
-                    #                     "toplatetype": "reaction",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": "CC#N",
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": "ACN",
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "mix",
-                    #             "actionnumber": 10,
-                    #             "content": {
-                    #                 "platetype": "reaction",
-                    #                 "repetitions": {"value": 3},
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 11,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "reaction",
-                    #                     "toplatetype": "spefilter",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": None,
-                    #                     "quantity": {"value": 300, "unit": "ul"},
-                    #                     "solvent": None,
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #     ],
-                    # },
+                    {
+                        "type": "workup",
+                        "driver": "robot",
+                        "sessionnumber": 3,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 6,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "stir",
+                        "driver": "human",
+                        "sessionnumber": 4,
+                        "actions": [
+                            {
+                                "type": "stir",
+                                "actionnumber": 7,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "temperature": {"value": 25, "unit": "degC"},
+                                    "duration": {"value": 1, "unit": "hours"},
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "workup",
+                        "driver": "robot",
+                        "sessionnumber": 5,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 8,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "reaction",
+                                        "toplatetype": "spefilter",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 9,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "mix",
+                                "actionnumber": 10,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "repetitions": {"value": 3},
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 11,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "reaction",
+                                        "toplatetype": "spefilter",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,
+                                        "quantity": {"value": 300, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "analyse",
+                        "driver": "robot",
+                        "sessionnumber": 6,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 12,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "spefilter",
+                                        "toplatetype": "lcms",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,  # Product of reaction
+                                        "quantity": {"value": 1, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 13,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "lcms",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 100, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
                 ],
             },
             "SOCS2A-suz-11": {
@@ -7895,116 +8325,159 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    # {
-                    #     "type": "workup",
-                    #     "driver": "robot",
-                    #     "sessionnumber": 3,
-                    #     "actions": [
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 6,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "solvent",
-                    #                     "toplatetype": "reaction",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": "CC#N",
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": "ACN",
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #     ],
-                    # },
-                    # {
-                    #     "type": "stir",
-                    #     "driver": "human",
-                    #     "sessionnumber": 4,
-                    #     "actions": [
-                    #         {
-                    #             "type": "stir",
-                    #             "actionnumber": 7,
-                    #             "content": {
-                    #                 "platetype": "reaction",
-                    #                 "temperature": {"value": 25, "unit": "degC"},
-                    #                 "duration": {"value": 1, "unit": "hours"},
-                    #             },
-                    #         },
-                    #     ],
-                    # },
-                    # {
-                    #     "type": "workup",
-                    #     "driver": "robot",
-                    #     "sessionnumber": 5,
-                    #     "actions": [
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 8,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "reaction",
-                    #                     "toplatetype": "spefilter",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": None,
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": None,
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 9,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "solvent",
-                    #                     "toplatetype": "reaction",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": "CC#N",
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": "ACN",
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "mix",
-                    #             "actionnumber": 10,
-                    #             "content": {
-                    #                 "platetype": "reaction",
-                    #                 "repetitions": {"value": 3},
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 11,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "reaction",
-                    #                     "toplatetype": "spefilter",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": None,
-                    #                     "quantity": {"value": 300, "unit": "ul"},
-                    #                     "solvent": None,
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #     ],
-                    # },
+                    {
+                        "type": "workup",
+                        "driver": "robot",
+                        "sessionnumber": 3,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 6,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "stir",
+                        "driver": "human",
+                        "sessionnumber": 4,
+                        "actions": [
+                            {
+                                "type": "stir",
+                                "actionnumber": 7,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "temperature": {"value": 25, "unit": "degC"},
+                                    "duration": {"value": 1, "unit": "hours"},
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "workup",
+                        "driver": "robot",
+                        "sessionnumber": 5,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 8,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "reaction",
+                                        "toplatetype": "spefilter",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 9,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "mix",
+                                "actionnumber": 10,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "repetitions": {"value": 3},
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 11,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "reaction",
+                                        "toplatetype": "spefilter",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,
+                                        "quantity": {"value": 300, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "analyse",
+                        "driver": "robot",
+                        "sessionnumber": 6,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 12,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "spefilter",
+                                        "toplatetype": "lcms",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,  # Product of reaction
+                                        "quantity": {"value": 1, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 13,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "lcms",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 100, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
                 ],
             },
             "SOCS2A-suz-12": {
@@ -8109,116 +8582,159 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    # {
-                    #     "type": "workup",
-                    #     "driver": "robot",
-                    #     "sessionnumber": 3,
-                    #     "actions": [
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 6,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "solvent",
-                    #                     "toplatetype": "reaction",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": "CC#N",
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": "ACN",
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #     ],
-                    # },
-                    # {
-                    #     "type": "stir",
-                    #     "driver": "human",
-                    #     "sessionnumber": 4,
-                    #     "actions": [
-                    #         {
-                    #             "type": "stir",
-                    #             "actionnumber": 7,
-                    #             "content": {
-                    #                 "platetype": "reaction",
-                    #                 "temperature": {"value": 25, "unit": "degC"},
-                    #                 "duration": {"value": 1, "unit": "hours"},
-                    #             },
-                    #         },
-                    #     ],
-                    # },
-                    # {
-                    #     "type": "workup",
-                    #     "driver": "robot",
-                    #     "sessionnumber": 5,
-                    #     "actions": [
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 8,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "reaction",
-                    #                     "toplatetype": "spefilter",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": None,
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": None,
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 9,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "solvent",
-                    #                     "toplatetype": "reaction",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": "CC#N",
-                    #                     "quantity": {"value": 200, "unit": "ul"},
-                    #                     "solvent": "ACN",
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "mix",
-                    #             "actionnumber": 10,
-                    #             "content": {
-                    #                 "platetype": "reaction",
-                    #                 "repetitions": {"value": 3},
-                    #             },
-                    #         },
-                    #         {
-                    #             "type": "add",
-                    #             "actionnumber": 11,
-                    #             "content": {
-                    #                 "plates": {
-                    #                     "fromplatetype": "reaction",
-                    #                     "toplatetype": "spefilter",
-                    #                 },
-                    #                 "material": {
-                    #                     "SMARTS": None,
-                    #                     "SMILES": None,
-                    #                     "quantity": {"value": 300, "unit": "ul"},
-                    #                     "solvent": None,
-                    #                     "density": None,
-                    #                     "concentration": None,
-                    #                 },
-                    #             },
-                    #         },
-                    #     ],
-                    # },
+                    {
+                        "type": "workup",
+                        "driver": "robot",
+                        "sessionnumber": 3,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 6,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "stir",
+                        "driver": "human",
+                        "sessionnumber": 4,
+                        "actions": [
+                            {
+                                "type": "stir",
+                                "actionnumber": 7,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "temperature": {"value": 25, "unit": "degC"},
+                                    "duration": {"value": 1, "unit": "hours"},
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "workup",
+                        "driver": "robot",
+                        "sessionnumber": 5,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 8,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "reaction",
+                                        "toplatetype": "spefilter",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 9,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 200, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "mix",
+                                "actionnumber": 10,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "repetitions": {"value": 3},
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 11,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "reaction",
+                                        "toplatetype": "spefilter",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,
+                                        "quantity": {"value": 300, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "analyse",
+                        "driver": "robot",
+                        "sessionnumber": 6,
+                        "actions": [
+                            {
+                                "type": "add",
+                                "actionnumber": 12,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "spefilter",
+                                        "toplatetype": "lcms",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": None,  # Product of reaction
+                                        "quantity": {"value": 1, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 13,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "solvent",
+                                        "toplatetype": "lcms",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CC#N",
+                                        "quantity": {"value": 100, "unit": "ul"},
+                                        "solvent": "ACN",
+                                        "density": None,
+                                        "concentration": None,
+                                    },
+                                },
+                            },
+                        ],
+                    },
                 ],
             },
         },
