@@ -19,6 +19,7 @@ from car.utils import (
     getReaction,
     getChemicalName,
     getInchiKey,
+    wellIndexToWellName,
 )
 
 from car.models import (
@@ -1221,7 +1222,9 @@ class CreateOTSession(object):
         welltype: str
             The well type eg. reaction, analyse
         wellindex: int
-            The index of the well in the plate
+            The index of the well in the plate eg. 0, 1, 2, 3 etc
+        wellname: str
+            The name of the well eg. A1, B1, C1 etc
         volume: float = None
             The optional volume of the well contents
         reactionobj: Reaction = None
@@ -1253,6 +1256,7 @@ class CreateOTSession(object):
             wellobj.column_id = columnobj
         wellobj.type = welltype
         wellobj.index = wellindex
+        wellobj.name = wellIndexToWellName(wellindex=wellindex, platesize=plateobj.numberwells)
         wellobj.volume = volume
         wellobj.smiles = smiles
         wellobj.concentration = concentration
@@ -1527,7 +1531,8 @@ class CreateOTSession(object):
                                 "SMILES": startingmaterialsdf.at[i, "smiles"],
                                 "plate-name": plateobj.name,
                                 "labware": plateobj.labware,
-                                "well": wellobj.index,
+                                "well-index": wellobj.index,
+                                "well-name": wellobj.name,
                                 "concentration": startingmaterialsdf.at[
                                     i, "concentration"
                                 ],
@@ -1574,7 +1579,8 @@ class CreateOTSession(object):
                             "SMILES": startingmaterialsdf.at[i, "smiles"],
                             "plate-name": plateobj.name,
                             "labware": plateobj.labware,
-                            "well": wellobj.index,
+                            "well-index": wellobj.index,
+                            "well-name": wellobj.name,
                             "concentration": startingmaterialsdf.at[i, "concentration"],
                             "solvent": startingmaterialsdf.at[i, "solvent"],
                             "molecularweight": startingmaterialsdf.at[
@@ -1948,7 +1954,8 @@ class CreateOTSession(object):
                             {
                                 "name": plateobj.name,
                                 "labware": plateobj.labware,
-                                "well": wellobj.index,
+                                "well-index": wellobj.index,
+                                "well-name": wellobj.name,
                                 "solvent": solventgroup,
                                 "amount-ul": volumetoadd,
                             }
@@ -1981,7 +1988,8 @@ class CreateOTSession(object):
                         {
                             "name": plateobj.name,
                             "labware": plateobj.labware,
-                            "well": wellobj.index,
+                            "well-index": wellobj.index,
+                            "well-name": wellobj.name,
                             "solvent": solventgroup,
                             "amount-ul": volumetoadd,
                         }

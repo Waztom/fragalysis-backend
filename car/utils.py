@@ -394,6 +394,30 @@ def getReactantsToBuy(batch_ids: list[int]) -> list:
         reactants_to_buy = reactants_to_buy + reactants_batch_to_buy
     return list(set(reactants_to_buy))
 
+def wellIndexToWellName(wellindex: int, platesize: int) -> str:
+    """Converts a well index to a human readable well name
+    
+    Parameters
+    ----------
+    wellindex: int
+        The well index to convert to a well name
+    platesize: int
+        The plate size to convert the well index to a well name
+
+    Returns
+    -------
+    wellname: str
+        The well name eg. A01
+    """
+    platewellindexconversions = {
+        4: 'A' + '%02d' % ((wellindex) + 1,),
+        24: 'ABCD'[(wellindex) % 4] + '%02d' % ((wellindex) // 4 + 1,),
+        96: 'ABCDEFGH'[(wellindex) % 8] + '%02d' % ((wellindex) // 8 + 1,),
+        384: 'ABCDEFGHIJKLMNOP'[(wellindex) % 16] + '%02d' % ((wellindex) // 16 + 1,),
+    }
+    wellname = platewellindexconversions[platesize]
+    return wellname
+
 
 def getBatchTargetMWs(batch_id: int) -> list[float]:
     """Gets the molecular weights of the final target compounds

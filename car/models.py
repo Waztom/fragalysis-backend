@@ -830,6 +830,8 @@ class Well(models.Model):
         Optional foreign key linking a well to a reaction
     index: IntegerField
         The well index (0-95) on the plate
+    name: CharField
+        The name of the well eg. A1, B1, C1
     type: CharField
         The type of well eg. analyse and reaction well
     volume: FloatField
@@ -870,6 +872,7 @@ class Well(models.Model):
     reaction_id = models.ForeignKey(Reaction, on_delete=models.CASCADE, null=True)
     column_id = models.ForeignKey(Column, on_delete=models.CASCADE, null=True)
     index = models.IntegerField()
+    name = models.CharField(max_length=3, null=True)
     type = models.CharField(choices=WellType.choices, max_length=55)
     volume = models.FloatField(null=True)
     smiles = models.CharField(max_length=255, null=True)
