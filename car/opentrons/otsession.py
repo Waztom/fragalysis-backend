@@ -141,17 +141,16 @@ class CreateOTSession(object):
             )
         if noncontinuationactionsessions.exists():
             searchsmiles = self.addactionqueryset.values_list("smiles", flat=True)
+            self.createReactionPlate(platetype="reaction")
         inputplatequeryset = self.getInputPlatesNeeded(searchsmiles=searchsmiles)
         self.updatePlateDeckOTSessionIDs(platequeryset=inputplatequeryset)
         self.createPipetteModel()
         self.createReactionStartingPlate()
-        if noncontinuationactionsessions.exists():
-            self.createReactionPlate(platetype="reaction")
-            if self.reactionstep > 1:
-                self.solventmaterialsdf = self.getAddActionsMaterialDataFrame(
-                    productexists=True
-                )
-                self.createSolventPlate(materialsdf=self.solventmaterialsdf)
+        if self.reactionstep > 1:
+            self.solventmaterialsdf = self.getAddActionsMaterialDataFrame(
+                productexists=True
+            )
+            self.createSolventPlate(materialsdf=self.solventmaterialsdf)
 
     def createWorkUpSession(self):
         """Creates a workup OT session"""
@@ -642,6 +641,7 @@ class CreateOTSession(object):
                 pipettevolume=x["maxvolume"], roundedvolumes=roundedvolumes
             ),
         )
+        print(self.reactionstep)
         print(self.actionsessiontype)
         print(channeltype)
         print(pipettetype)
@@ -1256,7 +1256,9 @@ class CreateOTSession(object):
             wellobj.column_id = columnobj
         wellobj.type = welltype
         wellobj.index = wellindex
-        wellobj.name = wellIndexToWellName(wellindex=wellindex, platesize=plateobj.numberwells)
+        wellobj.name = wellIndexToWellName(
+            wellindex=wellindex, platesize=plateobj.numberwells
+        )
         wellobj.volume = volume
         wellobj.smiles = smiles
         wellobj.concentration = concentration
