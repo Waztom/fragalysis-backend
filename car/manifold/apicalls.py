@@ -25,7 +25,7 @@ def getManifoldRetrosynthesis(smiles: str):
         "smiles": smiles,
         "maxLeadTimeWeeks": 12,
         "maxSearchDepth": 3,
-        "maxNumRoutesToReturn": 10,
+        "maxNumRoutesToReturn": 3,
         "catalogs": [
             "enamine_bb",
             "molport",
@@ -65,7 +65,7 @@ def getManifoldRetrosynthesisBatch(smiles: list):
         "smilesList": smiles,
         "maxLeadTimeWeeks": 12,
         "maxSearchDepth": 3,
-        "maxNumRoutesToReturn": 10,
+        "maxNumRoutesToReturn": 3,
         "catalogs": [
             "enamine_bb",
             "molport",
