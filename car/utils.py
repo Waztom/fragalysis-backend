@@ -493,6 +493,35 @@ def getBatchReactionIDs(batch_id: int, reaction_number: int) -> list[float]:
     return reaction_IDs
 
 
+def updateTargetMols(batch_id: int, concentration: float, volume: float) -> int:
+    """Updates the Target mols in a Batch - using concentartion and volume
+
+    Parameters
+    ----------
+    batch_id: int
+        The batch model object id that the targets are linked to
+    concentration: float
+        The concentration (mM) to be updated for the targets
+    volume: float
+        The volume (uL) to be updated for the targets
+
+    Returns
+    -------
+    """
+    target_qs = Batch.objects.get(id=batch_id).targets.all()
+    for target_obj in target_qs:
+        smiles = target_obj.smiles
+        mols = calculateMolsFromConc(
+            target_concentration=concentration, target_volume=volume
+        )
+        mass = calculateMassFromMols(mols=mols, SMILES=smiles)
+        target_obj.mols = mols
+        target_obj.concentration = concentration
+        target_obj.volume = volume
+        target_obj.mass = mass
+        target_obj.save()
+
+
 def updateReactionSuccessToFail(reaction_ids: list[int]):
     """Updates reactions to be failures
 
@@ -552,6 +581,74 @@ def getBatchReactionProductSmiles(batch_id: int, reaction_number: int) -> list[f
                     reactionobj.products.all().values_list("smiles", flat=True)
                 )
     return product_SMILES
+
+
+def getPlateMap(plate_ids: list):
+    """***Important Notice requires a tmp-files section within the car folder (it is recommended that this 'tmp-files' section is added to the git-ignore list)*** Generates a plate map in tmp-files of the plate with the matching plate id.
+    Parameters
+    ----------
+    plate_ids: list
+        The plate ids to generate the platemap info for
+
+    Returns
+    -------
+    platemap csv in tmp-files
+    """
+
+    plate_info = {
+        "plate_id": [],
+        "well_index": [],
+        "target_names": [],
+        "target_smiles": [],
+        "target_MWs": [],
+        "reactant_1_smiles": [],
+        "reactant_2_smiles": [],
+        "reactant_1_MWs": [],
+        "reactant_2_MWs": [],
+    }
+
+    for plate_id in plate_ids:
+        plate = Plate.objects.get(id=plate_id)
+        wells = plate.well_set.all().order_by("id")
+
+        # Get the target names
+
+        for well in wells:
+            well_index = well.index
+            target_name = well.method_id.target_id.name
+            target_smi = well.smiles
+            target_mw = getMWs(smiles=[target_smi])[0]
+            reactant_smiles = well.reaction_id.reactants.values_list(
+                "smiles", flat=True
+            )
+            reactant_mws = getMWs(smiles=reactant_smiles)
+            reactant_1_smi = reactant_smiles[0]
+            reactant_2_smi = reactant_smiles[1]
+            reactant_1_mw = reactant_mws[0]
+            reactant_2_mw = reactant_mws[1]
+            plate_info["plate_id"].append(plate_id)
+            plate_info["well_index"].append(well_index)
+            plate_info["target_names"].append(target_name)
+            plate_info["target_smiles"].append(target_smi)
+            plate_info["target_MWs"].append(target_mw)
+            plate_info["reactant_1_smiles"].append(reactant_1_smi)
+            plate_info["reactant_2_smiles"].append(reactant_2_smi)
+            plate_info["reactant_1_MWs"].append(reactant_1_mw)
+            plate_info["reactant_2_MWs"].append(reactant_2_mw)
+
+    # Write the dic to csv
+    import csv
+
+    filename = "-".join(map(str, plate_ids))
+    with open(
+        "/code/car/tmp-files/plateids-{}-platemaps.csv".format(filename), "w"
+    ) as f:
+        writer = csv.writer(f)
+        limit = len(plate_info["well_index"])
+        writer.writerow(plate_info.keys())
+        for i in range(limit):
+            writer.writerow([plate_info[x][i] for x in plate_info.keys()])
+    f.close()
 
 
 def getBatchReactionProductMWs(batch_id: int, reaction_number: int) -> list[float]:

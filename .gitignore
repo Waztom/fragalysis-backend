@@ -7,6 +7,11 @@ media/
 logs/
 django_app.sock
 *zip
+mathews-notes.txt
+
+# For tmp helper CAR files eg. platemaps
+car/tmp-files/
+
 
 # VScode
 .vscode/
