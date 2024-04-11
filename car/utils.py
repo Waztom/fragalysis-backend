@@ -4,6 +4,7 @@ from rdkit.Chem import Descriptors
 from rdkit import Chem
 from rdkit.Chem import AllChem
 from rdkit.Chem import Draw
+from rdkit.Chem import rdMolDescriptors
 import pubchempy as pcp
 import itertools
 import re
@@ -1335,6 +1336,26 @@ def getPubChemCAS(compound: object) -> str:
                 if match:
                     cas = match.group(1)
                     return cas
+    except Exception as e:
+        logger.info(inspect.stack()[0][3] + " yielded error: {}".format(e))
+        print(e)
+
+
+def getMolecularFormula(smiles: list) -> list:
+    """Gets the molecular formula of a list of compounds SMILES
+    Parameters
+    ----------
+    smiles: list[str]
+        The SMILES to calculate molecular formula for
+    Returns
+    -------
+    formula: list[str]
+    """
+    try:
+        formula = [
+            rdMolDescriptors.CalcMolFormula(Chem.MolFromSmiles(smi)) for smi in smiles
+        ]
+        return formula
     except Exception as e:
         logger.info(inspect.stack()[0][3] + " yielded error: {}".format(e))
         print(e)
