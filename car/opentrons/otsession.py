@@ -1,4 +1,5 @@
 """Create OT session"""
+
 from __future__ import annotations
 from django.core.files.storage import default_storage
 from django.core.files.base import ContentFile
@@ -1002,7 +1003,7 @@ class CreateOTSession(object):
                     ]
                 )
             noplatesneeded = int(math.ceil(wellsneeded / noplatevials))
-            volumedifference = maxvolumevial - medianvolume
+            volumedifference = abs(maxvolumevial - medianvolume)
             tempdifference = maxtemp - temperature
             vialcomparedict[labwareplate] = {
                 "noplatesneeded": noplatesneeded,
