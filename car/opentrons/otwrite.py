@@ -1170,8 +1170,8 @@ class OTWrite(object):
         dispensewellindex: int,
         transvolume: float,
         aspirateheight: int = 0.1,
-        dispenseheight: int = -5,
-        airgap: int = 15,
+        # dispenseheight: int = -5,
+        # airgap: int = 15,
         transfertype: str = "standard",
     ):
         """Prepares the transfer commmand instruction for a tranfer action
@@ -1203,12 +1203,11 @@ class OTWrite(object):
         newtip:
             Set to "never" to deal with pick up and drop tips built into protocol
         """
-
         humanread = f"transfertype - {transfertype} - transfer - {transvolume:.1f}ul from {aspiratewellindex} to {dispensewellindex}"
         instruction = [
             "\n\t# " + str(humanread),
             self.pipettename
-            + f".transfer({transvolume}, {aspirateplatename}.wells()[{aspiratewellindex}].bottom({aspirateheight}), {dispenseplatename}.wells()[{dispensewellindex}].top({dispenseheight}), air_gap = {airgap}, touch_tip=True, new_tip='never', blow_out=True, blowout_location='destination well')",
+            + f".transfer({transvolume}, {aspirateplatename}.wells()[{aspiratewellindex}].bottom({aspirateheight}), {dispenseplatename}.wells()[{dispensewellindex}].top({dispenseplatename}.highest_z*0.05), air_gap = {self.pipettename}.max_volume*0.05, touch_tip=True, new_tip='never', blow_out=True, blowout_location='destination well')",
         ]
         self.writeCommand(instruction)
 
@@ -1220,12 +1219,12 @@ class OTWrite(object):
         dispensecolumnindex: int,
         transvolume: float,
         aspirateheight: int = 0.1,
-        dispenseheight: int = -5,
-        airgap: int = 15,
+        # dispenseheight: int = -5,
+        # airgap: int = 15,
         transfertype: str = "standard",
     ):
-        """Prepares the mutli-pipette transfer commmand instruction for a tranfer action
-           using a column index
+        """Prepares the mutli-pipette transfer commmand instruction for a
+           transfer action using a column index
 
         Parameters
         ----------
@@ -1257,7 +1256,7 @@ class OTWrite(object):
         instruction = [
             "\n\t# " + str(humanread),
             self.pipettename
-            + f".transfer({transvolume}, {aspirateplatename}.columns()[{aspiratecolumnindex}][0].bottom({aspirateheight}), {dispenseplatename}.columns()[{dispensecolumnindex}][0].top({dispenseheight}), air_gap = {airgap}, touch_tip=True, new_tip='never', blow_out=True, blowout_location='destination well')",
+            + f".transfer({transvolume}, {aspirateplatename}.columns()[{aspiratecolumnindex}][0].bottom({aspirateheight}), {dispenseplatename}.columns()[{dispensecolumnindex}][0].top({dispenseplatename}.highest_z*0.05), air_gap = {self.pipettename}.max_volume*0.05, touch_tip=True, new_tip='never', blow_out=True, blowout_location='destination well')",
         ]
         self.writeCommand(instruction)
 

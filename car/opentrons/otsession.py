@@ -632,21 +632,47 @@ class CreateOTSession(object):
                 "maxvolume": 10,
             },
         ]
-        pipettetype = min(
-            [
-                pipette
-                for pipette in pipettesavailable
-                if pipette["type"] == channeltype
-            ],
-            key=lambda x: self.getNumberTransfers(
-                pipettevolume=x["maxvolume"], roundedvolumes=roundedvolumes
-            ),
+
+        mediantransfervolume = self.getMedianValue(values=roundedvolumes)
+        pipettecomparedict = {}
+
+        for pipette in pipettesavailable:
+            pipettevolume = pipette["maxvolume"]
+            pipettetype = pipette["type"]
+            pipettelabware = pipette["labware"]
+            volumedifference = pipettevolume - mediantransfervolume
+            if volumedifference < 0 or pipettetype != channeltype:
+                continue
+            numbertransfers = self.getNumberTransfers(
+                pipettevolume=pipettevolume, roundedvolumes=roundedvolumes
+            )
+            pipettecomparedict[pipettelabware] = {
+                "notransfers": numbertransfers,
+                "volumedifference": volumedifference,
+            }
+
+        minimumnotransfers = min(
+            [pipette["notransfers"] for pipette in pipettecomparedict.values()]
         )
-        print(self.reactionstep)
-        print(self.actionsessiontype)
-        print(channeltype)
-        print(pipettetype)
-        return pipettetype
+        pipettetypes = [
+            pipettelabware
+            for pipettelabware in pipettecomparedict
+            if pipettecomparedict[pipettelabware]["notransfers"] == minimumnotransfers
+        ]
+        if len(pipettetypes) > 1:
+            minimumvolumedifference = min(
+                [
+                    pipettecomparedict[pipettelabware]["volumedifference"]
+                    for pipettelabware in pipettetypes
+                ]
+            )
+            pipettetypes = [
+                pipettelabware
+                for pipettelabware in pipettecomparedict
+                if pipettecomparedict[pipettelabware]["volumedifference"]
+                == minimumvolumedifference
+            ]
+        return pipettetypes[0]
 
     def getNumberTransfers(self, pipettevolume: int, roundedvolumes: list) -> int:
         """Gets the number of transfers required for transferring
@@ -1003,8 +1029,10 @@ class CreateOTSession(object):
                     ]
                 )
             noplatesneeded = int(math.ceil(wellsneeded / noplatevials))
-            volumedifference = abs(maxvolumevial - medianvolume)
+            volumedifference = maxvolumevial - medianvolume
             tempdifference = maxtemp - temperature
+            if volumedifference < 0 or tempdifference < 0:
+                continue
             vialcomparedict[labwareplate] = {
                 "noplatesneeded": noplatesneeded,
                 "volumedifference": volumedifference,
