@@ -6562,7 +6562,9 @@ encoded_recipes = {
         "recipes": {
             "standard": {
                 "yield": 75,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[c^2,C^2:2]-[B]>>[c:1]-[c^2,C^2:2]"],
+                "reactionSMARTS": [
+                    "[c:1]-[F,Cl,Br,I].[c^2,C^2:2]-[B]>>[c:1]-[c^2,C^2:2]"
+                ],
                 "references": None,
                 "actionsessions": [
                     {
@@ -6819,7 +6821,9 @@ encoded_recipes = {
             },
             "SOCS2A-suz-1": {
                 "yield": 75,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[c^2,C^2:2]-[B]>>[c:1]-[c^2,C^2:2]"],
+                "reactionSMARTS": [
+                    "[c:1]-[F,Cl,Br,I].[c^2,C^2:2]-[B]>>[c:1]-[c^2,C^2:2]"
+                ],
                 "references": None,
                 "actionsessions": [
                     {
@@ -7076,7 +7080,9 @@ encoded_recipes = {
             },
             "SOCS2A-suz-2": {
                 "yield": 75,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[c^2,C^2:2]-[B]>>[c:1]-[c^2,C^2:2]"],
+                "reactionSMARTS": [
+                    "[c:1]-[F,Cl,Br,I].[c^2,C^2:2]-[B]>>[c:1]-[c^2,C^2:2]"
+                ],
                 "references": None,
                 "actionsessions": [
                     {
@@ -7333,7 +7339,9 @@ encoded_recipes = {
             },
             "SOCS2A-suz-3": {
                 "yield": 75,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[c^2,C^2:2]-[B]>>[c:1]-[c^2,C^2:2]"],
+                "reactionSMARTS": [
+                    "[c:1]-[F,Cl,Br,I].[c^2,C^2:2]-[B]>>[c:1]-[c^2,C^2:2]"
+                ],
                 "references": None,
                 "actionsessions": [
                     {
@@ -7590,7 +7598,9 @@ encoded_recipes = {
             },
             "SOCS2A-suz-4": {
                 "yield": 75,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[c^2,C^2:2]-[B]>>[c:1]-[c^2,C^2:2]"],
+                "reactionSMARTS": [
+                    "[c:1]-[F,Cl,Br,I].[c^2,C^2:2]-[B]>>[c:1]-[c^2,C^2:2]"
+                ],
                 "references": None,
                 "actionsessions": [
                     {
@@ -7847,7 +7857,9 @@ encoded_recipes = {
             },
             "SOCS2A-suz-5": {
                 "yield": 75,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[c^2,C^2:2]-[B]>>[c:1]-[c^2,C^2:2]"],
+                "reactionSMARTS": [
+                    "[c:1]-[F,Cl,Br,I].[c^2,C^2:2]-[B]>>[c:1]-[c^2,C^2:2]"
+                ],
                 "references": None,
                 "actionsessions": [
                     {
@@ -8104,7 +8116,9 @@ encoded_recipes = {
             },
             "SOCS2A-suz-6": {
                 "yield": 75,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[c^2,C^2:2]-[B]>>[c:1]-[c^2,C^2:2]"],
+                "reactionSMARTS": [
+                    "[c:1]-[F,Cl,Br,I].[c^2,C^2:2]-[B]>>[c:1]-[c^2,C^2:2]"
+                ],
                 "references": None,
                 "actionsessions": [
                     {
@@ -8361,7 +8375,9 @@ encoded_recipes = {
             },
             "SOCS2A-suz-7": {
                 "yield": 75,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[c^2,C^2:2]-[B]>>[c:1]-[c^2,C^2:2]"],
+                "reactionSMARTS": [
+                    "[c:1]-[F,Cl,Br,I].[c^2,C^2:2]-[B]>>[c:1]-[c^2,C^2:2]"
+                ],
                 "references": None,
                 "actionsessions": [
                     {
@@ -8618,7 +8634,9 @@ encoded_recipes = {
             },
             "SOCS2A-suz-8": {
                 "yield": 75,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[c^2,C^2:2]-[B]>>[c:1]-[c^2,C^2:2]"],
+                "reactionSMARTS": [
+                    "[c:1]-[F,Cl,Br,I].[c^2,C^2:2]-[B]>>[c:1]-[c^2,C^2:2]"
+                ],
                 "references": None,
                 "actionsessions": [
                     {
@@ -8875,7 +8893,9 @@ encoded_recipes = {
             },
             "SOCS2A-suz-9": {
                 "yield": 75,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[c^2,C^2:2]-[B]>>[c:1]-[c^2,C^2:2]"],
+                "reactionSMARTS": [
+                    "[c:1]-[F,Cl,Br,I].[c^2,C^2:2]-[B]>>[c:1]-[c^2,C^2:2]"
+                ],
                 "references": None,
                 "actionsessions": [
                     {
@@ -9132,7 +9152,9 @@ encoded_recipes = {
             },
             "SOCS2A-suz-10": {
                 "yield": 75,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[c^2,C^2:2]-[B]>>[c:1]-[c^2,C^2:2]"],
+                "reactionSMARTS": [
+                    "[c:1]-[F,Cl,Br,I].[c^2,C^2:2]-[B]>>[c:1]-[c^2,C^2:2]"
+                ],
                 "references": None,
                 "actionsessions": [
                     {
@@ -9389,7 +9411,9 @@ encoded_recipes = {
             },
             "SOCS2A-suz-11": {
                 "yield": 75,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[c^2,C^2:2]-[B]>>[c:1]-[c^2,C^2:2]"],
+                "reactionSMARTS": [
+                    "[c:1]-[F,Cl,Br,I].[c^2,C^2:2]-[B]>>[c:1]-[c^2,C^2:2]"
+                ],
                 "references": None,
                 "actionsessions": [
                     {
@@ -9646,7 +9670,9 @@ encoded_recipes = {
             },
             "SOCS2A-suz-12": {
                 "yield": 75,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[c^2,C^2:2]-[B]>>[c:1]-[c^2,C^2:2]"],
+                "reactionSMARTS": [
+                    "[c:1]-[F,Cl,Br,I].[c^2,C^2:2]-[B]>>[c:1]-[c^2,C^2:2]"
+                ],
                 "references": None,
                 "actionsessions": [
                     {
@@ -11222,6 +11248,104 @@ encoded_recipes = {
                         "sessionnumber": 2,
                         "actions": [
                             {
+                                "type": "stir",
+                                "actionnumber": 4,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "temperature": {
+                                        "value": 50,
+                                        "unit": "degC",
+                                    },
+                                    "duration": {"value": 3, "unit": "hours"},
+                                },
+                            },
+                        ],
+                    },
+                ],
+            },
+            "EV71A2A-WE": {
+                "yield": 77,
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
+                "references": "Modified recipe of SHIP1-WE-OPT for use in Wasgo-iter-1.0 two-step compounds",
+                "actionsessions": [
+                    {
+                        "type": "reaction",
+                        "driver": "robot",
+                        "sessionnumber": 1,
+                        "intermolecular": {
+                            "actions": [
+                                {
+                                    "type": "add",
+                                    "actionnumber": 1,
+                                    "content": {
+                                        "plates": {
+                                            "fromplatetype": "startingmaterial",
+                                            "toplatetype": "reaction",
+                                        },
+                                        "material": {
+                                            "SMARTS": "[#6:1]-[#8;H:2]",
+                                            "SMILES": None,
+                                            "quantity": {"value": 1.0, "unit": "moleq"},
+                                            "solvent": "DMA",
+                                            "concentration": 0.5,
+                                        },
+                                    },
+                                },
+                                {
+                                    "type": "add",
+                                    "actionnumber": 2,
+                                    "content": {
+                                        "plates": {
+                                            "fromplatetype": "startingmaterial",
+                                            "toplatetype": "reaction",
+                                        },
+                                        "material": {
+                                            "SMARTS": "[#6:3]-[Cl,Br,I]",
+                                            "SMILES": None,
+                                            "quantity": {"value": 5.0, "unit": "moleq"},
+                                            "solvent": "DMA",
+                                            "concentration": 0.625,
+                                        },
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        "type": "reaction",
+                        "driver": "human",
+                        "sessionnumber": 2,
+                        "continuation": True,
+                        "intermolecular": {
+                            "actions": [
+                            {
+                                    "type": "add",
+                                    "actionnumber": 3,
+                                    "content": {
+                                        "plates": {
+                                            "fromplatetype": "startingmaterial",
+                                         "toplatetype": "reaction",
+                                        },
+                                        "material": {
+                                            "SMARTS": None,
+                                            "SMILES": "[OH-].[Na+]",
+                                            "quantity": {"value": 3.0, "unit": "moleq"},
+                                            "solvent": None,
+                                            "concentration": None,
+                                        },
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        "type": "stir",
+                        "driver": "human",
+                        "sessionnumber": 3,
+                        "actions": [
+                            {    
                                 "type": "stir",
                                 "actionnumber": 4,
                                 "content": {
