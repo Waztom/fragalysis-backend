@@ -11320,13 +11320,13 @@ encoded_recipes = {
                         "continuation": True,
                         "intermolecular": {
                             "actions": [
-                            {
+                                {
                                     "type": "add",
                                     "actionnumber": 3,
                                     "content": {
                                         "plates": {
                                             "fromplatetype": "startingmaterial",
-                                         "toplatetype": "reaction",
+                                            "toplatetype": "reaction",
                                         },
                                         "material": {
                                             "SMARTS": None,
@@ -11345,7 +11345,7 @@ encoded_recipes = {
                         "driver": "human",
                         "sessionnumber": 3,
                         "actions": [
-                            {    
+                            {
                                 "type": "stir",
                                 "actionnumber": 4,
                                 "content": {

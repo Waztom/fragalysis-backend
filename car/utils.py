@@ -10,7 +10,9 @@ import itertools
 import re
 import inspect
 import logging
-
+import pandas as pd
+import csv
+import datetime
 
 from car.models import (
     ActionSession,
@@ -209,7 +211,7 @@ def getActionSessionQuerySet(
     reaction_ids: QuerySet[Reaction],
     driver: str = None,
 ) -> QuerySet[ActionSession]:
-    """Returns the action session wueryset for a type of driver
+    """Returns the action session queryset for a type of driver
        (human or robot)
 
     Parameters
@@ -552,6 +554,54 @@ def updateBatchMethodOTFriendly(batch_id: int):
             methodobj.save()
 
 
+def deleteBatchActionSessions(batch_id: int):
+    """Deletes all actions for a batch
+
+    Parameters
+    ----------
+    batch_id: int
+        The batch id to delete all actions for
+    """
+    reaction_qs = getBatchReactions(batchid=batch_id)
+    getActionSessionQuerySet(reaction_ids=reaction_qs).delete()
+
+
+def updateRecipeType(
+    batch_id: int, reaction_class: str, current_recipe: str, recipe_to_use: str
+):
+    """Updates the recipe type for a Reactions in a Batch
+
+    Parameters
+    ----------
+    batch_id: int
+        The batch id to update the recipe type for
+    reaction_class: str
+        The reaction class to update the recipe for
+    current_recipe: str
+        The current recipe to update
+    recipe_to_use: str
+        The recipe to update to
+    """
+    reaction_qs = getBatchReactions(batchid=batch_id).filter(
+        reactionclass=reaction_class, recipe=current_recipe
+    )
+    for reaction_obj in reaction_qs:
+        reaction_obj.recipe = recipe_to_use
+        reaction_obj.save()
+
+
+def deleteBatchActionSessions(batch_id: int):
+    """Delete the Action Sessions related to a Batch
+
+    Parameters
+    ----------
+    batch_id: int
+        The batch id to delete all actions for
+    """
+    reaction_qs = getBatchReactions(batchid=batch_id)
+    getActionSessionQuerySet(reaction_ids=reaction_qs).delete()
+
+
 def getBatchReactionProductSmiles(batch_id: int, reaction_number: int) -> list[float]:
     """Gets the MWs of the products for a reaction in
        a batch
@@ -584,16 +634,20 @@ def getBatchReactionProductSmiles(batch_id: int, reaction_number: int) -> list[f
     return product_SMILES
 
 
-def getPlateMap(plate_ids: list):
-    """***Important Notice requires a tmp-files section within the car folder (it is recommended that this 'tmp-files' section is added to the git-ignore list)*** Generates a plate map in tmp-files of the plate with the matching plate id.
+def getPlateMap(plate_ids: list, out_dir: str):
+    """Generates a Plate Map for a list of plate ids
+
     Parameters
     ----------
     plate_ids: list
         The plate ids to generate the platemap info for
+    out_dir: str
+        The directory to write the csv to
 
     Returns
     -------
-    platemap csv in tmp-files
+    platemap_csv: File
+        The csv files in tmp-files
     """
 
     plate_info = {
@@ -609,50 +663,49 @@ def getPlateMap(plate_ids: list):
         "reactant_2_MWs": [],
     }
 
-    for plate_id in plate_ids:
-        plate = Plate.objects.get(id=plate_id)
-        wells = plate.well_set.all().order_by("id")
+    try:
+        for plate_id in plate_ids:
+            plate = Plate.objects.get(id=plate_id)
+            wells = plate.well_set.all().order_by("id")
 
-        # Get the target names
+            for well in wells:
+                well_index = well.index
+                target_id = well.method_id.target_id.id
+                target_name = well.method_id.target_id.name
+                target_smi = well.smiles
+                target_mw = getMWs(smiles=[target_smi])[0]
+                reactant_smiles = well.reaction_id.reactants.values_list(
+                    "smiles", flat=True
+                )
+                reactant_mws = getMWs(smiles=reactant_smiles)
+                reactant_1_smi = reactant_smiles[0]
+                reactant_2_smi = reactant_smiles[1]
+                reactant_1_mw = reactant_mws[0]
+                reactant_2_mw = reactant_mws[1]
+                plate_info["plate_id"].append(plate_id)
+                plate_info["well_index"].append(well_index)
+                plate_info["target_ids"].append(target_id)
+                plate_info["target_names"].append(target_name)
+                plate_info["target_smiles"].append(target_smi)
+                plate_info["target_MWs"].append(target_mw)
+                plate_info["reactant_1_smiles"].append(reactant_1_smi)
+                plate_info["reactant_2_smiles"].append(reactant_2_smi)
+                plate_info["reactant_1_MWs"].append(reactant_1_mw)
+                plate_info["reactant_2_MWs"].append(reactant_2_mw)
 
-        for well in wells:
-            well_index = well.index
-            target_id = well.method_id.target_id.id
-            target_name = well.method_id.target_id.name
-            target_smi = well.smiles
-            target_mw = getMWs(smiles=[target_smi])[0]
-            reactant_smiles = well.reaction_id.reactants.values_list(
-                "smiles", flat=True
-            )
-            reactant_mws = getMWs(smiles=reactant_smiles)
-            reactant_1_smi = reactant_smiles[0]
-            reactant_2_smi = reactant_smiles[1]
-            reactant_1_mw = reactant_mws[0]
-            reactant_2_mw = reactant_mws[1]
-            plate_info["plate_id"].append(plate_id)
-            plate_info["well_index"].append(well_index)
-            plate_info["target_ids"].append(target_id)
-            plate_info["target_names"].append(target_name)
-            plate_info["target_smiles"].append(target_smi)
-            plate_info["target_MWs"].append(target_mw)
-            plate_info["reactant_1_smiles"].append(reactant_1_smi)
-            plate_info["reactant_2_smiles"].append(reactant_2_smi)
-            plate_info["reactant_1_MWs"].append(reactant_1_mw)
-            plate_info["reactant_2_MWs"].append(reactant_2_mw)
+        filename = "platemapids-" + "-".join(map(str, plate_ids))
 
-    # Write the dic to csv
-    import csv
+        with open("{}{}.csv".format(out_dir, filename), "w") as f:
+            writer = csv.writer(f)
+            limit = len(plate_info["well_index"])
+            writer.writerow(plate_info.keys())
+            for i in range(limit):
+                writer.writerow([plate_info[x][i] for x in plate_info.keys()])
+        f.close()
 
-    filename = "-".join(map(str, plate_ids))
-    with open(
-        "/code/car/tmp-files/plateids-{}-platemaps.csv".format(filename), "w"
-    ) as f:
-        writer = csv.writer(f)
-        limit = len(plate_info["well_index"])
-        writer.writerow(plate_info.keys())
-        for i in range(limit):
-            writer.writerow([plate_info[x][i] for x in plate_info.keys()])
-    f.close()
+    except Exception as e:
+        logger.info(inspect.stack()[0][3] + " yielded error: {}".format(e))
+        print(e)
 
 
 def getBatchReactionProductMWs(batch_id: int, reaction_number: int) -> list[float]:
@@ -1062,6 +1115,70 @@ def combiChem(
             )
         )
     return all_possible_combinations
+
+
+def createCombiChemCSV(csv_input_file: str, out_dir: str):
+    """Creates a .csv file for all the combinations possible for a given input
+        of reactant SMILES pairs
+
+    Parameters
+    ----------
+    csv_input_file: str
+        The path to .csv file to read the reactant SMILES pairs and reactant classes from
+    out_dir: str
+        The directory to write the csv to
+    """
+    try:
+        output_list = []
+        input_df = pd.read_csv(csv_input_file)
+        grouped_df = input_df.groupby(["reactant_class", "reaction_recipe"])
+        for group in grouped_df:
+            reaction_classes = group[1]["reactant_class"].tolist()
+            reaction_recipes = group[1]["reaction_recipe"].tolist()
+            reactant_1_SMILES = group[1]["reactant_1"].tolist()
+            reactant_2_SMILES = group[1]["reactant_2"].tolist()
+            reaction_SMARTS = encoded_recipes[reaction_classes[0]][reaction_recipes[0]][
+                "reactionSMARTS"
+            ]
+
+            all_possible_combinations = combiChem(reactant_1_SMILES, reactant_2_SMILES)
+            product_smiles = []
+            for reactant_pair in all_possible_combinations:
+                product_mols = checkReactantSMARTS(
+                    reactant_SMILES=reactant_pair, reaction_SMARTS=reaction_SMARTS
+                )
+                product_smiles.append(Chem.MolToSmiles(product_mols[0]))
+
+            all_possible_reactant_1_smiles = [x[0] for x in all_possible_combinations]
+            all_possible_reactant_2_smiles = [x[1] for x in all_possible_combinations]
+
+            output_list.append(
+                [
+                    all_possible_reactant_1_smiles,
+                    all_possible_reactant_2_smiles,
+                    product_smiles,
+                    reaction_classes,
+                    reaction_recipes,
+                ]
+            )
+        out_df = pd.DataFrame(
+            output_list,
+            columns=[
+                "reactant_1_SMILES",
+                "reactant_2_SMILES",
+                "product_SMILES",
+                "reaction_class",
+                "reaction_recipe",
+            ],
+        )
+        out_df.write_csv(
+            out_dir
+            + "{}-combi-chem.csv".format(datetime.now().strftime("%Y-%m-%d-%H-%M-%S"))
+        )
+
+    except Exception as e:
+        logger.info(inspect.stack()[0][3] + " yielded error: {}".format(e))
+        print(e)
 
 
 def createSVGString(smiles: str) -> str:
