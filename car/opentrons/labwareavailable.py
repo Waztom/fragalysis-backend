@@ -40,7 +40,7 @@ labware_plates = {
         "no_wells_in_column": 8,
         "no_wells": 96,
         "no_columns": 12,
-        "volume_well": 1000,
+        "volume_well": 600,
         "max_temp": 25,
         "reflux": False,
     },

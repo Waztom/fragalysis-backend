@@ -599,6 +599,7 @@ def getPlateMap(plate_ids: list):
     plate_info = {
         "plate_id": [],
         "well_index": [],
+        "target_ids": [],
         "target_names": [],
         "target_smiles": [],
         "target_MWs": [],
@@ -616,6 +617,7 @@ def getPlateMap(plate_ids: list):
 
         for well in wells:
             well_index = well.index
+            target_id = well.method_id.target_id.id
             target_name = well.method_id.target_id.name
             target_smi = well.smiles
             target_mw = getMWs(smiles=[target_smi])[0]
@@ -629,6 +631,7 @@ def getPlateMap(plate_ids: list):
             reactant_2_mw = reactant_mws[1]
             plate_info["plate_id"].append(plate_id)
             plate_info["well_index"].append(well_index)
+            plate_info["target_ids"].append(target_id)
             plate_info["target_names"].append(target_name)
             plate_info["target_smiles"].append(target_smi)
             plate_info["target_MWs"].append(target_mw)
