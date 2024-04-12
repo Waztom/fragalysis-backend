@@ -672,7 +672,15 @@ class CreateOTSession(object):
                 if pipettecomparedict[pipettelabware]["volumedifference"]
                 == minimumvolumedifference
             ]
-        return pipettetypes[0]
+        pipettetype = next(
+            (
+                pipette
+                for pipette in pipettesavailable
+                if pipette["labware"] == pipettetypes[0]
+            ),
+            None,
+        )
+        return pipettetype
 
     def getNumberTransfers(self, pipettevolume: int, roundedvolumes: list) -> int:
         """Gets the number of transfers required for transferring
