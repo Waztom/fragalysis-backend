@@ -680,6 +680,7 @@ class CreateOTSession(object):
             ),
             None,
         )
+
         return pipettetype
 
     def getNumberTransfers(self, pipettevolume: int, roundedvolumes: list) -> int:
@@ -1039,6 +1040,18 @@ class CreateOTSession(object):
             noplatesneeded = int(math.ceil(wellsneeded / noplatevials))
             volumedifference = maxvolumevial - medianvolume
             tempdifference = maxtemp - temperature
+            print("The median volume is {}".format(medianvolume))
+            print("The temperature is {}".format(temperature))
+            print(
+                "The volume difference is {} for plate {}".format(
+                    volumedifference, labwareplate
+                )
+            )
+            print(
+                "The temp difference is {} for plate {}".format(
+                    tempdifference, labwareplate
+                )
+            )
             if volumedifference < 0 or tempdifference < 0:
                 continue
             vialcomparedict[labwareplate] = {
