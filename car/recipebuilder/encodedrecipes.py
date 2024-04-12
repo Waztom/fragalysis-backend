@@ -1128,7 +1128,7 @@ encoded_recipes = {
                             },
                         ],
                     },
-                	{
+                    {
                         "type": "analyse",
                         "driver": "robot",
                         "sessionnumber": 4,
@@ -11905,7 +11905,7 @@ encoded_recipes = {
                             },
                         ],
                     },
-                	{
+                    {
                         "type": "analyse",
                         "driver": "robot",
                         "sessionnumber": 4,
