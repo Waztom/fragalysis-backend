@@ -148,18 +148,16 @@ class ValidateFile(object):
                 ].tolist()
 
                 reactant_1_SMILES = [
+                    "" if str(reactant) == "nan" else
                     reactant.strip()
                     for reactant in self.df["reactant-1-{}".format(reaction_number)]
-                    if str(reactant) != "nan"
                 ]
 
                 reactant_2_SMILES = [
+                    "" if str(reactant) == "nan" else
                     reactant.strip()
                     for reactant in self.df["reactant-2-{}".format(reaction_number)]
-                    if str(reactant) != "nan"
                 ]
-                if not reactant_2_SMILES:
-                    reactant_2_SMILES = [""] * len(reactant_1_SMILES)
                 reactant_pair_smiles = list(zip(reactant_1_SMILES, reactant_2_SMILES))
                 if self.validated:
                     reactant_pair_smiles_ordered, product_smiles = self.checkReaction(

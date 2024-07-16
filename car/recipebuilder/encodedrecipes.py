@@ -1146,7 +1146,7 @@ encoded_recipes = {
                                         "SMARTS": None,
                                         "SMILES": "C[S](C)=O",
                                         "quantity": {
-                                        ### this should be tied to CAR!
+                                            ### this should be tied to CAR!
                                             "value": 40,
                                             "unit": "ul",
                                         },  # Check conc for XChem
