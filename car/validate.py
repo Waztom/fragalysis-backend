@@ -133,32 +133,39 @@ class ValidateFile(object):
             for reaction_number in reaction_numbers:
                 reaction_info = {}
                 reaction_groupby_column = (
-                    self.df["reaction-groupby-column-{}".format(reaction_number)]
+                    self.df["reaction-groupby-column-{}".format(reaction_number)][
+                        reaction_number <= self.df["no-steps"]
+                    ]
                     .apply(bool)
                     .tolist()
                 )
-                reaction_names = self.df[
-                    "reaction-name-{}".format(reaction_number)
-                ].tolist()
+                reaction_names = self.df["reaction-name-{}".format(reaction_number)][
+                        reaction_number <= self.df["no-steps"]
+                    ].tolist()
                 reaction_recipes = self.df[
                     "reaction-recipe-{}".format(reaction_number)
-                ].tolist()
+                ][
+                        reaction_number <= self.df["no-steps"]
+                    ].tolist()
                 product_smiles = self.df[
                     "reaction-product-smiles-{}".format(reaction_number)
-                ].tolist()
-
+                ][
+                        reaction_number <= self.df["no-steps"]
+                    ].tolist()
                 reactant_1_SMILES = [
-                    "" if str(reactant) == "nan" else
-                    reactant.strip()
-                    for reactant in self.df["reactant-1-{}".format(reaction_number)]
+                    "" if str(reactant) == "nan" else reactant.strip()
+                    for reactant in self.df["reactant-1-{}".format(reaction_number)][
+                        reaction_number <= self.df["no-steps"]
+                    ]
                 ]
-
                 reactant_2_SMILES = [
-                    "" if str(reactant) == "nan" else
-                    reactant.strip()
-                    for reactant in self.df["reactant-2-{}".format(reaction_number)]
+                    "" if str(reactant) == "nan" else reactant.strip()
+                    for reactant in self.df["reactant-2-{}".format(reaction_number)][
+                        reaction_number <= self.df["no-steps"]
+                    ]
                 ]
                 reactant_pair_smiles = list(zip(reactant_1_SMILES, reactant_2_SMILES))
+
                 if self.validated:
                     reactant_pair_smiles_ordered, product_smiles = self.checkReaction(
                         reactant_pair_smiles=reactant_pair_smiles,
@@ -166,8 +173,11 @@ class ValidateFile(object):
                         reaction_recipes=reaction_recipes,
                         product_smiles=product_smiles,
                     )
-                    if reaction_number == max_no_steps:
-                        self.target_smiles = self.target_smiles + product_smiles
+                    target_smiles = self.df["reaction-product-smiles-{}".format(reaction_number)][
+                        self.df["no-steps"] == reaction_number
+                    ].to_list()
+                    if target_smiles:
+                        self.target_smiles = self.target_smiles + target_smiles
                     reaction_info[
                         "reaction-groupby-column-{}".format(reaction_number)
                     ] = reaction_groupby_column
@@ -231,7 +241,6 @@ class ValidateFile(object):
                     ]
                 )
             )
-
             self.product_smiles = self.product_smiles + products
             self.reactant_pair_smiles = self.reactant_pair_smiles + reactant_pair_smiles
             self.reaction_groupby_column = (
