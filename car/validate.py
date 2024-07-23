@@ -148,14 +148,12 @@ class ValidateFile(object):
                 ].tolist()
 
                 reactant_1_SMILES = [
-                    "" if str(reactant) == "nan" else
-                    reactant.strip()
+                    "" if str(reactant) == "nan" else reactant.strip()
                     for reactant in self.df["reactant-1-{}".format(reaction_number)]
                 ]
 
                 reactant_2_SMILES = [
-                    "" if str(reactant) == "nan" else
-                    reactant.strip()
+                    "" if str(reactant) == "nan" else reactant.strip()
                     for reactant in self.df["reactant-2-{}".format(reaction_number)]
                 ]
                 reactant_pair_smiles = list(zip(reactant_1_SMILES, reactant_2_SMILES))

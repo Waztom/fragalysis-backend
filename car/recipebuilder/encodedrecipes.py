@@ -2454,6 +2454,322 @@ encoded_recipes = {
                     },
                 ],
             },
+            "NB-1": {
+                "yield": 100,
+                "reactionSMARTS": [
+                    "[#7:2]-[#6](=[#8])-[#8]-[#6](-[#6])(-[#6])(-[#6])>>[#7:2]"
+                ],
+                "references": None,
+                "actionsessions": [
+                    {
+                        "type": "reaction",
+                        "driver": "robot",
+                        "sessionnumber": 1,
+                        "intermolecular": {
+                            "actions": [
+                                # {
+                                #     "type": "add",
+                                #     "actionnumber": 1,
+                                #     "content": {
+                                #         "plates": {
+                                #             "fromplatetype": "startingmaterial",
+                                #             "toplatetype": "reaction",
+                                #         },
+                                #         "material": {
+                                #             "SMARTS": None,
+                                #             ### MP-TsOH, not just p-TsOH!!!!!
+                                #             "SMILES": "Cc1ccc(S(=O)(=O)O)cc1",
+                                #             "quantity": {"value": 1.5, "unit": "moleq"},
+                                #             "solvent": "MeOH",
+                                #             "concentration": 0.5,
+                                #         },
+                                #     },
+                                # },
+                                {
+                                    "type": "add",
+                                    "actionnumber": 1,
+                                    "content": {
+                                        "plates": {
+                                            "fromplatetype": "startingmaterial",
+                                            "toplatetype": "reaction",
+                                        },
+                                        "material": {
+                                            "SMARTS": [
+                                                "[#7:2]-[#6:1](=[#8])-[#8]-[#6](-[#6])(-[#6])(-[#6])"
+                                            ],
+                                            "SMILES": None,
+                                            "quantity": {"value": 1, "unit": "moleq"},
+                                            "solvent": "MeOH",
+                                            "concentration": 0.5,
+                                        },
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        "type": "stir",
+                        "driver": "human",
+                        "sessionnumber": 2,
+                        "actions": [
+                            {
+                                "type": "stir",
+                                "actionnumber": 2,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "temperature": {"value": 25, "unit": "degC"},
+                                    "duration": {"value": 1, "unit": "hours"},
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "reaction",
+                        "driver": "robot",
+                        "sessionnumber": 3,
+                        "intermolecular": {
+                            "actions": [
+                                {
+                                    "type": "add",
+                                    "actionnumber": 3,
+                                    "content": {
+                                        "plates": {
+                                            "fromplatetype": "startingmaterial",
+                                            "toplatetype": "reaction",
+                                        },
+                                        "material": {
+                                            "SMARTS": None,
+                                            "SMILES": "CCN(C(C)C)C(C)C",
+                                            "quantity": {"value": 5, "unit": "moleq"},
+                                            "solvent": "MeOH",
+                                            "concentration": 0.5,
+                                        },
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        "type": "stir",
+                        "driver": "human",
+                        "sessionnumber": 4,
+                        "actions": [
+                            {
+                                "type": "stir",
+                                "actionnumber": 5,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "temperature": {"value": 60, "unit": "degC"},
+                                    "duration": {"value": 1, "unit": "hours"},
+                                },
+                            },
+                        ],
+                    },
+                ],
+            },
+            "NB-2": {
+                "yield": 100,
+                "reactionSMARTS": [
+                    "[#7:2]-[#6](=[#8])-[#8]-[#6](-[#6])(-[#6])(-[#6])>>[#7:2]"
+                ],
+                "references": None,
+                "actionsessions": [
+                    {
+                        "type": "reaction",
+                        "driver": "robot",
+                        "sessionnumber": 1,
+                        "intermolecular": {
+                            "actions": [
+                                {
+                                    "type": "add",
+                                    "actionnumber": 1,
+                                    "content": {
+                                        "plates": {
+                                            "fromplatetype": "startingmaterial",
+                                            "toplatetype": "reaction",
+                                        },
+                                        "material": {
+                                            "SMARTS": [
+                                                "[#7:2]-[#6:1](=[#8])-[#8]-[#6](-[#6])(-[#6])(-[#6])"
+                                            ],
+                                            "SMILES": None,
+                                            "quantity": {"value": 1, "unit": "moleq"},
+                                            "solvent": "MeOH",
+                                            "concentration": 0.5,
+                                        },
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        "type": "stir",
+                        "driver": "human",
+                        "sessionnumber": 2,
+                        "actions": [
+                            {
+                                # "type": "add",
+                                # "actionnumber": 2,
+                                # "content": {
+                                #     "plates": {
+                                #         "fromplatetype": "startingmaterial",
+                                #         "toplatetype": "reaction",
+                                #     },
+                                #     "material": {
+                                #         "SMARTS": None,
+                                #         ### MP-TsOH, not just p-TsOH!!!!!
+                                #         "SMILES": "Cc1ccc(S(=O)(=O)O)cc1",
+                                #         "quantity": {"value": 1.5, "unit": "moleq"},
+                                #         "solvent": "MeOH",
+                                #         "concentration": 0.5,
+                                #     },
+                                # },
+                                "type": "stir",
+                                "actionnumber": 2,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "temperature": {"value": 25, "unit": "degC"},
+                                    "duration": {"value": 1, "unit": "hours"},
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        "type": "reaction",
+                        "driver": "robot",
+                        "sessionnumber": 3,
+                        "intermolecular": {
+                            "actions": [
+                                {
+                                    "type": "extract",
+                                    "actionnumber": 3,
+                                    "content": {
+                                        "plates": {
+                                            "fromplatetype": "reaction",
+                                            "toplatetype": "solvent",
+                                        },
+                                        "material": {
+                                            "layer": "bottom",
+                                            "SMILES": None,  # Product of reaction
+                                            # for paradox plates
+                                            # aspirateheightconversion-c": -0.4040
+                                            # aspirateheightconversion-m": 0.02865
+                                            "quantity": {"value": 56, "unit": "ul"},
+                                            "solvent": None,
+                                            "density": None,
+                                            "concentration": None,
+                                        },
+                                    },
+                                },
+                                {
+                                    "type": "add",
+                                    "actionnumber": 4,
+                                    "content": {
+                                        "plates": {
+                                            "fromplatetype": "startingmaterial",
+                                            "toplatetype": "reaction",
+                                        },
+                                        "material": {
+                                            "SMARTS": None,
+                                            "SMILES": "CCN(C(C)C)C(C)C",
+                                            "quantity": {"value": 5, "unit": "moleq"},
+                                            "solvent": "MeOH",
+                                            "concentration": 0.5,
+                                        },
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        "type": "stir",
+                        "driver": "human",
+                        "sessionnumber": 4,
+                        "actions": [
+                            {
+                                "type": "stir",
+                                "actionnumber": 6,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "temperature": {"value": 60, "unit": "degC"},
+                                    "duration": {"value": 1, "unit": "hours"},
+                                },
+                            },
+                        ],
+                    },
+                ],
+            },
+            "NB-3": {
+                "yield": 100,
+                "reactionSMARTS": [
+                    "[#7:2]-[#6](=[#8])-[#8]-[#6](-[#6])(-[#6])(-[#6])>>[#7:2]"
+                ],
+                "references": None,
+                "actionsessions": [
+                    {
+                        "type": "reaction",
+                        "driver": "robot",
+                        "sessionnumber": 1,
+                        "intermolecular": {
+                            "actions": [
+                                {
+                                    "type": "add",
+                                    "actionnumber": 1,
+                                    "content": {
+                                        "plates": {
+                                            "fromplatetype": "startingmaterial",
+                                            "toplatetype": "reaction",
+                                        },
+                                        "material": {
+                                            "SMARTS": [
+                                                "[#7:2]-[#6:1](=[#8])-[#8]-[#6](-[#6])(-[#6])(-[#6])"
+                                            ],
+                                            "SMILES": None,
+                                            "quantity": {"value": 1, "unit": "moleq"},
+                                            "solvent": "O",
+                                            "concentration": 0.5,
+                                        },
+                                    },
+                                },
+                                # {
+                                #     "type": "add",
+                                #     "actionnumber": 2,
+                                #     "content": {
+                                #         "plates": {
+                                #             "fromplatetype": "startingmaterial",
+                                #             "toplatetype": "reaction",
+                                #         },
+                                #         "material": {
+                                #             "SMARTS": None,
+                                #             ### MP-TsOH, not just p-TsOH!!!!!
+                                #             "SMILES": "Cc1ccc(S(=O)(=O)O)cc1",
+                                #             "quantity": {"value": 1.5, "unit": "moleq"},
+                                #             "solvent": "MeOH",
+                                #             "concentration": 0.5,
+                                #         },
+                                #     },
+                                # },
+                            ],
+                        },
+                    },
+                    {
+                        "type": "stir",
+                        "driver": "human",
+                        "sessionnumber": 2,
+                        "actions": [
+                            {
+                                "type": "stir",
+                                "actionnumber": 2,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "temperature": {"value": 110, "unit": "degC"},
+                                    "duration": {"value": 1, "unit": "hours"},
+                                },
+                            },
+                        ],
+                    },
+                ],
+            },
         },
     },
     "Boc+TBS deprotection": {
