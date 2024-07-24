@@ -2521,6 +2521,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -2550,7 +2551,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 40, "unit": "degC"},
@@ -2632,6 +2633,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -2661,7 +2663,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 40, "unit": "degC"},
@@ -2743,6 +2745,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -2772,7 +2775,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 40, "unit": "degC"},
@@ -2854,6 +2857,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -2883,7 +2887,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 40, "unit": "degC"},
@@ -2965,6 +2969,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -2994,7 +2999,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 40, "unit": "degC"},
@@ -3076,6 +3081,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -3105,7 +3111,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 40, "unit": "degC"},
@@ -3187,6 +3193,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -3216,7 +3223,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 40, "unit": "degC"},
@@ -3298,6 +3305,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -3327,7 +3335,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 40, "unit": "degC"},
@@ -3409,6 +3417,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -3438,7 +3447,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 40, "unit": "degC"},
@@ -3520,6 +3529,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -3549,7 +3559,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 60, "unit": "degC"},
@@ -3631,6 +3641,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -3660,7 +3671,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 60, "unit": "degC"},
@@ -3742,6 +3753,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -3771,7 +3783,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 60, "unit": "degC"},
@@ -3853,6 +3865,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -3882,7 +3895,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 60, "unit": "degC"},
@@ -3964,6 +3977,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -3993,7 +4007,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 60, "unit": "degC"},
@@ -4075,6 +4089,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -4104,7 +4119,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 60, "unit": "degC"},
@@ -4186,6 +4201,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -4215,7 +4231,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 60, "unit": "degC"},
@@ -4297,6 +4313,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -4326,7 +4343,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 60, "unit": "degC"},
@@ -4408,6 +4425,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -4437,7 +4455,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 60, "unit": "degC"},
@@ -4519,6 +4537,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -4548,7 +4567,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 80, "unit": "degC"},
@@ -4630,6 +4649,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -4659,7 +4679,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 80, "unit": "degC"},
@@ -4741,6 +4761,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -4770,7 +4791,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 80, "unit": "degC"},
@@ -4852,6 +4873,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -4881,7 +4903,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 80, "unit": "degC"},
@@ -4963,6 +4985,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -4992,7 +5015,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 80, "unit": "degC"},
@@ -5074,6 +5097,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -5103,7 +5127,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 80, "unit": "degC"},
@@ -5185,6 +5209,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -5214,7 +5239,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 80, "unit": "degC"},
@@ -5296,6 +5321,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -5325,7 +5351,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 80, "unit": "degC"},
@@ -5407,6 +5433,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -5436,7 +5463,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 80, "unit": "degC"},
@@ -5528,6 +5555,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 4,
+                        "continuation": True,
                         "actions": [
                             {
                                 "type": "extract",
@@ -14751,6 +14779,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -14780,7 +14809,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 40, "unit": "degC"},
@@ -14862,6 +14891,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -14891,7 +14921,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 40, "unit": "degC"},
@@ -14973,6 +15003,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -15002,7 +15033,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 40, "unit": "degC"},
@@ -15084,6 +15115,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -15113,7 +15145,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 40, "unit": "degC"},
@@ -15195,6 +15227,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -15224,7 +15257,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 40, "unit": "degC"},
@@ -15306,6 +15339,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -15335,7 +15369,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 40, "unit": "degC"},
@@ -15417,6 +15451,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -15446,7 +15481,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 40, "unit": "degC"},
@@ -15528,6 +15563,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -15557,7 +15593,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 40, "unit": "degC"},
@@ -15639,6 +15675,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -15668,7 +15705,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 40, "unit": "degC"},
@@ -15750,6 +15787,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -15779,7 +15817,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 60, "unit": "degC"},
@@ -15861,6 +15899,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -15890,7 +15929,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 60, "unit": "degC"},
@@ -15972,6 +16011,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -16001,7 +16041,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 60, "unit": "degC"},
@@ -16083,6 +16123,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -16112,7 +16153,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 60, "unit": "degC"},
@@ -16194,6 +16235,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -16223,7 +16265,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 60, "unit": "degC"},
@@ -16305,6 +16347,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -16334,7 +16377,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 60, "unit": "degC"},
@@ -16416,6 +16459,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -16445,7 +16489,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 60, "unit": "degC"},
@@ -16527,6 +16571,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -16556,7 +16601,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 60, "unit": "degC"},
@@ -16638,6 +16683,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -16667,7 +16713,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 60, "unit": "degC"},
@@ -16749,6 +16795,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -16778,7 +16825,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 80, "unit": "degC"},
@@ -16860,6 +16907,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -16889,7 +16937,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 80, "unit": "degC"},
@@ -16971,6 +17019,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -17000,7 +17049,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 80, "unit": "degC"},
@@ -17082,6 +17131,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -17111,7 +17161,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 80, "unit": "degC"},
@@ -17193,6 +17243,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -17222,7 +17273,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 80, "unit": "degC"},
@@ -17304,6 +17355,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -17333,7 +17385,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 80, "unit": "degC"},
@@ -17415,6 +17467,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -17444,7 +17497,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 80, "unit": "degC"},
@@ -17526,6 +17579,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -17555,7 +17609,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 80, "unit": "degC"},
@@ -17637,6 +17691,7 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 3,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -17666,7 +17721,7 @@ encoded_recipes = {
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 80, "unit": "degC"},
@@ -17686,31 +17741,41 @@ encoded_recipes = {
                 "actionsessions": [
                     {
                         "type": "reaction",
-                        "driver": "robot",
+                        "driver": "human",
                         "sessionnumber": 1,
+                        "continuation": True,
                         "intermolecular": {
                             "actions": [
-                                # {
-                                #     "type": "add",
-                                #     "actionnumber": 1,
-                                #     "content": {
-                                #         "plates": {
-                                #             "fromplatetype": "startingmaterial",
-                                #             "toplatetype": "reaction",
-                                #         },
-                                #         "material": {
-                                #             "SMARTS": None,
-                                #             ### MP-TsOH, not just p-TsOH!!!!!
-                                #             "SMILES": "Cc1ccc(S(=O)(=O)O)cc1",
-                                #             "quantity": {"value": 1.5, "unit": "moleq"},
-                                #             "solvent": "MeOH",
-                                #             "concentration": 0.5,
-                                #         },
-                                #     },
-                                # },
                                 {
                                     "type": "add",
                                     "actionnumber": 1,
+                                    "content": {
+                                        "plates": {
+                                            "fromplatetype": "startingmaterial",
+                                            "toplatetype": "reaction",
+                                        },
+                                        "material": {
+                                            "SMARTS": None,
+                                            ### MP-TsOH, not just p-TsOH!!!!!
+                                            "SMILES": "Cc1ccc(S(=O)(=O)O)cc1",
+                                            "quantity": {"value": 1.5, "unit": "moleq"},
+                                            "solvent": None,
+                                            "concentration": None,
+                                        },
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        "type": "reaction",
+                        "driver": "robot",
+                        "sessionnumber": 2,
+                        "intermolecular": {
+                            "actions": [
+                                {
+                                    "type": "add",
+                                    "actionnumber": 2,
                                     "content": {
                                         "plates": {
                                             "fromplatetype": "startingmaterial",
@@ -17731,11 +17796,11 @@ encoded_recipes = {
                     {
                         "type": "stir",
                         "driver": "human",
-                        "sessionnumber": 2,
+                        "sessionnumber": 3,
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 2,
+                                "actionnumber": 3,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 80, "unit": "degC"},
@@ -17747,37 +17812,54 @@ encoded_recipes = {
                     {
                         "type": "reaction",
                         "driver": "robot",
-                        "sessionnumber": 3,
-                        "intermolecular": {
-                            "actions": [
-                                {
-                                    "type": "add",
-                                    "actionnumber": 3,
-                                    "content": {
-                                        "plates": {
-                                            "fromplatetype": "startingmaterial",
-                                            "toplatetype": "reaction",
-                                        },
-                                        "material": {
-                                            "SMARTS": None,
-                                            "SMILES": "CCN(C(C)C)C(C)C",
-                                            "quantity": {"value": 5, "unit": "moleq"},
-                                            "solvent": "MeOH",
-                                            "concentration": 0.5,
-                                        },
+                        "sessionnumber": 4,
+                        "continuation": True,
+                        "actions": [
+                            {
+                                "type": "extract",
+                                "actionnumber": 4,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "reaction",
+                                        "toplatetype": "solvent",
+                                    },
+                                    "material": {
+                                        "layer": "bottom",
+                                        "SMILES": "C",
+                                        "quantity": {"value": 56, "unit": "ul"},
+                                        "solvent": None,
+                                        "density": None,
+                                        "concentration": None,
                                     },
                                 },
-                            ],
-                        },
+                            },
+                            {
+                                "type": "add",
+                                "actionnumber": 5,
+                                "content": {
+                                    "plates": {
+                                        "fromplatetype": "startingmaterial",
+                                        "toplatetype": "reaction",
+                                    },
+                                    "material": {
+                                        "SMARTS": None,
+                                        "SMILES": "CCN(C(C)C)C(C)C",
+                                        "quantity": {"value": 5, "unit": "moleq"},
+                                        "solvent": "MeOH",
+                                        "concentration": 0.5,
+                                    },
+                                },
+                            },
+                        ],
                     },
                     {
                         "type": "stir",
                         "driver": "human",
-                        "sessionnumber": 4,
+                        "sessionnumber": 5,
                         "actions": [
                             {
                                 "type": "stir",
-                                "actionnumber": 5,
+                                "actionnumber": 6,
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {"value": 40, "unit": "degC"},
