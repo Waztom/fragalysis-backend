@@ -890,6 +890,7 @@ class OTWrite(object):
                         groupedreactionquerysets.append(
                             notgroupbycolumnreactionqueryset
                         )
+
                     groupbycolumnreactionqueryset = reactionclassqueryset.filter(
                         groupbycolumn=True
                     )
@@ -897,10 +898,14 @@ class OTWrite(object):
                         for reactionrecipe in reactionrecipes:
                             reactionbyrecipequeryset = (
                                 groupbycolumnreactionqueryset.filter(
-                                    recipe=reactionrecipe
+                                    recipe=reactionrecipe,
+                                    groupbycolumn=True,
                                 )
                             )
-                            groupedreactionquerysets.append(reactionbyrecipequeryset)
+                            if reactionbyrecipequeryset:
+                                groupedreactionquerysets.append(
+                                    reactionbyrecipequeryset
+                                )
 
         return groupedreactionquerysets
 

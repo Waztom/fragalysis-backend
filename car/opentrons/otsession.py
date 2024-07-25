@@ -941,6 +941,7 @@ class CreateOTSession(object):
                         groupedreactionquerysets.append(
                             notgroupbycolumnreactionqueryset
                         )
+
                     groupbycolumnreactionqueryset = reactionclassqueryset.filter(
                         groupbycolumn=True
                     )
@@ -948,10 +949,14 @@ class CreateOTSession(object):
                         for reactionrecipe in reactionrecipes:
                             reactionbyrecipequeryset = (
                                 groupbycolumnreactionqueryset.filter(
-                                    recipe=reactionrecipe
+                                    recipe=reactionrecipe,
+                                    groupbycolumn=True,
                                 )
                             )
-                            groupedreactionquerysets.append(reactionbyrecipequeryset)
+                            if reactionbyrecipequeryset:
+                                groupedreactionquerysets.append(
+                                    reactionbyrecipequeryset
+                                )
 
         return groupedreactionquerysets
 
@@ -1040,11 +1045,10 @@ class CreateOTSession(object):
             noplatesneeded = int(math.ceil(wellsneeded / noplatevials))
             volumedifference = maxvolumevial - medianvolume
             tempdifference = maxtemp - temperature
-            maxvolumedifferences = [
-                False if vol - maxvolumevial <= 0 else vol - maxvolumevial
-                for vol in volumes
-            ]
-            if volumedifference < 0 or tempdifference < 0 or any(maxvolumedifferences):
+            maxvolumeexceededtest = all(
+                [False if maxvolumevial - vol <= 0 else True for vol in volumes]
+            )
+            if volumedifference < 0 or tempdifference < 0 or not maxvolumeexceededtest:
                 continue
             vialcomparedict[labwareplate] = {
                 "noplatesneeded": noplatesneeded,
