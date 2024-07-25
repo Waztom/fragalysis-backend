@@ -5637,7 +5637,7 @@ encoded_recipes = {
                                             "SMARTS": "[#7:2]-[#6:1](=[#8])-[#8]-[#6](-[#6])(-[#6])(-[#6])",
                                             "SMILES": None,
                                             "quantity": {"value": 1, "unit": "moleq"},
-                                            "solvent": "Water",
+                                            "solvent": "H2O",
                                             "concentration": 0.5,
                                         },
                                     },
@@ -5706,7 +5706,7 @@ encoded_recipes = {
                                             "SMARTS": "[#7:2]-[#6:1](=[#8])-[#8]-[#6](-[#6])(-[#6])(-[#6])",
                                             "SMILES": None,
                                             "quantity": {"value": 1, "unit": "moleq"},
-                                            "solvent": "Water",
+                                            "solvent": "H2O",
                                             "concentration": 0.5,
                                         },
                                     },
@@ -5775,7 +5775,7 @@ encoded_recipes = {
                                             "SMARTS": "[#7:2]-[#6:1](=[#8])-[#8]-[#6](-[#6])(-[#6])(-[#6])",
                                             "SMILES": None,
                                             "quantity": {"value": 1, "unit": "moleq"},
-                                            "solvent": "Water",
+                                            "solvent": "H2O",
                                             "concentration": 0.5,
                                         },
                                     },
@@ -5813,6 +5813,74 @@ encoded_recipes = {
                                     "platetype": "reaction",
                                     "temperature": {"value": 120, "unit": "degC"},
                                     "duration": {"value": 1, "unit": "hours"},
+                                },
+                            },
+                        ],
+                    },
+                ],
+            },
+            "NB-58": {
+                "yield": 100,
+                "reactionSMARTS": [
+                    "[#7:2]-[#6](=[#8])-[#8]-[#6](-[#6])(-[#6])(-[#6])>>[#7:2]"
+                ],
+                "references": None,
+                "actionsessions": [
+                    {
+                        "type": "reaction",
+                        "driver": "robot",
+                        "sessionnumber": 1,
+                        "intermolecular": {
+                            "actions": [
+                                {
+                                    "type": "add",
+                                    "actionnumber": 1,
+                                    "content": {
+                                        "plates": {
+                                            "fromplatetype": "startingmaterial",
+                                            "toplatetype": "reaction",
+                                        },
+                                        "material": {
+                                            "SMARTS": "[#7:2]-[#6:1](=[#8])-[#8]-[#6](-[#6])(-[#6])(-[#6])",
+                                            "SMILES": None,
+                                            "quantity": {"value": 1, "unit": "moleq"},
+                                            "solvent": "MeOH",
+                                            "concentration": 0.5,
+                                        },
+                                    },
+                                },
+                                {
+                                    "type": "add",
+                                    "actionnumber": 2,
+                                    "content": {
+                                        "plates": {
+                                            "fromplatetype": "startingmaterial",
+                                            "toplatetype": "reaction",
+                                        },
+                                        "material": {
+                                            "SMARTS": None,
+                                            "SMILES": "Cl",
+                                            "quantity": {"value": 3.0, "unit": "moleq"},
+                                            "solvent": "Dioxane",
+                                            "concentration": 4,
+                                        },
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        "type": "stir",
+                        "driver": "human",
+                        "sessionnumber": 2,
+                        "actions": [
+                            {
+                                "type": "stir",
+                                "actionnumber": 3,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "temperature": {"value": 25, "unit": "degC"},
+                                    "duration": {"value": 12, "unit": "hours"},
                                 },
                             },
                         ],
@@ -5940,7 +6008,7 @@ encoded_recipes = {
                                             "SMARTS": None,
                                             "SMILES": "[Li+].[OH-]",
                                             "quantity": {"value": 1.0, "unit": "moleq"},
-                                            "solvent": "Water",
+                                            "solvent": "H2O",
                                             "concentration": 1.2,
                                         },
                                     },
@@ -6008,7 +6076,7 @@ encoded_recipes = {
                                             "SMARTS": None,
                                             "SMILES": "[Li+].[OH-]",
                                             "quantity": {"value": 0.5, "unit": "moleq"},
-                                            "solvent": "Water",
+                                            "solvent": "H2O",
                                             "concentration": 1.2,
                                         },
                                     },
@@ -6077,7 +6145,7 @@ encoded_recipes = {
                                             "SMARTS": None,
                                             "SMILES": "[Li+].[OH-]",
                                             "quantity": {"value": 1.1, "unit": "moleq"},
-                                            "solvent": "Water",
+                                            "solvent": "H2O",
                                             "concentration": 1.2,
                                         },
                                     },
@@ -18036,23 +18104,6 @@ encoded_recipes = {
                                         },
                                     },
                                 },
-                                # {
-                                #     "type": "add",
-                                #     "actionnumber": 2,
-                                #     "content": {
-                                #         "plates": {
-                                #             "fromplatetype": "startingmaterial",
-                                #             "toplatetype": "reaction",
-                                #         },
-                                #         "material": {
-                                #             "SMARTS": None,
-                                #             "SMILES": "C(=O)([O-])[O-].[Cs+].[Cs+]",
-                                #             "quantity": {"value": 0.5, "unit": "moleq"},
-                                #             "solvent": "DMF",
-                                #             "concentration": 0.5,
-                                #         },
-                                #     },
-                                # },
                                 {
                                     "type": "add",
                                     "actionnumber": 2,
@@ -18063,13 +18114,10 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "O",
-                                            "quantity": {
-                                                "value": 0.05,
-                                                "unit": "moleq",
-                                            },
-                                            "solvent": "Water",
-                                            "concentration": 1,
+                                            "SMILES": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                                            "quantity": {"value": 0.5, "unit": "moleq"},
+                                            "solvent": "H2O",
+                                            "concentration": 0.5,
                                         },
                                     },
                                 },
@@ -18124,23 +18172,6 @@ encoded_recipes = {
                                         },
                                     },
                                 },
-                                # {
-                                #     "type": "add",
-                                #     "actionnumber": 2,
-                                #     "content": {
-                                #         "plates": {
-                                #             "fromplatetype": "startingmaterial",
-                                #             "toplatetype": "reaction",
-                                #         },
-                                #         "material": {
-                                #             "SMARTS": None,
-                                #             "SMILES": "C(=O)([O-])[O-].[K+].[K+]",
-                                #             "quantity": {"value": 5, "unit": "moleq"},
-                                #             "solvent": "DMF",
-                                #             "concentration": 0.5,
-                                #         },
-                                #     },
-                                # },
                                 {
                                     "type": "add",
                                     "actionnumber": 2,
@@ -18151,13 +18182,10 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "O",
-                                            "quantity": {
-                                                "value": 0.05,
-                                                "unit": "moleq",
-                                            },
-                                            "solvent": "Water",
-                                            "concentration": 1,
+                                            "SMILES": "C(=O)([O-])[O-].[K+].[K+]",
+                                            "quantity": {"value": 5, "unit": "moleq"},
+                                            "solvent": "H2O",
+                                            "concentration": 0.5,
                                         },
                                     },
                                 },
@@ -18348,23 +18376,6 @@ encoded_recipes = {
                                         },
                                     },
                                 },
-                                # {
-                                #     "type": "add",
-                                #     "actionnumber": 2,
-                                #     "content": {
-                                #         "plates": {
-                                #             "fromplatetype": "startingmaterial",
-                                #             "toplatetype": "reaction",
-                                #         },
-                                #         "material": {
-                                #             "SMARTS": None,
-                                #             "SMILES": "C(=O)([O-])[O-].[Cs+].[Cs+]",
-                                #             "quantity": {"value": 0.5, "unit": "moleq"},
-                                #             "solvent": "DMA",
-                                #             "concentration": 0.5,
-                                #         },
-                                #     },
-                                # },
                                 {
                                     "type": "add",
                                     "actionnumber": 2,
@@ -18375,13 +18386,10 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "O",
-                                            "quantity": {
-                                                "value": 0.05,
-                                                "unit": "moleq",
-                                            },
-                                            "solvent": "Water",
-                                            "concentration": 1,
+                                            "SMILES": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                                            "quantity": {"value": 0.5, "unit": "moleq"},
+                                            "solvent": "H2O",
+                                            "concentration": 0.5,
                                         },
                                     },
                                 },
@@ -18436,23 +18444,6 @@ encoded_recipes = {
                                         },
                                     },
                                 },
-                                # {
-                                #     "type": "add",
-                                #     "actionnumber": 2,
-                                #     "content": {
-                                #         "plates": {
-                                #             "fromplatetype": "startingmaterial",
-                                #             "toplatetype": "reaction",
-                                #         },
-                                #         "material": {
-                                #             "SMARTS": None,
-                                #             "SMILES": "C(=O)([O-])[O-].[K+].[K+]",
-                                #             "quantity": {"value": 5, "unit": "moleq"},
-                                #             "solvent": "DMA",
-                                #             "concentration": 0.5,
-                                #         },
-                                #     },
-                                # },
                                 {
                                     "type": "add",
                                     "actionnumber": 2,
@@ -18463,13 +18454,10 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "O",
-                                            "quantity": {
-                                                "value": 0.05,
-                                                "unit": "moleq",
-                                            },
-                                            "solvent": "Water",
-                                            "concentration": 1,
+                                            "SMILES": "C(=O)([O-])[O-].[K+].[K+]",
+                                            "quantity": {"value": 5, "unit": "moleq"},
+                                            "solvent": "H2O",
+                                            "concentration": 0.5,
                                         },
                                     },
                                 },
@@ -18660,23 +18648,6 @@ encoded_recipes = {
                                         },
                                     },
                                 },
-                                # {
-                                #     "type": "add",
-                                #     "actionnumber": 2,
-                                #     "content": {
-                                #         "plates": {
-                                #             "fromplatetype": "startingmaterial",
-                                #             "toplatetype": "reaction",
-                                #         },
-                                #         "material": {
-                                #             "SMARTS": None,
-                                #             "SMILES": "C(=O)([O-])[O-].[Cs+].[Cs+]",
-                                #             "quantity": {"value": 0.5, "unit": "moleq"},
-                                #             "solvent": "DMF",
-                                #             "concentration": 0.5,
-                                #         },
-                                #     },
-                                # },
                                 {
                                     "type": "add",
                                     "actionnumber": 2,
@@ -18687,13 +18658,10 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "O",
-                                            "quantity": {
-                                                "value": 0.05,
-                                                "unit": "moleq",
-                                            },
-                                            "solvent": "Water",
-                                            "concentration": 1,
+                                            "SMILES": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                                            "quantity": {"value": 0.5, "unit": "moleq"},
+                                            "solvent": "H2O",
+                                            "concentration": 0.5,
                                         },
                                     },
                                 },
@@ -18748,23 +18716,6 @@ encoded_recipes = {
                                         },
                                     },
                                 },
-                                # {
-                                #     "type": "add",
-                                #     "actionnumber": 2,
-                                #     "content": {
-                                #         "plates": {
-                                #             "fromplatetype": "startingmaterial",
-                                #             "toplatetype": "reaction",
-                                #         },
-                                #         "material": {
-                                #             "SMARTS": None,
-                                #             "SMILES": "C(=O)([O-])[O-].[K+].[K+]",
-                                #             "quantity": {"value": 5, "unit": "moleq"},
-                                #             "solvent": "DMF",
-                                #             "concentration": 0.5,
-                                #         },
-                                #     },
-                                # },
                                 {
                                     "type": "add",
                                     "actionnumber": 2,
@@ -18775,13 +18726,10 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "O",
-                                            "quantity": {
-                                                "value": 0.05,
-                                                "unit": "moleq",
-                                            },
-                                            "solvent": "Water",
-                                            "concentration": 1,
+                                            "SMILES": "C(=O)([O-])[O-].[K+].[K+]",
+                                            "quantity": {"value": 5, "unit": "moleq"},
+                                            "solvent": "H2O",
+                                            "concentration": 0.5,
                                         },
                                     },
                                 },
@@ -18972,23 +18920,6 @@ encoded_recipes = {
                                         },
                                     },
                                 },
-                                # {
-                                #     "type": "add",
-                                #     "actionnumber": 2,
-                                #     "content": {
-                                #         "plates": {
-                                #             "fromplatetype": "startingmaterial",
-                                #             "toplatetype": "reaction",
-                                #         },
-                                #         "material": {
-                                #             "SMARTS": None,
-                                #             "SMILES": "C(=O)([O-])[O-].[Cs+].[Cs+]",
-                                #             "quantity": {"value": 0.5, "unit": "moleq"},
-                                #             "solvent": "DMA",
-                                #             "concentration": 0.5,
-                                #         },
-                                #     },
-                                # },
                                 {
                                     "type": "add",
                                     "actionnumber": 2,
@@ -18999,13 +18930,10 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "O",
-                                            "quantity": {
-                                                "value": 0.05,
-                                                "unit": "moleq",
-                                            },
-                                            "solvent": "Water",
-                                            "concentration": 1,
+                                            "SMILES": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                                            "quantity": {"value": 0.5, "unit": "moleq"},
+                                            "solvent": "H2O",
+                                            "concentration": 0.5,
                                         },
                                     },
                                 },
@@ -19060,23 +18988,6 @@ encoded_recipes = {
                                         },
                                     },
                                 },
-                                # {
-                                #     "type": "add",
-                                #     "actionnumber": 2,
-                                #     "content": {
-                                #         "plates": {
-                                #             "fromplatetype": "startingmaterial",
-                                #             "toplatetype": "reaction",
-                                #         },
-                                #         "material": {
-                                #             "SMARTS": None,
-                                #             "SMILES": "C(=O)([O-])[O-].[K+].[K+]",
-                                #             "quantity": {"value": 5, "unit": "moleq"},
-                                #             "solvent": "DMA",
-                                #             "concentration": 0.5,
-                                #         },
-                                #     },
-                                # },
                                 {
                                     "type": "add",
                                     "actionnumber": 2,
@@ -19087,13 +18998,10 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "O",
-                                            "quantity": {
-                                                "value": 0.05,
-                                                "unit": "moleq",
-                                            },
-                                            "solvent": "Water",
-                                            "concentration": 1,
+                                            "SMILES": "C(=O)([O-])[O-].[K+].[K+]",
+                                            "quantity": {"value": 5, "unit": "moleq"},
+                                            "solvent": "H2O",
+                                            "concentration": 0.5,
                                         },
                                     },
                                 },
@@ -19284,23 +19192,6 @@ encoded_recipes = {
                                         },
                                     },
                                 },
-                                # {
-                                #     "type": "add",
-                                #     "actionnumber": 2,
-                                #     "content": {
-                                #         "plates": {
-                                #             "fromplatetype": "startingmaterial",
-                                #             "toplatetype": "reaction",
-                                #         },
-                                #         "material": {
-                                #             "SMARTS": None,
-                                #             "SMILES": "C(=O)([O-])[O-].[Cs+].[Cs+]",
-                                #             "quantity": {"value": 0.5, "unit": "moleq"},
-                                #             "solvent": "DMF",
-                                #             "concentration": 0.5,
-                                #         },
-                                #     },
-                                # },
                                 {
                                     "type": "add",
                                     "actionnumber": 2,
@@ -19311,13 +19202,10 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "O",
-                                            "quantity": {
-                                                "value": 0.05,
-                                                "unit": "moleq",
-                                            },
-                                            "solvent": "Water",
-                                            "concentration": 1,
+                                            "SMILES": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                                            "quantity": {"value": 0.5, "unit": "moleq"},
+                                            "solvent": "H2O",
+                                            "concentration": 0.5,
                                         },
                                     },
                                 },
@@ -19372,23 +19260,6 @@ encoded_recipes = {
                                         },
                                     },
                                 },
-                                # {
-                                #     "type": "add",
-                                #     "actionnumber": 2,
-                                #     "content": {
-                                #         "plates": {
-                                #             "fromplatetype": "startingmaterial",
-                                #             "toplatetype": "reaction",
-                                #         },
-                                #         "material": {
-                                #             "SMARTS": None,
-                                #             "SMILES": "C(=O)([O-])[O-].[K+].[K+]",
-                                #             "quantity": {"value": 5, "unit": "moleq"},
-                                #             "solvent": "DMF",
-                                #             "concentration": 0.5,
-                                #         },
-                                #     },
-                                # },
                                 {
                                     "type": "add",
                                     "actionnumber": 2,
@@ -19399,13 +19270,10 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "O",
-                                            "quantity": {
-                                                "value": 0.05,
-                                                "unit": "moleq",
-                                            },
-                                            "solvent": "Water",
-                                            "concentration": 1,
+                                            "SMILES": "C(=O)([O-])[O-].[K+].[K+]",
+                                            "quantity": {"value": 5, "unit": "moleq"},
+                                            "solvent": "H2O",
+                                            "concentration": 0.5,
                                         },
                                     },
                                 },
@@ -19596,23 +19464,6 @@ encoded_recipes = {
                                         },
                                     },
                                 },
-                                # {
-                                #     "type": "add",
-                                #     "actionnumber": 2,
-                                #     "content": {
-                                #         "plates": {
-                                #             "fromplatetype": "startingmaterial",
-                                #             "toplatetype": "reaction",
-                                #         },
-                                #         "material": {
-                                #             "SMARTS": None,
-                                #             "SMILES": "C(=O)([O-])[O-].[Cs+].[Cs+]",
-                                #             "quantity": {"value": 0.5, "unit": "moleq"},
-                                #             "solvent": "DMA",
-                                #             "concentration": 0.5,
-                                #         },
-                                #     },
-                                # },
                                 {
                                     "type": "add",
                                     "actionnumber": 2,
@@ -19623,13 +19474,10 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "O",
-                                            "quantity": {
-                                                "value": 0.05,
-                                                "unit": "moleq",
-                                            },
-                                            "solvent": "Water",
-                                            "concentration": 1,
+                                            "SMILES": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                                            "quantity": {"value": 0.5, "unit": "moleq"},
+                                            "solvent": "H2O",
+                                            "concentration": 0.5,
                                         },
                                     },
                                 },
@@ -19684,23 +19532,6 @@ encoded_recipes = {
                                         },
                                     },
                                 },
-                                # {
-                                #     "type": "add",
-                                #     "actionnumber": 2,
-                                #     "content": {
-                                #         "plates": {
-                                #             "fromplatetype": "startingmaterial",
-                                #             "toplatetype": "reaction",
-                                #         },
-                                #         "material": {
-                                #             "SMARTS": None,
-                                #             "SMILES": "C(=O)([O-])[O-].[K+].[K+]",
-                                #             "quantity": {"value": 5, "unit": "moleq"},
-                                #             "solvent": "DMA",
-                                #             "concentration": 0.5,
-                                #         },
-                                #     },
-                                # },
                                 {
                                     "type": "add",
                                     "actionnumber": 2,
@@ -19711,13 +19542,10 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "O",
-                                            "quantity": {
-                                                "value": 0.05,
-                                                "unit": "moleq",
-                                            },
-                                            "solvent": "Water",
-                                            "concentration": 1,
+                                            "SMILES": "C(=O)([O-])[O-].[K+].[K+]",
+                                            "quantity": {"value": 5, "unit": "moleq"},
+                                            "solvent": "H2O",
+                                            "concentration": 0.5,
                                         },
                                     },
                                 },
@@ -19736,6 +19564,74 @@ encoded_recipes = {
                                     "platetype": "reaction",
                                     "temperature": {"value": 100, "unit": "degC"},
                                     "duration": {"value": 1, "unit": "hours"},
+                                },
+                            },
+                        ],
+                    },
+                ],
+            },
+            "TBS-79": {
+                "yield": 100,
+                "reactionSMARTS": [
+                    "[#6:1]-[#8:2]-[#14]([#6H3])([#6H3])-[#6]([#6H3])([#6H3])([#6H3])>>[#6:1]-[#8:2]-[#1]"
+                ],
+                "references": None,
+                "actionsessions": [
+                    {
+                        "type": "reaction",
+                        "driver": "robot",
+                        "sessionnumber": 1,
+                        "intermolecular": {
+                            "actions": [
+                                {
+                                    "type": "add",
+                                    "actionnumber": 1,
+                                    "content": {
+                                        "plates": {
+                                            "fromplatetype": "startingmaterial",
+                                            "toplatetype": "reaction",
+                                        },
+                                        "material": {
+                                            "SMARTS": "[#6:1]-[#8:2]-[#14]([#6H3])([#6H3])-[#6]([#6H3])([#6H3])([#6H3])",
+                                            "SMILES": None,
+                                            "quantity": {"value": 1, "unit": "moleq"},
+                                            "solvent": "MeOH",
+                                            "concentration": 0.5,
+                                        },
+                                    },
+                                },
+                                {
+                                    "type": "add",
+                                    "actionnumber": 2,
+                                    "content": {
+                                        "plates": {
+                                            "fromplatetype": "startingmaterial",
+                                            "toplatetype": "reaction",
+                                        },
+                                        "material": {
+                                            "SMARTS": None,
+                                            "SMILES": "Cl",
+                                            "quantity": {"value": 5.0, "unit": "moleq"},
+                                            "solvent": "Dioxane",
+                                            "concentration": 4,
+                                        },
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        "type": "stir",
+                        "driver": "human",
+                        "sessionnumber": 2,
+                        "actions": [
+                            {
+                                "type": "stir",
+                                "actionnumber": 3,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "temperature": {"value": 25, "unit": "degC"},
+                                    "duration": {"value": 12, "unit": "hours"},
                                 },
                             },
                         ],
