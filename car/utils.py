@@ -678,10 +678,16 @@ def getPlateMap(plate_ids: list, out_dir: str):
                     "smiles", flat=True
                 )
                 reactant_mws = getMWs(smiles=reactant_smiles)
-                reactant_1_smi = reactant_smiles[0]
-                reactant_2_smi = reactant_smiles[1]
-                reactant_1_mw = reactant_mws[0]
-                reactant_2_mw = reactant_mws[1]
+                if len(reactant_smiles) == 1:
+                    reactant_1_smi = reactant_smiles[0]
+                    reactant_1_mw = reactant_mws[0]
+                    reactant_2_smi = ""
+                    reactant_2_mw = ""
+                if len(reactant_smiles) == 2:
+                    reactant_1_smi = reactant_smiles[0]
+                    reactant_1_mw = reactant_mws[0]
+                    reactant_2_smi = reactant_smiles[1]
+                    reactant_2_mw = reactant_mws[1]
                 plate_info["plate_id"].append(plate_id)
                 plate_info["well_index"].append(well_index)
                 plate_info["target_ids"].append(target_id)
@@ -965,7 +971,9 @@ def getMWs(smiles: list[str]) -> list[float]:
         The list of molecular weights
     """
     try:
-        MWs = [Descriptors.MolWt(Chem.MolFromSmiles(smi)) for smi in smiles]
+        MWs = [
+            Descriptors.MolWt(Chem.MolFromSmiles(smi)) for smi in smiles if smi != ""
+        ]
         return MWs
     except Exception as e:
         logger.info(inspect.stack()[0][3] + " yielded error: {}".format(e))
