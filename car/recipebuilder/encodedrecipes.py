@@ -14075,9 +14075,7 @@ encoded_recipes = {
             },
             "EV71A2A-Suz": {
                 "yield": 75,
-                "reactionSMARTS": [
-                    "[c:1]-[F,Cl,Br,I].[#6:2]-[B]>>[c:1]-[#6:2]"
-                ],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[#6:2]-[B]>>[c:1]-[#6:2]"],
                 "references": None,
                 "actionsessions": [
                     {
