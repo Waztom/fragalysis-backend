@@ -43,7 +43,7 @@ encoded_recipes = {
         "recipes": {
             "Yinuo-MS-1": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -96,7 +96,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -146,7 +146,7 @@ encoded_recipes = {
             # This is the copy position begining
             "Yinuo-MS-2": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -199,7 +199,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -248,7 +248,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-3": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -301,7 +301,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -350,7 +350,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-4": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -403,7 +403,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -452,7 +452,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-5": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -505,7 +505,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -555,7 +555,7 @@ encoded_recipes = {
             # This is the copy position begining
             "Yinuo-MS-6": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -608,7 +608,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -657,7 +657,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-7": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -710,7 +710,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -759,7 +759,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-8": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -812,7 +812,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -862,7 +862,7 @@ encoded_recipes = {
             # This is the copy position end
             "Yinuo-MS-9": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -915,7 +915,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -965,7 +965,7 @@ encoded_recipes = {
             # This is the copy position begining
             "Yinuo-MS-10": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -1018,7 +1018,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -1067,7 +1067,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-11": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -1120,7 +1120,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -1169,7 +1169,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-12": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -1222,7 +1222,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -1271,7 +1271,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-13": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -1324,7 +1324,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -1374,7 +1374,7 @@ encoded_recipes = {
             # This is the copy position begining
             "Yinuo-MS-14": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -1427,7 +1427,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -1476,7 +1476,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-15": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -1529,7 +1529,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -1578,7 +1578,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-16": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -1631,7 +1631,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -1680,7 +1680,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-17": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -1733,7 +1733,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -1783,7 +1783,7 @@ encoded_recipes = {
             # This is the copy position begining
             "Yinuo-MS-18": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -1836,7 +1836,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -1885,7 +1885,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-19": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -1938,7 +1938,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -1987,7 +1987,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-20": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -2040,7 +2040,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -2089,7 +2089,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-21": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -2142,7 +2142,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -2192,7 +2192,7 @@ encoded_recipes = {
             # This is the copy position begining
             "Yinuo-MS-22": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -2245,7 +2245,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -2294,7 +2294,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-23": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -2347,7 +2347,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -2396,7 +2396,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-24": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -2449,7 +2449,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -2499,7 +2499,7 @@ encoded_recipes = {
             # This is the copy position end
             "Yinuo-MS-25": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -2552,7 +2552,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -2602,7 +2602,7 @@ encoded_recipes = {
             # This is the copy position begining
             "Yinuo-MS-26": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -2655,7 +2655,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -2704,7 +2704,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-27": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -2757,7 +2757,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -2806,7 +2806,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-28": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -2859,7 +2859,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -2908,7 +2908,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-29": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -2961,7 +2961,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -3011,7 +3011,7 @@ encoded_recipes = {
             # This is the copy position begining
             "Yinuo-MS-30": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -3064,7 +3064,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -3113,7 +3113,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-31": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -3166,7 +3166,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -3215,7 +3215,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-32": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -3268,7 +3268,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -3317,7 +3317,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-33": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -3370,7 +3370,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -3420,7 +3420,7 @@ encoded_recipes = {
             # This is the copy position begining
             "Yinuo-MS-34": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -3473,7 +3473,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -3522,7 +3522,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-35": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -3575,7 +3575,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -3624,7 +3624,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-36": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -3677,7 +3677,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -3726,7 +3726,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-37": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -3779,7 +3779,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -3829,7 +3829,7 @@ encoded_recipes = {
             # This is the copy position begining
             "Yinuo-MS-38": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -3882,7 +3882,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -3931,7 +3931,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-39": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -3984,7 +3984,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -4033,7 +4033,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-40": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -4086,7 +4086,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -4136,7 +4136,7 @@ encoded_recipes = {
             # This is the copy position end
             "Yinuo-MS-41": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -4189,7 +4189,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -4239,7 +4239,7 @@ encoded_recipes = {
             # This is the copy position begining
             "Yinuo-MS-42": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -4292,7 +4292,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -4341,7 +4341,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-43": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -4394,7 +4394,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -4443,7 +4443,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-44": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -4496,7 +4496,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -4545,7 +4545,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-45": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -4598,7 +4598,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -4648,7 +4648,7 @@ encoded_recipes = {
             # This is the copy position begining
             "Yinuo-MS-46": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -4701,7 +4701,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -4750,7 +4750,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-47": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -4803,7 +4803,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -4852,7 +4852,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-48": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -4905,7 +4905,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -4954,7 +4954,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-49": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -5007,7 +5007,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -5057,7 +5057,7 @@ encoded_recipes = {
             # This is the copy position begining
             "Yinuo-MS-50": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -5110,7 +5110,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -5159,7 +5159,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-51": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -5212,7 +5212,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -5261,7 +5261,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-52": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -5314,7 +5314,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -5363,7 +5363,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-53": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -5416,7 +5416,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -5466,7 +5466,7 @@ encoded_recipes = {
             # This is the copy position begining
             "Yinuo-MS-54": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -5519,7 +5519,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -5568,7 +5568,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-55": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -5621,7 +5621,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -5670,7 +5670,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-56": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -5723,7 +5723,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -5773,7 +5773,7 @@ encoded_recipes = {
             # This is the copy position end
             "Yinuo-MS-57": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -5826,7 +5826,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -5876,7 +5876,7 @@ encoded_recipes = {
             # This is the copy position begining
             "Yinuo-MS-58": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -5929,7 +5929,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -5978,7 +5978,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-59": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -6031,7 +6031,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -6080,7 +6080,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-60": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -6133,7 +6133,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -6182,7 +6182,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-61": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -6235,7 +6235,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -6285,7 +6285,7 @@ encoded_recipes = {
             # This is the copy position begining
             "Yinuo-MS-62": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -6338,7 +6338,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -6387,7 +6387,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-63": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -6440,7 +6440,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -6489,7 +6489,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-64": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -6542,7 +6542,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -6591,7 +6591,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-65": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -6644,7 +6644,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -6694,7 +6694,7 @@ encoded_recipes = {
             # This is the copy position begining
             "Yinuo-MS-66": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -6747,7 +6747,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -6796,7 +6796,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-67": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -6849,7 +6849,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -6898,7 +6898,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-68": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -6951,7 +6951,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -7000,7 +7000,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-69": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -7053,7 +7053,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -7103,7 +7103,7 @@ encoded_recipes = {
             # This is the copy position begining
             "Yinuo-MS-70": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -7156,7 +7156,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -7205,7 +7205,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-71": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -7258,7 +7258,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -7307,7 +7307,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-72": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -7360,7 +7360,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -7410,7 +7410,7 @@ encoded_recipes = {
             # This is the copy position end
             "Yinuo-MS-73": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -7463,7 +7463,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -7513,7 +7513,7 @@ encoded_recipes = {
             # This is the copy position begining
             "Yinuo-MS-74": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -7566,7 +7566,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -7615,7 +7615,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-75": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -7668,7 +7668,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -7717,7 +7717,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-76": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -7770,7 +7770,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -7819,7 +7819,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-77": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -7872,7 +7872,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -7922,7 +7922,7 @@ encoded_recipes = {
             # This is the copy position begining
             "Yinuo-MS-78": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -7975,7 +7975,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -8024,7 +8024,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-79": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -8077,7 +8077,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -8126,7 +8126,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-80": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -8179,7 +8179,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -8228,7 +8228,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-81": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -8281,7 +8281,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -8331,7 +8331,7 @@ encoded_recipes = {
             # This is the copy position begining
             "Yinuo-MS-82": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -8384,7 +8384,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -8433,7 +8433,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-83": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -8486,7 +8486,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -8535,7 +8535,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-84": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -8588,7 +8588,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -8637,7 +8637,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-85": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -8690,7 +8690,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -8740,7 +8740,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-86": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -8793,7 +8793,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -8843,7 +8843,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-87": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -8896,7 +8896,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -8946,7 +8946,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-88": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -8999,7 +8999,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -9049,7 +9049,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-89": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -9102,7 +9102,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -9152,7 +9152,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-90": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -9205,7 +9205,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -9255,7 +9255,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-91": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -9308,7 +9308,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -9358,7 +9358,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-92": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -9411,7 +9411,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -9461,7 +9461,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-93": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -9514,7 +9514,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -9564,7 +9564,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-94": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -9617,7 +9617,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -9667,7 +9667,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-95": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -9720,7 +9720,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -9770,7 +9770,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-96": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -9823,7 +9823,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -9873,7 +9873,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-97": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -9926,7 +9926,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -9976,7 +9976,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-98": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -10029,7 +10029,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -10079,7 +10079,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-99": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -10132,7 +10132,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -10182,7 +10182,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-100": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -10235,7 +10235,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -10285,7 +10285,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-101": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -10338,7 +10338,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -10388,7 +10388,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-102": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -10441,7 +10441,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -10491,7 +10491,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-103": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -10544,7 +10544,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -10594,7 +10594,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-104": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -10647,7 +10647,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -10697,7 +10697,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-105": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -10750,7 +10750,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -10800,7 +10800,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-106": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -10853,7 +10853,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -10903,7 +10903,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-107": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -10956,7 +10956,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -11006,7 +11006,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-108": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -11059,7 +11059,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -11109,7 +11109,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-109": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -11162,7 +11162,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -11212,7 +11212,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-110": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -11265,7 +11265,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -11315,7 +11315,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-111": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -11368,7 +11368,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -11418,7 +11418,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-112": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -11471,7 +11471,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -11521,7 +11521,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-113": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -11574,7 +11574,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -11624,7 +11624,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-114": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -11677,7 +11677,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -11727,7 +11727,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-115": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -11780,7 +11780,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -11830,7 +11830,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-116": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -11883,7 +11883,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -11933,7 +11933,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-117": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -11986,7 +11986,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -12036,7 +12036,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-118": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -12089,7 +12089,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -12139,7 +12139,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-119": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -12192,7 +12192,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -12242,7 +12242,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-120": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -12295,7 +12295,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -12345,7 +12345,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-121": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -12398,7 +12398,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -12448,7 +12448,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-122": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -12501,7 +12501,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -12551,7 +12551,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-123": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -12604,7 +12604,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -12654,7 +12654,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-124": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -12707,7 +12707,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -12757,7 +12757,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-125": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -12810,7 +12810,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -12860,7 +12860,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-126": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -12913,7 +12913,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -12963,7 +12963,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-127": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -13016,7 +13016,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -13066,7 +13066,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-128": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -13119,7 +13119,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for B2(neop)2
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -13169,7 +13169,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-129": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -13222,7 +13222,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -13272,7 +13272,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-130": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -13325,7 +13325,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -13375,7 +13375,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-131": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -13428,7 +13428,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -13478,7 +13478,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-132": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -13531,7 +13531,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -13581,7 +13581,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-133": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -13634,7 +13634,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -13684,7 +13684,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-134": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -13737,7 +13737,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -13787,7 +13787,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-135": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -13840,7 +13840,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -13890,7 +13890,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-136": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -13943,7 +13943,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -13993,7 +13993,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-137": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -14046,7 +14046,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -14096,7 +14096,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-138": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -14149,7 +14149,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -14199,7 +14199,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-139": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -14252,7 +14252,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -14302,7 +14302,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-140": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -14355,7 +14355,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -14405,7 +14405,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-141": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -14458,7 +14458,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -14508,7 +14508,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-142": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -14561,7 +14561,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -14611,7 +14611,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-143": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -14664,7 +14664,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -14714,7 +14714,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-144": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -14767,7 +14767,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -14817,7 +14817,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-145": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -14870,7 +14870,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -14920,7 +14920,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-146": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -14973,7 +14973,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -15023,7 +15023,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-147": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -15076,7 +15076,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -15126,7 +15126,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-148": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -15179,7 +15179,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -15229,7 +15229,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-149": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -15282,7 +15282,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -15332,7 +15332,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-150": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -15385,7 +15385,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -15435,7 +15435,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-151": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -15488,7 +15488,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -15538,7 +15538,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-152": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -15591,7 +15591,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -15641,7 +15641,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-153": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -15694,7 +15694,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -15744,7 +15744,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-154": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -15797,7 +15797,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -15847,7 +15847,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-155": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -15900,7 +15900,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -15950,7 +15950,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-156": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -16003,7 +16003,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -16053,7 +16053,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-157": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -16106,7 +16106,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -16156,7 +16156,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-158": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -16209,7 +16209,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -16259,7 +16259,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-159": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -16312,7 +16312,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -16362,7 +16362,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-160": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -16415,7 +16415,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -16465,7 +16465,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-161": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -16518,7 +16518,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -16568,7 +16568,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-162": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -16621,7 +16621,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -16671,7 +16671,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-163": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -16724,7 +16724,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -16774,7 +16774,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-164": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -16827,7 +16827,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -16877,7 +16877,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-165": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -16930,7 +16930,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -16980,7 +16980,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-166": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -17033,7 +17033,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -17083,7 +17083,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-167": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -17136,7 +17136,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -17186,7 +17186,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-168": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -17239,7 +17239,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -17289,7 +17289,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-169": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -17342,7 +17342,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             # Smiles for dioxaborole
                                             "quantity": {"value": 2, "unit": "moleq"},
@@ -17392,7 +17392,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-170": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -17444,7 +17444,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -17492,7 +17492,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-171": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -17544,7 +17544,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Touene",
@@ -17592,7 +17592,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-172": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -17644,7 +17644,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -17692,7 +17692,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-173": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -17744,7 +17744,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Touene",
@@ -17793,7 +17793,7 @@ encoded_recipes = {
             # This is the copy position begining
             "Yinuo-MS-174": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -17845,7 +17845,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -17893,7 +17893,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-175": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -17945,7 +17945,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Touene",
@@ -17993,7 +17993,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-176": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -18045,7 +18045,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -18093,7 +18093,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-177": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -18145,7 +18145,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -18193,7 +18193,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-178": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -18245,7 +18245,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -18293,7 +18293,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-179": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -18345,7 +18345,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -18393,7 +18393,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-180": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -18445,7 +18445,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -18493,7 +18493,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-181": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -18545,7 +18545,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -18593,7 +18593,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-182": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -18645,7 +18645,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -18693,7 +18693,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-183": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -18745,7 +18745,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -18793,7 +18793,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-184": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -18845,7 +18845,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -18893,7 +18893,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-185": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -18945,7 +18945,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -18993,7 +18993,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-186": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -19045,7 +19045,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -19093,7 +19093,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-187": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -19145,7 +19145,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -19193,7 +19193,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-188": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -19245,7 +19245,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -19293,7 +19293,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-189": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -19345,7 +19345,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -19393,7 +19393,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-190": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -19445,7 +19445,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -19493,7 +19493,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-191": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -19545,7 +19545,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -19593,7 +19593,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-192": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -19645,7 +19645,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -19693,7 +19693,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-193": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -19745,7 +19745,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -19793,7 +19793,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-194": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -19845,7 +19845,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -19893,7 +19893,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-195": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -19945,7 +19945,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -19993,7 +19993,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-196": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -20045,7 +20045,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -20093,7 +20093,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-197": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -20145,7 +20145,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -20193,7 +20193,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-198": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -20245,7 +20245,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -20293,7 +20293,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-199": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -20345,7 +20345,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -20393,7 +20393,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-200": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -20445,7 +20445,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -20493,7 +20493,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-201": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -20545,7 +20545,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -20593,7 +20593,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-202": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -20645,7 +20645,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -20693,7 +20693,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-203": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -20745,7 +20745,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -20793,7 +20793,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-204": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -20845,7 +20845,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -20893,7 +20893,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-205": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -20945,7 +20945,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -20993,7 +20993,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-206": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -21045,7 +21045,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -21093,7 +21093,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-207": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -21145,7 +21145,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -21193,7 +21193,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-208": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -21245,7 +21245,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -21293,7 +21293,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-209": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -21345,7 +21345,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -21393,7 +21393,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-210": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -21445,7 +21445,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -21493,7 +21493,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-211": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -21545,7 +21545,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -21593,7 +21593,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-212": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -21645,7 +21645,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -21693,7 +21693,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-213": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -21745,7 +21745,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -21793,7 +21793,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-214": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -21845,7 +21845,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -21893,7 +21893,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-215": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -21945,7 +21945,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -21993,7 +21993,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-216": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -22045,7 +22045,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -22093,7 +22093,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-217": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -22145,7 +22145,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -22193,7 +22193,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-218": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -22245,7 +22245,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -22293,7 +22293,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-219": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -22345,7 +22345,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -22393,7 +22393,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-220": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -22445,7 +22445,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -22493,7 +22493,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-221": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -22545,7 +22545,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -22593,7 +22593,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-222": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -22645,7 +22645,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -22693,7 +22693,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-223": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -22745,7 +22745,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -22793,7 +22793,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-224": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -22845,7 +22845,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -22893,7 +22893,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-225": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -22945,7 +22945,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -22993,7 +22993,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-226": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -23045,7 +23045,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -23093,7 +23093,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-227": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -23145,7 +23145,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -23193,7 +23193,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-228": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -23245,7 +23245,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -23293,7 +23293,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-229": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -23345,7 +23345,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -23393,7 +23393,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-230": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -23445,7 +23445,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -23493,7 +23493,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-231": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -23545,7 +23545,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -23593,7 +23593,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-232": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -23645,7 +23645,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -23693,7 +23693,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-233": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -23745,7 +23745,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -23793,7 +23793,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-234": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -23845,7 +23845,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -23893,7 +23893,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-235": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -23945,7 +23945,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -23993,7 +23993,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-236": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -24045,7 +24045,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -24093,7 +24093,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-237": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -24145,7 +24145,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -24193,7 +24193,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-238": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -24245,7 +24245,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -24293,7 +24293,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-239": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -24345,7 +24345,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -24393,7 +24393,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-240": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -24445,7 +24445,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -24493,7 +24493,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-241": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -24545,7 +24545,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -24593,7 +24593,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-242": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -24645,7 +24645,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -24693,7 +24693,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-243": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -24745,7 +24745,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -24793,7 +24793,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-244": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -24845,7 +24845,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -24893,7 +24893,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-245": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -24945,7 +24945,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -24993,7 +24993,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-246": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -25045,7 +25045,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -25093,7 +25093,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-247": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -25145,7 +25145,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -25193,7 +25193,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-248": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -25245,7 +25245,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -25293,7 +25293,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-249": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -25345,7 +25345,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -25393,7 +25393,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-250": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -25445,7 +25445,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -25493,7 +25493,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-251": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -25545,7 +25545,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -25593,7 +25593,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-252": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -25645,7 +25645,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -25693,7 +25693,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-253": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -25745,7 +25745,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -25793,7 +25793,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-254": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -25845,7 +25845,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -25893,7 +25893,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-255": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -25945,7 +25945,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -25993,7 +25993,7 @@ encoded_recipes = {
             },
             "Yinuo-MS-256": {
                 "yield": 100,
-                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B][B]>>[c:1]-[B]"],
+                "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[B:2][B]>>[c:1]-[B:2]"],
                 "references": None,
                 "actionsessions": [
                     {
@@ -26045,7 +26045,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[B][B]",
+                                            "SMARTS": "[B:2][B]",
                                             "SMILES": None,
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -36542,6 +36542,176 @@ encoded_recipes = {
     "Sp2-sp2 Suzuki coupling": {
         "intramolecular": False,
         "recipes": {
+            "Yinuo-Suz-DMA": {
+                "yield": 100,
+                "reactionSMARTS": [
+                    "[c:1]-[F,Cl,Br,I].[c^2,C^2:2]-[B]>>[c:1]-[c^2,C^2:2]"
+                ],
+                "references": None,
+                "actionsessions": [
+                    {
+                        "type": "reaction",
+                        "driver": "robot",
+                        "sessionnumber": 1,
+                        "intermolecular": {
+                            "actions": [
+                                {
+                                    "type": "add",
+                                    "actionnumber": 1,
+                                    "content": {
+                                        "plates": {
+                                            "fromplatetype": "startingmaterial",
+                                            "toplatetype": "reaction",
+                                        },
+                                        "material": {
+                                            "SMARTS": "[c:1]-[F,Cl,Br,I]",
+                                            "SMILES": None,
+                                            "quantity": {"value": 1, "unit": "moleq"},
+                                            "solvent": "DMA",
+                                            "concentration": 0.25,
+                                        },
+                                    },
+                                },
+                                {
+                                    "type": "add",
+                                    "actionnumber": 2,
+                                    "content": {
+                                        "plates": {
+                                            "fromplatetype": "startingmaterial",
+                                            "toplatetype": "reaction",
+                                        },
+                                        "material": {
+                                            "SMARTS": "[c^2,C^2:2]-[B]",
+                                            "SMILES": None,
+                                            "quantity": {"value": 1, "unit": "moleq"},
+                                            "solvent": "DMA",
+                                            "concentration": 0.25,
+                                        },
+                                    },
+                                },
+                                {
+                                    "type": "add",
+                                    "actionnumber": 3,
+                                    "content": {
+                                        "plates": {
+                                            "fromplatetype": "startingmaterial",
+                                            "toplatetype": "reaction",
+                                        },
+                                        "material": {
+                                            "SMARTS": None,
+                                            "SMILES": "[K+].[K+].[O-]C([O-])=O",
+                                            "quantity": {"value": 3, "unit": "moleq"},
+                                            "solvent": "H2O",
+                                            "concentration": 1,
+                                        },
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        "type": "stir",
+                        "sessionnumber": 2,
+                        "driver": "human",
+                        "actions": [
+                            {
+                                "type": "stir",
+                                "actionnumber": 4,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "duration": {"value": 15, "unit": "hours"},
+                                },
+                            },
+                        ],
+                    },
+                ],
+            },
+            "Yinuo-Suz-Tol": {
+                "yield": 100,
+                "reactionSMARTS": [
+                    "[c:1]-[F,Cl,Br,I].[c^2,C^2:2]-[B]>>[c:1]-[c^2,C^2:2]"
+                ],
+                "references": None,
+                "actionsessions": [
+                    {
+                        "type": "reaction",
+                        "driver": "robot",
+                        "sessionnumber": 1,
+                        "intermolecular": {
+                            "actions": [
+                                {
+                                    "type": "add",
+                                    "actionnumber": 1,
+                                    "content": {
+                                        "plates": {
+                                            "fromplatetype": "startingmaterial",
+                                            "toplatetype": "reaction",
+                                        },
+                                        "material": {
+                                            "SMARTS": "[c:1]-[F,Cl,Br,I]",
+                                            "SMILES": None,
+                                            "quantity": {"value": 1, "unit": "moleq"},
+                                            "solvent": "Toluene",
+                                            "concentration": 0.25,
+                                        },
+                                    },
+                                },
+                                {
+                                    "type": "add",
+                                    "actionnumber": 2,
+                                    "content": {
+                                        "plates": {
+                                            "fromplatetype": "startingmaterial",
+                                            "toplatetype": "reaction",
+                                        },
+                                        "material": {
+                                            "SMARTS": "[c^2,C^2:2]-[B]",
+                                            "SMILES": None,
+                                            "quantity": {"value": 1, "unit": "moleq"},
+                                            "solvent": "Toluene",
+                                            "concentration": 0.25,
+                                        },
+                                    },
+                                },
+                                {
+                                    "type": "add",
+                                    "actionnumber": 3,
+                                    "content": {
+                                        "plates": {
+                                            "fromplatetype": "startingmaterial",
+                                            "toplatetype": "reaction",
+                                        },
+                                        "material": {
+                                            "SMARTS": None,
+                                            "SMILES": "[K+].[K+].[O-]C([O-])=O",
+                                            "quantity": {"value": 3, "unit": "moleq"},
+                                            "solvent": "H2O",
+                                            "concentration": 1,
+                                        },
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        "type": "stir",
+                        "sessionnumber": 2,
+                        "driver": "human",
+                        "actions": [
+                            {
+                                "type": "stir",
+                                "actionnumber": 4,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "duration": {"value": 15, "unit": "hours"},
+                                },
+                            },
+                        ],
+                    },
+                ],
+            },
             "standard": {
                 "yield": 75,
                 "reactionSMARTS": [
