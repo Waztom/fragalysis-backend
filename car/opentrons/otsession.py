@@ -46,7 +46,6 @@ import math
 from .labwareavailable import labware_plates
 
 
-
 class CreateOTSession(object):
     """
     Creates a StartOTSession object for generating a protocol
@@ -700,14 +699,12 @@ class CreateOTSession(object):
         numbertransfers: int
             The number of tranfers required for the pipette type used
         """
-        print(roundedvolumes)
         numbertransfers = sum(
             [
                 round(volume / pipettevolume) if pipettevolume < volume else 1
                 for volume in roundedvolumes
             ]
         )
-        print(numbertransfers)
         return numbertransfers
 
     def getAddActionsDataFrame(
@@ -1046,18 +1043,25 @@ class CreateOTSession(object):
             noplatesneeded = int(math.ceil(wellsneeded / noplatevials))
             volumedifference = maxvolumevial - medianvolume
             tempdifference = maxtemp - temperature
-            maxvolumeexceededtest = all(
-                [False if maxvolumevial - vol <= 0 else True for vol in volumes]
-            )
-            if volumedifference < 0 or tempdifference < 0 or not maxvolumeexceededtest:
-                continue
+            if platetype == "reaction":  # Reaction plates can only fill one well
+                maxvolumeexceededtest = all(
+                    [False if maxvolumevial - vol <= 0 else True for vol in volumes]
+                )
+                if (
+                    volumedifference < 0
+                    or tempdifference < 0
+                    or not maxvolumeexceededtest
+                ):
+                    continue
+            if platetype == "starting":  # Starting plates can fill multiple wells
+                if volumedifference < 0 or tempdifference < 0:
+                    continue
             vialcomparedict[labwareplate] = {
                 "noplatesneeded": noplatesneeded,
                 "volumedifference": volumedifference,
                 "novialsneeded": wellsneeded,
                 "tempdifference": tempdifference,
             }
-
         mininumnoplatesneeeded = min(
             (d["noplatesneeded"] for d in vialcomparedict.values())
         )
@@ -1972,13 +1976,11 @@ class CreateOTSession(object):
                     nowellsneededratio = totalvolume / (maxwellvolume - deadvolume)
                     frac, whole = math.modf(nowellsneededratio)
                     volumestoadd = [maxwellvolume for i in range(int(whole))]
-                    print("The volumes to add are {}".format(volumestoadd))
                     volumestoadd.append(frac * maxwellvolume + deadvolume)
                     for volumetoadd in volumestoadd:
                         indexwellavailable = self.getPlateWellIndexAvailable(
                             plateobj=plateobj
                         )
-                        print("The indexwellavailable is {}".format(indexwellavailable))
                         if type(indexwellavailable) == bool:
                             plateobj = self.createPlateModel(
                                 platetype="solvent",

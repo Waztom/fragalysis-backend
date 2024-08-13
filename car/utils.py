@@ -1242,7 +1242,7 @@ def createReactionSVGString(smarts: str) -> str:
 
 
 def getAddtionOrder(
-    product_smi: str, reactant_SMILES: tuple, reaction_SMARTS: str
+    product_smi: str, reactant_SMILES: tuple, reaction_SMARTS: list
 ) -> list:
     """Gets reactant pair addition order as SMILES that yields the expected
        product via the reaction SMARTS pattern
@@ -1253,7 +1253,7 @@ def getAddtionOrder(
         The product SMILES
     reactant_SMILES_pair: tuple
         The reactant SMILES pair for a reaction
-    reaction_SMARTS: lits
+    reaction_SMARTS: lists
         The reaction SMARTS pattern. List for multiple SMARTS patterns/reaction transformations.
 
     Returns
@@ -1263,35 +1263,60 @@ def getAddtionOrder(
     status: None
         None if no order can create the input product
     """
+    try:
+        reaction_SMARTS = reaction_SMARTS[0]
+        reaction_SMARTS_reactants = reaction_SMARTS.split(">>")[0].split(".")
+        rxn = AllChem.ReactionFromSmarts(reaction_SMARTS)
+        reactant_mols = [
+            Chem.MolFromSmiles(smi) for smi in reactant_SMILES if smi != ""
+        ]
 
-    reaction_SMARTS = reaction_SMARTS[0]
-    rxn = AllChem.ReactionFromSmarts(reaction_SMARTS)
-    reactant_mols = [Chem.MolFromSmiles(smi) for smi in reactant_SMILES if smi != ""]
+        if reaction_SMARTS_reactants == "":
+            ordered_smis = [canonSmiles(smi) for smi in reactant_SMILES if smi != ""]
 
-    if len(reactant_mols) == 1:
-        ordered_smis = [canonSmiles(smi) for smi in reactant_SMILES if smi != ""]
+        if len(reactant_mols) == 1:
+            ordered_smis = [canonSmiles(smi) for smi in reactant_SMILES if smi != ""]
 
-    if len(reactant_mols) > 1:
-        for reactant_permutation in list(itertools.permutations(reactant_mols)):
-            try:
-                products = rxn.RunReactants(reactant_permutation)
-                product_mols = [product[0] for product in products]
-                if not product_mols:
-                    continue  # reactants were in wrong order so no product
-            except Exception as e:
-                logger.info(inspect.stack()[0][3] + " yielded error: {}".format(e))
-                print(e)
-                print(reactant_permutation)
-                continue
-            product_smis = [Chem.MolToSmiles(m) for m in product_mols if m is not None]
-            if product_smi in product_smis:
-                ordered_smis = [Chem.MolToSmiles(m) for m in reactant_permutation]
-    if "ordered_smis" in locals():
-        return ordered_smis
-    else:
-        print(reaction_SMARTS)
-        print(reactant_SMILES)
-        return None
+        if len(reactant_mols) > 1:
+
+            if Chem.MolFromSmarts(reaction_SMARTS_reactants[0]) == Chem.MolFromSmarts(
+                reaction_SMARTS_reactants[1]
+            ):
+                ordered_smis = [
+                    canonSmiles(smi) for smi in reactant_SMILES if smi != ""
+                ]
+            else:
+                for reactant_permutation in list(itertools.permutations(reactant_mols)):
+                    try:
+                        products = rxn.RunReactants(reactant_permutation)
+                        product_mols = [product[0] for product in products]
+                        if not product_mols:
+                            continue  # reactants were in wrong order so no product
+                    except Exception as e:
+                        logger.info(
+                            inspect.stack()[0][3] + " yielded error: {}".format(e)
+                        )
+                        print(e)
+                        print(reactant_permutation)
+                        continue
+                    product_smis = [
+                        Chem.MolToSmiles(m) for m in product_mols if m is not None
+                    ]
+                    if product_smi in product_smis:
+                        ordered_smis = [
+                            Chem.MolToSmiles(m) for m in reactant_permutation
+                        ]
+        if "ordered_smis" in locals():
+            return ordered_smis
+        else:
+            print("Additon order not found")
+            print(reaction_SMARTS)
+            print(reactant_SMILES)
+            print("Additon order not found")
+            return None
+    except Exception as e:
+        logger.info(inspect.stack()[0][3] + " yielded error: {}".format(e))
+        print(e)
 
 
 def checkReactantSMARTS(reactant_SMILES: tuple, reaction_SMARTS: list) -> list:
