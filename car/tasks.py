@@ -480,6 +480,8 @@ def uploadCustomReaction(validate_output):
                     reaction_recipe_tuples,
                     reaction_product_smiles_tuples,
                 ):
+                    print("Reactant pair smiles: ", reactant_pair_smiles)
+                    print("Reaction product smiles: ", reaction_product_smiles)
                     reaction_smarts = AllChem.ReactionFromSmarts(
                         "{}>>{}".format(
                             ".".join(reactant_pair_smiles), reaction_product_smiles

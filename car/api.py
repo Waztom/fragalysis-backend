@@ -6,7 +6,8 @@ from django.conf import settings
 import os
 import json
 from celery.result import AsyncResult
-from viewer.tasks import check_services
+
+# from viewer.tasks import check_services
 import pandas as pd
 from rdkit.Chem import Descriptors
 
@@ -230,7 +231,7 @@ class ProjectViewSet(viewsets.ModelViewSet):
             }
 
         """
-        check_services()
+        # check_services() # Uncomment when in production
         project_info = {}
         project_info["projectname"] = request.data["project_name"]
         project_info["submittername"] = request.data["submitter_name"]
@@ -436,7 +437,7 @@ class BatchViewSet(viewsets.ModelViewSet):
     @action(methods=["post"], detail=False)
     def canonicalizesmiles(self, request, pk=None):
         """Post method to canonicalise a list or csv file of SMILES"""
-        check_services()
+        # check_services()
         if request.POST.get("smiles"):
             smiles = request.POST.getlist("smiles")
             task = canonicalizeSmiles.delay(smiles=smiles)
@@ -606,7 +607,7 @@ class OTProjectViewSet(viewsets.ModelViewSet):
         The batch ids that the OT project will be created for
         The project name of the OT project
         """
-        check_services()
+        # check_services()
         batch_ids = request.data["batchids"]
         protocol_name = request.data["protocol_name"]
         task = createOTScript.delay(batchids=batch_ids, protocol_name=protocol_name)

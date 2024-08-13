@@ -164,6 +164,10 @@ class ValidateFile(object):
                         reaction_recipes=reaction_recipes,
                         product_smiles=product_smiles,
                     )
+                    print(
+                        "The reactant pair smiles ordered are: ",
+                        reactant_pair_smiles_ordered,
+                    )
                     if reaction_number == max_no_steps:
                         self.target_smiles = self.target_smiles + product_smiles
                     reaction_info[
@@ -606,6 +610,15 @@ class ValidateFile(object):
                 smarts = encoded_recipes[reaction_name]["recipes"][reaction_recipe][
                     "reactionSMARTS"
                 ]
+                if not all(smarts):
+                    print(
+                        "Warning ignoring smarts pattern for reaction: ", reaction_name
+                    )
+                    print("This can only be used for custom chem uploads")
+                    product_created_smiles.append(product_smiles[index])
+                    reactant_pair_smiles_ordered.append(reactant_pair)
+                    continue
+
                 product_mols = checkReactantSMARTS(
                     reactant_SMILES=reactant_pair, reaction_SMARTS=smarts
                 )
