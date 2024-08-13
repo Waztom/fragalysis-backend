@@ -97,7 +97,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -200,7 +200,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -244,7 +244,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-3": {
@@ -303,7 +302,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -347,7 +346,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-4": {
@@ -406,7 +404,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -449,7 +447,7 @@ encoded_recipes = {
                                 },
                             },
                         ],
-                    },    
+                    },
                 ],
             },
             "Yinuo-MS-5": {
@@ -508,7 +506,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -552,7 +550,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             # This is the copy position begining
@@ -612,7 +609,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -656,7 +653,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-7": {
@@ -715,7 +711,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -759,7 +755,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-8": {
@@ -818,7 +813,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -862,7 +857,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             # This is the copy position end
@@ -922,7 +916,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -966,7 +960,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             # This is the copy position begining
@@ -1026,7 +1019,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -1070,7 +1063,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-11": {
@@ -1129,7 +1121,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -1173,7 +1165,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-12": {
@@ -1232,7 +1223,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -1276,7 +1267,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-13": {
@@ -1335,7 +1325,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -1379,7 +1369,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             # This is the copy position begining
@@ -1439,7 +1428,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -1483,7 +1472,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-15": {
@@ -1542,7 +1530,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -1586,7 +1574,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-16": {
@@ -1645,7 +1632,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -1689,7 +1676,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-17": {
@@ -1748,7 +1734,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -1792,7 +1778,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             # This is the copy position begining
@@ -1852,7 +1837,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -1896,7 +1881,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-19": {
@@ -1955,7 +1939,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -1999,7 +1983,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-20": {
@@ -2058,7 +2041,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -2102,7 +2085,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-21": {
@@ -2161,7 +2143,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -2205,7 +2187,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             # This is the copy position begining
@@ -2265,7 +2246,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -2309,7 +2290,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-23": {
@@ -2368,7 +2348,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -2412,7 +2392,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-24": {
@@ -2471,7 +2450,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -2515,7 +2494,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             # This is the copy position end
@@ -2575,7 +2553,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -2619,7 +2597,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             # This is the copy position begining
@@ -2679,7 +2656,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -2723,7 +2700,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-27": {
@@ -2782,7 +2758,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -2826,7 +2802,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-28": {
@@ -2885,7 +2860,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -2929,7 +2904,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-29": {
@@ -2988,7 +2962,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -3032,7 +3006,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             # This is the copy position begining
@@ -3092,7 +3065,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -3136,7 +3109,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-31": {
@@ -3195,7 +3167,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -3239,7 +3211,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-32": {
@@ -3298,7 +3269,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -3342,7 +3313,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-33": {
@@ -3401,7 +3371,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -3445,7 +3415,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             # This is the copy position begining
@@ -3505,7 +3474,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -3549,7 +3518,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-35": {
@@ -3608,7 +3576,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -3652,7 +3620,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-36": {
@@ -3711,7 +3678,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -3755,7 +3722,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-37": {
@@ -3814,7 +3780,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -3858,7 +3824,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             # This is the copy position begining
@@ -3918,7 +3883,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -3962,7 +3927,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-39": {
@@ -4021,7 +3985,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -4065,7 +4029,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-40": {
@@ -4124,7 +4087,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -4168,7 +4131,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             # This is the copy position end
@@ -4228,7 +4190,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -4272,7 +4234,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             # This is the copy position begining
@@ -4332,7 +4293,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -4376,7 +4337,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-43": {
@@ -4435,7 +4395,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -4479,7 +4439,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-44": {
@@ -4538,7 +4497,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -4582,7 +4541,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-45": {
@@ -4641,7 +4599,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -4685,7 +4643,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             # This is the copy position begining
@@ -4745,7 +4702,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -4789,7 +4746,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-47": {
@@ -4848,7 +4804,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -4892,7 +4848,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-48": {
@@ -4951,7 +4906,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -4995,7 +4950,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-49": {
@@ -5054,7 +5008,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -5098,7 +5052,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             # This is the copy position begining
@@ -5158,7 +5111,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -5202,7 +5155,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-51": {
@@ -5261,7 +5213,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -5305,7 +5257,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-52": {
@@ -5364,7 +5315,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -5408,7 +5359,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-53": {
@@ -5467,7 +5417,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -5511,7 +5461,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             # This is the copy position begining
@@ -5571,7 +5520,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -5615,7 +5564,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-55": {
@@ -5674,7 +5622,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -5718,7 +5666,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-56": {
@@ -5777,7 +5724,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -5821,7 +5768,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             # This is the copy position end
@@ -5881,7 +5827,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -5925,7 +5871,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             # This is the copy position begining
@@ -5985,7 +5930,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -6029,7 +5974,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-59": {
@@ -6088,7 +6032,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -6132,7 +6076,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-60": {
@@ -6191,7 +6134,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -6235,7 +6178,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-61": {
@@ -6294,7 +6236,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -6338,7 +6280,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             # This is the copy position begining
@@ -6398,7 +6339,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -6442,7 +6383,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-63": {
@@ -6501,7 +6441,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -6545,7 +6485,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-64": {
@@ -6604,7 +6543,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": "[B][B]",
-                                            "SMILES": None,,
+                                            "SMILES": None,
                                             # Smiles for B2(Pin)2
                                             "quantity": {"value": 2, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -6648,7 +6587,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-65": {
@@ -6751,7 +6689,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             # This is the copy position begining
@@ -6855,7 +6792,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-67": {
@@ -6958,7 +6894,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-68": {
@@ -7061,7 +6996,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-69": {
@@ -7164,7 +7098,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             # This is the copy position begining
@@ -7268,7 +7201,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-71": {
@@ -7371,7 +7303,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-72": {
@@ -7474,7 +7405,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             # This is the copy position end
@@ -7578,7 +7508,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             # This is the copy position begining
@@ -7682,7 +7611,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-75": {
@@ -7785,7 +7713,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-76": {
@@ -7888,7 +7815,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-77": {
@@ -7991,7 +7917,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             # This is the copy position begining
@@ -8095,7 +8020,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-79": {
@@ -8198,7 +8122,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-80": {
@@ -8301,7 +8224,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-81": {
@@ -8404,7 +8326,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             # This is the copy position begining
@@ -8508,7 +8429,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-83": {
@@ -8611,7 +8531,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-84": {
@@ -8714,7 +8633,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-85": {
@@ -8818,7 +8736,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-86": {
@@ -9025,7 +8942,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-88": {
@@ -9129,7 +9045,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-89": {
@@ -9233,7 +9148,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-90": {
@@ -9337,7 +9251,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-91": {
@@ -9441,7 +9354,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-92": {
@@ -9545,7 +9457,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-93": {
@@ -9649,7 +9560,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-94": {
@@ -9753,7 +9663,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-95": {
@@ -9857,7 +9766,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-96": {
@@ -9961,7 +9869,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-97": {
@@ -10065,7 +9972,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-98": {
@@ -10169,7 +10075,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-99": {
@@ -10273,7 +10178,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-100": {
@@ -10377,7 +10281,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-101": {
@@ -10481,7 +10384,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-102": {
@@ -10585,7 +10487,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-103": {
@@ -10689,7 +10590,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-104": {
@@ -10793,7 +10693,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-105": {
@@ -10897,7 +10796,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-106": {
@@ -11001,7 +10899,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-107": {
@@ -11105,7 +11002,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-108": {
@@ -11209,7 +11105,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-109": {
@@ -11313,7 +11208,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-110": {
@@ -11417,7 +11311,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-111": {
@@ -11521,7 +11414,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-112": {
@@ -11625,7 +11517,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-113": {
@@ -11729,7 +11620,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-114": {
@@ -11833,7 +11723,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-115": {
@@ -11937,7 +11826,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-116": {
@@ -12041,7 +11929,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-117": {
@@ -12145,7 +12032,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-118": {
@@ -12249,7 +12135,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-119": {
@@ -12353,7 +12238,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-120": {
@@ -12457,7 +12341,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-121": {
@@ -12561,7 +12444,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-122": {
@@ -12665,7 +12547,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-123": {
@@ -12769,7 +12650,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-124": {
@@ -12873,7 +12753,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-125": {
@@ -12977,7 +12856,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-126": {
@@ -13081,7 +12959,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-127": {
@@ -13185,7 +13062,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-128": {
@@ -13289,7 +13165,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-129": {
@@ -13393,7 +13268,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-130": {
@@ -13497,7 +13371,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-131": {
@@ -13601,7 +13474,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-132": {
@@ -13705,7 +13577,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-133": {
@@ -13809,7 +13680,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-134": {
@@ -13913,7 +13783,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-135": {
@@ -14017,7 +13886,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-136": {
@@ -14121,7 +13989,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-137": {
@@ -14225,7 +14092,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-138": {
@@ -14329,7 +14195,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-139": {
@@ -14433,7 +14298,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-140": {
@@ -14537,7 +14401,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-141": {
@@ -14641,7 +14504,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-142": {
@@ -14745,7 +14607,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-143": {
@@ -14849,7 +14710,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-144": {
@@ -14953,7 +14813,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-145": {
@@ -15057,7 +14916,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-146": {
@@ -15161,7 +15019,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-147": {
@@ -15265,7 +15122,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-148": {
@@ -15369,7 +15225,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-149": {
@@ -15473,7 +15328,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-150": {
@@ -15577,7 +15431,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-151": {
@@ -15681,7 +15534,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-152": {
@@ -15785,7 +15637,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-153": {
@@ -15889,7 +15740,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-154": {
@@ -15993,7 +15843,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-155": {
@@ -16097,7 +15946,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-156": {
@@ -16201,7 +16049,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-157": {
@@ -16305,7 +16152,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-158": {
@@ -16409,7 +16255,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-159": {
@@ -16513,7 +16358,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-160": {
@@ -16617,7 +16461,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-161": {
@@ -16721,7 +16564,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-162": {
@@ -16825,7 +16667,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-163": {
@@ -16929,7 +16770,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-164": {
@@ -17033,7 +16873,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-165": {
@@ -17137,7 +16976,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-166": {
@@ -17241,7 +17079,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-167": {
@@ -17345,7 +17182,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-168": {
@@ -17449,7 +17285,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-169": {
@@ -17553,7 +17388,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-170": {
@@ -17654,7 +17488,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-171": {
@@ -17755,7 +17588,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-172": {
@@ -17856,7 +17688,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-173": {
@@ -17957,7 +17788,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             # This is the copy position begining
@@ -18059,7 +17889,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-175": {
@@ -18160,7 +17989,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-176": {
@@ -18261,7 +18089,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-177": {
@@ -18362,7 +18189,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-178": {
@@ -18463,7 +18289,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-179": {
@@ -18564,7 +18389,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-180": {
@@ -18665,7 +18489,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-181": {
@@ -18766,7 +18589,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-182": {
@@ -18867,7 +18689,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-183": {
@@ -18968,7 +18789,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-184": {
@@ -19069,7 +18889,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-185": {
@@ -19170,7 +18989,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-186": {
@@ -19271,7 +19089,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-187": {
@@ -19372,7 +19189,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-188": {
@@ -19473,7 +19289,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-189": {
@@ -19574,7 +19389,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-190": {
@@ -19675,7 +19489,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-191": {
@@ -19776,7 +19589,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-192": {
@@ -19877,7 +19689,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-193": {
@@ -19978,7 +19789,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-194": {
@@ -20079,7 +19889,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-195": {
@@ -20180,7 +19989,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-196": {
@@ -20281,7 +20089,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-197": {
@@ -20382,7 +20189,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-198": {
@@ -20483,7 +20289,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-199": {
@@ -20584,7 +20389,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-200": {
@@ -20685,7 +20489,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-201": {
@@ -20786,7 +20589,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-202": {
@@ -20887,7 +20689,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-203": {
@@ -20988,7 +20789,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-204": {
@@ -21089,7 +20889,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-205": {
@@ -21190,7 +20989,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-206": {
@@ -21291,7 +21089,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-207": {
@@ -21392,7 +21189,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-208": {
@@ -21493,7 +21289,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-209": {
@@ -21594,7 +21389,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-210": {
@@ -21695,7 +21489,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-211": {
@@ -21796,7 +21589,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-212": {
@@ -21897,7 +21689,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-213": {
@@ -21998,7 +21789,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-214": {
@@ -22099,7 +21889,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-215": {
@@ -22200,7 +21989,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-216": {
@@ -22301,7 +22089,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-217": {
@@ -22402,7 +22189,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-218": {
@@ -22503,7 +22289,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-219": {
@@ -22604,7 +22389,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-220": {
@@ -22705,7 +22489,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-221": {
@@ -22806,7 +22589,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-222": {
@@ -22907,7 +22689,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-223": {
@@ -23008,7 +22789,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-224": {
@@ -23109,7 +22889,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-225": {
@@ -23210,7 +22989,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-226": {
@@ -23311,7 +23089,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-227": {
@@ -23412,7 +23189,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-228": {
@@ -23513,7 +23289,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-229": {
@@ -23614,7 +23389,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-230": {
@@ -23715,7 +23489,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-231": {
@@ -23816,7 +23589,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-232": {
@@ -23917,7 +23689,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-233": {
@@ -24018,7 +23789,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-234": {
@@ -24119,7 +23889,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-235": {
@@ -24220,7 +23989,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-236": {
@@ -24321,7 +24089,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-237": {
@@ -24422,7 +24189,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-238": {
@@ -24523,7 +24289,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-239": {
@@ -24624,7 +24389,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-240": {
@@ -24725,7 +24489,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-241": {
@@ -24826,7 +24589,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-242": {
@@ -24927,7 +24689,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-243": {
@@ -25028,7 +24789,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-244": {
@@ -25129,7 +24889,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-245": {
@@ -25230,7 +24989,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-246": {
@@ -25331,7 +25089,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-247": {
@@ -25432,7 +25189,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-248": {
@@ -25533,7 +25289,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-249": {
@@ -25634,7 +25389,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-250": {
@@ -25735,7 +25489,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-251": {
@@ -25836,7 +25589,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-252": {
@@ -25937,7 +25689,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-253": {
@@ -26038,7 +25789,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-254": {
@@ -26139,7 +25889,6 @@ encoded_recipes = {
                             },
                         ],
                     },
-                    
                 ],
             },
             "Yinuo-MS-255": {
@@ -26239,7 +25988,7 @@ encoded_recipes = {
                                 },
                             },
                         ],
-                    },    
+                    },
                 ],
             },
             "Yinuo-MS-256": {
