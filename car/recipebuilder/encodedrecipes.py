@@ -79,8 +79,8 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
-                                            # Smiles for Pd2Cl2(dppf) C1
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
+                                            # Smiles for XPhos G3
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
                                             "concentration": 0.25,
@@ -569,8 +569,8 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
-                                            # Smiles for C4
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
+                                            # Smiles for tBuBrettPhosG3
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
                                             "concentration": 0.25,
@@ -733,7 +733,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf) C1
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -1223,7 +1223,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for C4
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -1388,7 +1388,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf) C1
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -1878,7 +1878,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for C4
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -2042,7 +2042,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf) C1
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -2532,7 +2532,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for C4
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -2696,7 +2696,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf) C1
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -3186,7 +3186,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for C4
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -3350,7 +3350,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf) C1
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -3840,7 +3840,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for C4
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -4005,7 +4005,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf) C1
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -4495,7 +4495,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for C4
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -4659,7 +4659,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf) C1
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -5149,7 +5149,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for C4
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -5313,7 +5313,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf) C1
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -5369,7 +5369,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -5533,7 +5533,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -5696,7 +5696,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -5803,7 +5803,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for C4
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -5859,7 +5859,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -5967,7 +5967,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf) C1
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -6023,7 +6023,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -6187,7 +6187,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -6350,7 +6350,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -6457,7 +6457,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for C4
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -6513,7 +6513,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -6622,7 +6622,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf) C1
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -6678,7 +6678,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -6842,7 +6842,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -7005,7 +7005,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -7112,7 +7112,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for C4
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -7168,7 +7168,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -7276,7 +7276,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf) C1
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -7332,7 +7332,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -7496,7 +7496,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -7659,7 +7659,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -7766,7 +7766,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for C4
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -7822,7 +7822,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -7930,7 +7930,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf) C1
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -7986,7 +7986,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -8150,7 +8150,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -8313,7 +8313,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -8420,7 +8420,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for C4
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -8476,7 +8476,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -8584,7 +8584,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf) C1
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -8640,7 +8640,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -8804,7 +8804,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -8967,7 +8967,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -9074,7 +9074,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for C4
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -9130,7 +9130,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -9239,7 +9239,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf) C1
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -9295,7 +9295,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -9459,7 +9459,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -9622,7 +9622,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -9729,7 +9729,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for C4
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -9785,7 +9785,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -9893,7 +9893,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf) C1
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -9949,7 +9949,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -10113,7 +10113,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -10276,7 +10276,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -10383,7 +10383,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for C4
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -10439,7 +10439,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -10547,7 +10547,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf) C1
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -11037,7 +11037,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for C4
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -11201,7 +11201,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf) C1
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -11691,7 +11691,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for C4
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -11856,7 +11856,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf) C1
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -12346,7 +12346,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for C4
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -12510,7 +12510,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf) C1
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -13000,7 +13000,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for C4
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -13164,7 +13164,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf) C1
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -13654,7 +13654,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for C4
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -13818,7 +13818,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf)
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -14310,7 +14310,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for Pd(Pcy3)2Cl2
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -14474,7 +14474,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf)
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -14966,7 +14966,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for Pd(Pcy3)2Cl2
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -15130,7 +15130,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf)
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -15622,7 +15622,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for Pd(Pcy3)2Cl2
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -15786,7 +15786,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf)
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -15843,7 +15843,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -16007,7 +16007,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -16171,7 +16171,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -16278,7 +16278,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for Pd(Pcy3)2Cl2
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -16335,7 +16335,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -16442,7 +16442,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf)
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -16499,7 +16499,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -16663,7 +16663,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -16827,7 +16827,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -16934,7 +16934,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for Pd(Pcy3)2Cl2
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -16991,7 +16991,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -17098,7 +17098,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf)
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -17155,7 +17155,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -17319,7 +17319,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -17483,7 +17483,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -17590,7 +17590,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for Pd(Pcy3)2Cl2
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -17647,7 +17647,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -17754,7 +17754,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf)
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -17811,7 +17811,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -17975,7 +17975,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -18139,7 +18139,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -18246,7 +18246,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for Pd(Pcy3)2Cl2
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -18303,7 +18303,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -18410,7 +18410,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf)
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -18467,7 +18467,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -18631,7 +18631,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -18795,7 +18795,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -18902,7 +18902,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for Pd(Pcy3)2Cl2
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -18959,7 +18959,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -19066,7 +19066,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf)
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -19123,7 +19123,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -19287,7 +19287,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -19451,7 +19451,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -19558,7 +19558,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for Pd(Pcy3)2Cl2
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -19615,7 +19615,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -19722,7 +19722,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf)
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -19779,7 +19779,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -19943,7 +19943,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -20107,7 +20107,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -20214,7 +20214,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for Pd(Pcy3)2Cl2
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -20271,7 +20271,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -20378,7 +20378,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf)
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -20435,7 +20435,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -20599,7 +20599,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -20763,7 +20763,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -20870,7 +20870,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for Pd(Pcy3)2Cl2
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -20927,7 +20927,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -21034,7 +21034,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf)
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -21526,7 +21526,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for Pd(Pcy3)2Cl2
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -21690,7 +21690,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf)
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -22182,7 +22182,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for Pd(Pcy3)2Cl2
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -22346,7 +22346,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf)
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -22838,7 +22838,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for Pd(Pcy3)2Cl2
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -23002,7 +23002,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf)
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -23494,7 +23494,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for Pd(Pcy3)2Cl2
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -23658,7 +23658,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf)
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -24150,7 +24150,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for Pd(Pcy3)2Cl2
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -24314,7 +24314,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf)
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -24806,7 +24806,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for Pd(Pcy3)2Cl2
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -24970,7 +24970,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf)
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -25462,7 +25462,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for Pd(Pcy3)2Cl2
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -25626,7 +25626,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf)
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -26118,7 +26118,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for Pd(Pcy3)2Cl2
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -26282,7 +26282,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf)
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -26339,7 +26339,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -26503,7 +26503,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -26667,7 +26667,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -26774,7 +26774,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for Pd(Pcy3)2Cl2
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -26831,7 +26831,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -26938,7 +26938,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf)
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -26995,7 +26995,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -27159,7 +27159,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -27323,7 +27323,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -27430,7 +27430,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             # Smiles for Pd(Pcy3)2Cl2
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -27487,7 +27487,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -27594,7 +27594,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             # Smiles for Pd2Cl2(dppf)
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
@@ -27651,7 +27651,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -27812,7 +27812,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -27972,7 +27972,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -28078,7 +28078,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
                                             "concentration": 0.25,
@@ -28132,7 +28132,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -28238,7 +28238,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
                                             "concentration": 0.25,
@@ -28292,7 +28292,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -28453,7 +28453,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -28613,7 +28613,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -28719,7 +28719,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
                                             "concentration": 0.25,
@@ -28773,7 +28773,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -28879,7 +28879,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
                                             "concentration": 0.25,
@@ -28933,7 +28933,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -29093,7 +29093,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -29253,7 +29253,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -29359,7 +29359,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
                                             "concentration": 0.25,
@@ -29413,7 +29413,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -29519,7 +29519,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
                                             "concentration": 0.25,
@@ -29573,7 +29573,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -29733,7 +29733,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -29893,7 +29893,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -29999,7 +29999,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
                                             "concentration": 0.25,
@@ -30053,7 +30053,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -30159,7 +30159,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
                                             "concentration": 0.25,
@@ -30213,7 +30213,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -30373,7 +30373,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -30533,7 +30533,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -30639,7 +30639,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
                                             "concentration": 0.25,
@@ -30693,7 +30693,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -30799,7 +30799,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
                                             "concentration": 0.25,
@@ -30853,7 +30853,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -31013,7 +31013,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -31173,7 +31173,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -31279,7 +31279,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
                                             "concentration": 0.25,
@@ -31333,7 +31333,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -31439,7 +31439,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
                                             "concentration": 0.25,
@@ -31919,7 +31919,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
                                             "concentration": 0.25,
@@ -32079,7 +32079,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
                                             "concentration": 0.25,
@@ -32559,7 +32559,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
                                             "concentration": 0.25,
@@ -32719,7 +32719,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
                                             "concentration": 0.25,
@@ -33199,7 +33199,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
                                             "concentration": 0.25,
@@ -33359,7 +33359,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
                                             "concentration": 0.25,
@@ -33839,7 +33839,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
                                             "concentration": 0.25,
@@ -33999,7 +33999,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
                                             "concentration": 0.25,
@@ -34479,7 +34479,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
                                             "concentration": 0.25,
@@ -34639,7 +34639,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
                                             "concentration": 0.25,
@@ -35119,7 +35119,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
                                             "concentration": 0.25,
@@ -35279,7 +35279,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
                                             "concentration": 0.25,
@@ -35759,7 +35759,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
                                             "concentration": 0.25,
@@ -35919,7 +35919,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
                                             "concentration": 0.25,
@@ -36399,7 +36399,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
                                             "concentration": 0.25,
@@ -36559,7 +36559,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
                                             "concentration": 0.25,
@@ -36613,7 +36613,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -36773,7 +36773,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -36933,7 +36933,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -37039,7 +37039,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
                                             "concentration": 0.25,
@@ -37093,7 +37093,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -37199,7 +37199,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
                                             "concentration": 0.25,
@@ -37253,7 +37253,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -37413,7 +37413,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -37573,7 +37573,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -37679,7 +37679,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
                                             "concentration": 0.25,
@@ -37733,7 +37733,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -37839,7 +37839,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
                                             "concentration": 0.25,
@@ -37893,7 +37893,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -38053,7 +38053,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -38213,7 +38213,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -38319,7 +38319,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
                                             "concentration": 0.25,
@@ -38373,7 +38373,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -38479,7 +38479,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
                                             "concentration": 0.25,
@@ -38533,7 +38533,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -38693,7 +38693,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -38853,7 +38853,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -38959,7 +38959,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
                                             "concentration": 0.25,
@@ -39013,7 +39013,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 80, "unit": "degC"},
+                                    "temperature": {"value": 81, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -39119,7 +39119,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
                                             "concentration": 0.25,
@@ -39173,7 +39173,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -39333,7 +39333,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -39493,7 +39493,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -39599,7 +39599,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
                                             "concentration": 0.25,
@@ -39653,7 +39653,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -39759,7 +39759,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
                                             "concentration": 0.25,
@@ -39813,7 +39813,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -39973,7 +39973,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -40133,7 +40133,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -40239,7 +40239,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "DMA",
                                             "concentration": 0.25,
@@ -40293,7 +40293,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -40399,7 +40399,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
                                             "concentration": 0.25,
@@ -40453,7 +40453,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -40613,7 +40613,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -40773,7 +40773,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -40879,7 +40879,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
                                             "concentration": 0.25,
@@ -40933,7 +40933,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -41039,7 +41039,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "[Fe].ClCCl.Cl[Pd]Cl.[CH]1[CH][CH][C]([CH]1)P(c2ccccc2)c3ccccc3.[CH]4[CH][CH][C]([CH]4)P(c5ccccc5)c6ccccc6",
+                                            "SMILES": "C1(C2C([Pd]OS(=O)(=O)C)=CC=CC=2)C(N)=CC=CC=1.C1(C=CC=CC=1C1C(C(C)C)=CC(C(C)C)=CC=1C(C)C)P(C1CCCCC1)C1CCCCC1",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
                                             "concentration": 0.25,
@@ -41093,7 +41093,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -41253,7 +41253,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -41413,7 +41413,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
@@ -41519,7 +41519,7 @@ encoded_recipes = {
                                         },
                                         "material": {
                                             "SMARTS": None,
-                                            "SMILES": "Cl[Pd]Cl.C1CCC(CC1)P(C2CCCCC2)C3CCCCC3.C4CCC(CC4)P(C5CCCCC5)C6CCCCC6",
+                                            "SMILES": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=C(C=CC(=C2P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C.CS(=O)(=O)O.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]",
                                             "quantity": {"value": 0.1, "unit": "moleq"},
                                             "solvent": "Toluene",
                                             "concentration": 0.25,
@@ -41573,7 +41573,7 @@ encoded_recipes = {
                                 "actionnumber": 5,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120, "unit": "degC"},
+                                    "temperature": {"value": 121, "unit": "degC"},
                                     "duration": {"value": 3, "unit": "hours"},
                                 },
                             },
