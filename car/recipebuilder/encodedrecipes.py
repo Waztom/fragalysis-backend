@@ -42826,7 +42826,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-Am-1": {
+            "EV71A2A-P0001": {
                 "yield": 85,
                 "reactionSMARTS": [
                     "[#6:1](=[#8:2])-[#8;H1].[#7;H3,H2,H1:3]>>[#6:1](=[#8:2])-[#7:3]"
@@ -43084,7 +43084,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-Am-2": {
+            "EV71A2A-P0002": {
                 "yield": 85,
                 "reactionSMARTS": [
                     "[#6:1](=[#8:2])-[#8;H1].[#7;H3,H2,H1:3]>>[#6:1](=[#8:2])-[#7:3]"
@@ -48008,7 +48008,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-Nb-1": {
+            "EV71A2A-P0007": {
                 "yield": 100,
                 "reactionSMARTS": [
                     "[#7:2]-[#6](=[#8])-[#8]-[#6](-[#6])(-[#6])(-[#6])>>[#7:2]"
@@ -56689,7 +56689,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-Suz-1": {
+            "EV71A2A-P0023": {
                 "yield": 75,
                 "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[#6:2]-[B]>>[c:1]-[#6:2]"],
                 "references": None,
@@ -56946,7 +56946,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-Suz-2": {
+            "EV71A2A-P0024": {
                 "yield": 75,
                 "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[#6:2]-[B]>>[c:1]-[#6:2]"],
                 "references": None,
@@ -57203,7 +57203,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-Suz-3": {
+            "EV71A2A-P0025": {
                 "yield": 75,
                 "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[#6:2]-[B]>>[c:1]-[#6:2]"],
                 "references": None,
@@ -57460,7 +57460,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-Suz-4": {
+            "EV71A2A-P0026": {
                 "yield": 75,
                 "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[#6:2]-[B]>>[c:1]-[#6:2]"],
                 "references": None,
@@ -57717,7 +57717,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-Suz-5": {
+            "EV71A2A-P0027": {
                 "yield": 75,
                 "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[#6:2]-[B]>>[c:1]-[#6:2]"],
                 "references": None,
@@ -57974,7 +57974,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-Suz-6": {
+            "EV71A2A-P0028": {
                 "yield": 75,
                 "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[#6:2]-[B]>>[c:1]-[#6:2]"],
                 "references": None,
@@ -58231,7 +58231,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-Suz-7": {
+            "EV71A2A-P0029": {
                 "yield": 75,
                 "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[#6:2]-[B]>>[c:1]-[#6:2]"],
                 "references": None,
@@ -58488,7 +58488,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-Suz-8": {
+            "EV71A2A-P0030": {
                 "yield": 75,
                 "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[#6:2]-[B]>>[c:1]-[#6:2]"],
                 "references": None,
@@ -58745,7 +58745,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-Suz-9": {
+            "EV71A2A-P0031": {
                 "yield": 75,
                 "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[#6:2]-[B]>>[c:1]-[#6:2]"],
                 "references": None,
@@ -59002,7 +59002,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-Suz-10": {
+            "EV71A2A-P0032": {
                 "yield": 75,
                 "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[#6:2]-[B]>>[c:1]-[#6:2]"],
                 "references": None,
@@ -59259,7 +59259,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-Suz-11": {
+            "EV71A2A-P0033": {
                 "yield": 75,
                 "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[#6:2]-[B]>>[c:1]-[#6:2]"],
                 "references": None,
@@ -59516,7 +59516,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-Suz-12": {
+            "EV71A2A-P0034": {
                 "yield": 75,
                 "reactionSMARTS": ["[c:1]-[F,Cl,Br,I].[#6:2]-[B]>>[c:1]-[#6:2]"],
                 "references": None,
@@ -65338,7 +65338,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-Tbs-1": {
+            "EV71A2A-P0008": {
                 "yield": 100,
                 "reactionSMARTS": [
                     "[#6:1]-[#8:2]-[#14]([#6H3])([#6H3])-[#6]([#6H3])([#6H3])([#6H3])>>[#6:1]-[#8:2]-[#1]"
@@ -65410,7 +65410,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-Tbs-2": {
+            "EV71A2A-P0009": {
                 "yield": 100,
                 "reactionSMARTS": [
                     "[#6:1]-[#8:2]-[#14]([#6H3])([#6H3])-[#6]([#6H3])([#6H3])([#6H3])>>[#6:1]-[#8:2]-[#1]"
@@ -65482,7 +65482,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-Tbs-3": {
+            "EV71A2A-P0010": {
                 "yield": 100,
                 "reactionSMARTS": [
                     "[#6:1]-[#8:2]-[#14]([#6H3])([#6H3])-[#6]([#6H3])([#6H3])([#6H3])>>[#6:1]-[#8:2]-[#1]"
@@ -65554,7 +65554,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-Tbs-4": {
+            "EV71A2A-P0011": {
                 "yield": 100,
                 "reactionSMARTS": [
                     "[#6:1]-[#8:2]-[#14]([#6H3])([#6H3])-[#6]([#6H3])([#6H3])([#6H3])>>[#6:1]-[#8:2]-[#1]"
@@ -65626,7 +65626,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-Tbs-5": {
+            "EV71A2A-P0012": {
                 "yield": 100,
                 "reactionSMARTS": [
                     "[#6:1]-[#8:2]-[#14]([#6H3])([#6H3])-[#6]([#6H3])([#6H3])([#6H3])>>[#6:1]-[#8:2]-[#1]"
@@ -65698,7 +65698,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-Tbs-6": {
+            "EV71A2A-P0013": {
                 "yield": 100,
                 "reactionSMARTS": [
                     "[#6:1]-[#8:2]-[#14]([#6H3])([#6H3])-[#6]([#6H3])([#6H3])([#6H3])>>[#6:1]-[#8:2]-[#1]"
@@ -65767,7 +65767,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-Tbs-7": {
+            "EV71A2A-P0014": {
                 "yield": 100,
                 "reactionSMARTS": [
                     "[#6:1]-[#8:2]-[#14]([#6H3])([#6H3])-[#6]([#6H3])([#6H3])([#6H3])>>[#6:1]-[#8:2]-[#1]"
@@ -65836,7 +65836,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-Tbs-8": {
+            "EV71A2A-P0015": {
                 "yield": 100,
                 "reactionSMARTS": [
                     "[#6:1]-[#8:2]-[#14]([#6H3])([#6H3])-[#6]([#6H3])([#6H3])([#6H3])>>[#6:1]-[#8:2]-[#1]"
@@ -65905,7 +65905,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-Tbs-9": {
+            "EV71A2A-P0016": {
                 "yield": 100,
                 "reactionSMARTS": [
                     "[#6:1]-[#8:2]-[#14]([#6H3])([#6H3])-[#6]([#6H3])([#6H3])([#6H3])>>[#6:1]-[#8:2]-[#1]"
@@ -65974,7 +65974,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-Tbs-10": {
+            "EV71A2A-P0017": {
                 "yield": 100,
                 "reactionSMARTS": [
                     "[#6:1]-[#8:2]-[#14]([#6H3])([#6H3])-[#6]([#6H3])([#6H3])([#6H3])>>[#6:1]-[#8:2]-[#1]"
@@ -66043,7 +66043,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-Tbs-11": {
+            "EV71A2A-P0018": {
                 "yield": 100,
                 "reactionSMARTS": [
                     "[#6:1]-[#8:2]-[#14]([#6H3])([#6H3])-[#6]([#6H3])([#6H3])([#6H3])>>[#6:1]-[#8:2]-[#1]"
@@ -66112,7 +66112,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-Tbs-12": {
+            "EV71A2A-P0019": {
                 "yield": 100,
                 "reactionSMARTS": [
                     "[#6:1]-[#8:2]-[#14]([#6H3])([#6H3])-[#6]([#6H3])([#6H3])([#6H3])>>[#6:1]-[#8:2]-[#1]"
@@ -66181,7 +66181,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-Tbs-13": {
+            "EV71A2A-P0020": {
                 "yield": 100,
                 "reactionSMARTS": [
                     "[#6:1]-[#8:2]-[#14]([#6H3])([#6H3])-[#6]([#6H3])([#6H3])([#6H3])>>[#6:1]-[#8:2]-[#1]"
@@ -66250,7 +66250,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-Tbs-14": {
+            "EV71A2A-P0021": {
                 "yield": 100,
                 "reactionSMARTS": [
                     "[#6:1]-[#8:2]-[#14]([#6H3])([#6H3])-[#6]([#6H3])([#6H3])([#6H3])>>[#6:1]-[#8:2]-[#1]"
@@ -66319,7 +66319,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-Tbs-15": {
+            "EV71A2A-P0022": {
                 "yield": 100,
                 "reactionSMARTS": [
                     "[#6:1]-[#8:2]-[#14]([#6H3])([#6H3])-[#6]([#6H3])([#6H3])([#6H3])>>[#6:1]-[#8:2]-[#1]"
@@ -66991,7 +66991,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-We-1": {
+            "EV71A2A-P0003": {
                 "yield": 77,
                 "reactionSMARTS": [
                     "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
@@ -67180,7 +67180,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-We-2": {
+            "EV71A2A-P0004": {
                 "yield": 77,
                 "reactionSMARTS": [
                     "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
@@ -67369,7 +67369,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-We-3": {
+            "EV71A2A-P0005": {
                 "yield": 77,
                 "reactionSMARTS": [
                     "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
@@ -67558,7 +67558,7 @@ encoded_recipes = {
                     },
                 ],
             },
-            "EV71A2A-C3-We-4": {
+            "EV71A2A-P0006": {
                 "yield": 77,
                 "reactionSMARTS": [
                     "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
