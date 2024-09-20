@@ -67997,7 +67997,7 @@ encoded_recipes = {
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {
-                                        "value": 57,
+                                        "value": 25,
                                         "unit": "degC",
                                     },
                                     "duration": {"value": 1, "unit": "hours"},
@@ -68410,7 +68410,7 @@ encoded_recipes = {
                                 "content": {
                                     "platetype": "reaction",
                                     "temperature": {
-                                        "value": 57,
+                                        "value": 25,
                                         "unit": "degC",
                                     },
                                     "duration": {"value": 1, "unit": "hours"},
