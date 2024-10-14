@@ -67971,7 +67971,7 @@ encoded_recipes = {
                                     "actionnumber": 1,
                                     "content": {
                                         "plates": {
-                                            "fromplatetype": "startingmaterial",
+                                            "fromplatetype": "solvent",
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
@@ -67986,7 +67986,7 @@ encoded_recipes = {
                             ],
                         },
                     },
-                    # human step here to try and force paradox plate
+                    # human step here to try to dry the paradox plate
                     {
                         "type": "stir",
                         "driver": "human",
@@ -68075,7 +68075,6 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 5,
-                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -68083,7 +68082,7 @@ encoded_recipes = {
                                     "actionnumber": 6,
                                     "content": {
                                         "plates": {
-                                            "fromplatetype": "startingmaterial",
+                                            "fromplatetype": "solvent",
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
