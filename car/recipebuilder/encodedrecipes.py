@@ -86420,7 +86420,7 @@ encoded_recipes = {
                                 "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120,"unit": "degC" },
+                                    "temperature": {"value": 120, "unit": "degC"},
                                     "duration": {"value": 4, "unit": "hours"},
                                     # take sample after 2h, 4h, 6h, over night
                                 },
@@ -86733,7 +86733,7 @@ encoded_recipes = {
                                 "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120,"unit": "degC" },
+                                    "temperature": {"value": 120, "unit": "degC"},
                                     "duration": {"value": 4, "unit": "hours"},
                                     # take sample after 2h, 4h, 6h, over night
                                 },
@@ -87046,7 +87046,7 @@ encoded_recipes = {
                                 "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 120,"unit": "degC" },
+                                    "temperature": {"value": 120, "unit": "degC"},
                                     "duration": {"value": 4, "unit": "hours"},
                                     # take sample after 2h, 4h, 6h, over night
                                 },
@@ -87359,7 +87359,7 @@ encoded_recipes = {
                                 "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 140,"unit": "degC" },
+                                    "temperature": {"value": 140, "unit": "degC"},
                                     "duration": {"value": 4, "unit": "hours"},
                                     # take sample after 2h, 4h, 6h, over night
                                 },
@@ -87672,7 +87672,7 @@ encoded_recipes = {
                                 "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 140,"unit": "degC" },
+                                    "temperature": {"value": 140, "unit": "degC"},
                                     "duration": {"value": 4, "unit": "hours"},
                                     # take sample after 2h, 4h, 6h, over night
                                 },
@@ -87985,7 +87985,7 @@ encoded_recipes = {
                                 "actionnumber": 4,
                                 "content": {
                                     "platetype": "reaction",
-                                    "temperature": {"value": 140,"unit": "degC" },
+                                    "temperature": {"value": 140, "unit": "degC"},
                                     "duration": {"value": 4, "unit": "hours"},
                                     # take sample after 2h, 4h, 6h, over night
                                 },
@@ -110439,7 +110439,7 @@ encoded_recipes = {
                                             "concentration": 0.5,
                                         },
                                     },
-                                }, 
+                                },
                             ],
                         },
                     },
@@ -110473,5 +110473,5 @@ encoded_recipes = {
                 ],
             },
         },
-    },  
+    },
 }
