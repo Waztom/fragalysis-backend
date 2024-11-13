@@ -110362,7 +110362,7 @@ encoded_recipes = {
             "CHICKV-P001": {
                 "yield": 70,
                 "reactionSMARTS": [
-                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                    "[#6:1](=[#8])-[#8;H1:5].[#7:4](-[#8;H1])=[#6:6]-[#7;H1,H2:4]>>[c:6]1[n:7][o:5][c:1][n:4]1"
                 ],
                 "references": "To do",
                 "actionsessions": [
@@ -110432,8 +110432,8 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": None,
-                                            "SMILES": "Cc1cc(C)c(O)cc1N",
+                                            "SMARTS": "[#7:4](-[#8;H1])=[#6:6]-[#7;H1,H2:4]",
+                                            "SMILES": None,
                                             "quantity": {"value": 1.0, "unit": "moleq"},
                                             "solvent": "DMF",
                                             "concentration": 0.5,
