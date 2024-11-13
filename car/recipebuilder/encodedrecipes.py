@@ -110178,7 +110178,7 @@ encoded_recipes = {
             "SHIP1-WE-35": {
                 "yield": 70,
                 "reactionSMARTS": [
-                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                    "[#6:1](=[#8])-[#8;H1:5].[#7:4](-[#8;H1])=[#6:6]-[#7;H1,H2:4]>>[c:6]1[n:7][o:5][c:1][n:4]1"
                 ],
                 "references": "To do",
                 "actionsessions": [
@@ -110197,7 +110197,7 @@ encoded_recipes = {
                                             "toplatetype": "reaction",
                                         },
                                         "material": {
-                                            "SMARTS": "[#6:1]-[#8;H:2]",
+                                            "SMARTS": "[#6:1](=[#8])-[#8;H1:5]",
                                             "SMILES": None,
                                             "quantity": {"value": 1.0, "unit": "moleq"},
                                             "solvent": "DMA",
@@ -110356,4 +110356,122 @@ encoded_recipes = {
             },
         },
     },
+    "1,2,4-oxadiazole ring closing": {
+        "intramolecular": False,
+        "recipes": {
+            "CHICKV-P001": {
+                "yield": 70,
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
+                "references": "To do",
+                "actionsessions": [
+                    {
+                        "type": "reaction",
+                        "driver": "robot",
+                        "sessionnumber": 1,
+                        "intermolecular": {
+                            "actions": [
+                                {
+                                    "type": "add",
+                                    "actionnumber": 1,
+                                    "content": {
+                                        "plates": {
+                                            "fromplatetype": "startingmaterial",
+                                            "toplatetype": "reaction",
+                                        },
+                                        "material": {
+                                            "SMARTS": "[#6:1]-[#8;H:2]",
+                                            "SMILES": None,
+                                            "quantity": {"value": 1.0, "unit": "moleq"},
+                                            "solvent": "DMF",
+                                            "concentration": 0.5,
+                                        },
+                                    },
+                                },
+                                {
+                                    "type": "add",
+                                    "actionnumber": 2,
+                                    "content": {
+                                        "plates": {
+                                            "fromplatetype": "startingmaterial",
+                                            "toplatetype": "reaction",
+                                        },
+                                        "material": {
+                                            "SMARTS": None,
+                                            "SMILES": "CN(C)C(=[N+](C)C)N1C2=C(N=CC=C2)[N+](=N1)[O-].F[P-](F)(F)(F)(F)F",
+                                            "quantity": {"value": 5.0, "unit": "moleq"},
+                                            "solvent": "DMF",
+                                            "concentration": 1.1,
+                                        },
+                                    },
+                                },
+                                {
+                                    "type": "add",
+                                    "actionnumber": 3,
+                                    "content": {
+                                        "plates": {
+                                            "fromplatetype": "startingmaterial",
+                                            "toplatetype": "reaction",
+                                        },
+                                        "material": {
+                                            "SMARTS": None,
+                                            "SMILES": "CCN(C(C)C)C(C)C",
+                                            "quantity": {"value": 3.0, "unit": "moleq"},
+                                            "solvent": "DMF",
+                                            "concentration": 10,
+                                        },
+                                    },
+                                },
+                                {
+                                    "type": "add",
+                                    "actionnumber": 4,
+                                    "content": {
+                                        "plates": {
+                                            "fromplatetype": "startingmaterial",
+                                            "toplatetype": "reaction",
+                                        },
+                                        "material": {
+                                            "SMARTS": None,
+                                            "SMILES": "Cc1cc(C)c(O)cc1N",
+                                            "quantity": {"value": 1.0, "unit": "moleq"},
+                                            "solvent": "DMF",
+                                            "concentration": 0.5,
+                                        },
+                                    },
+                                }, 
+                            ],
+                        },
+                    },
+                    {
+                        "type": "stir",
+                        "driver": "human",
+                        "sessionnumber": 2,
+                        "actions": [
+                            # below step does occur but needs to be messaged out for CAR's algorithm to function.
+                            # {
+                            #     "type": "stir",
+                            #     "actionnumber": 4,
+                            #     "content": {
+                            #         "platetype": "reaction",
+                            #         "temperature": {"value": 20, "unit": "degC"},
+                            #         "duration": {"value": 2, "unit": "hours"},
+                            #     },
+                            # },
+                            {
+                                "type": "stir",
+                                "actionnumber": 5,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "temperature": {"value": 163, "unit": "degC"},
+                                    # DMF reflux temp
+                                    "duration": {"value": 12, "unit": "hours"},
+                                },
+                            },
+                        ],
+                    },
+                ],
+            },
+        },
+    },  
 }
