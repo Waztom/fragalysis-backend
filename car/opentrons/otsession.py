@@ -1130,7 +1130,11 @@ class CreateOTSession(object):
         )
         materialsdf["customSMexists"] = materialsdf.apply(
             lambda row: checkCustomSMExists(
-                otsessionobj=self.otsessionobj, volume=row["volume"], smiles=row["smiles"], concentration=row["concentration"], solvent=row["solvent"]
+                otsessionobj=self.otsessionobj,
+                volume=row["volume"],
+                smiles=row["smiles"],
+                concentration=row["concentration"],
+                solvent=row["solvent"],
             ),
             axis=1,
         )
@@ -1560,7 +1564,6 @@ class CreateOTSession(object):
                     concentration=row["concentration"],
                     solvent=row["solvent"],
                 )
-
 
     def createReactionStartingPlate(self):
         """Creates the starting material plate/s for executing a reaction's add actions"""
