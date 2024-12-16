@@ -1,5 +1,5 @@
 from django.db.models import QuerySet
-from django.db.models import Q, Max
+from django.db.models import Q, Max, Sum
 from rdkit.Chem import Descriptors
 from rdkit import Chem
 from rdkit.Chem import AllChem
@@ -897,6 +897,40 @@ def getReactionYields(reactionclasslist: list, recipelist) -> list[int]:
     ]
     return reactionyields
 
+def checkCustomSMExists(otsessionobj: object, volume: float, smiles: str, concentration: float, solvent: str) -> bool:
+    """Checks if a custom SM exists in the database
+    
+    Parameters
+    ----------
+    otsessionobj: object
+        The OTSession object to search for the custom SM
+    volume: float
+        The volume of the custom SM
+    smiles: str
+        The SMILES of the custom SM
+    concentration: float
+        The concentration of the custom SM
+    solvent: str
+        The solvent of the custom SM
+    """
+    try:
+        startmaterialplatematchqueryset = Plate.objects.filter(otsession_id=otsessionobj.id, platetype="startingmaterial")
+        if startmaterialplatematchqueryset:
+            for plate in startmaterialplatematchqueryset:
+                wellmatchqueryset = plate.well_set.filter(
+                    smiles=smiles, concentration=concentration, solvent=solvent
+                )
+                totalvolumeavailable = wellmatchqueryset.aggregate(Sum("volume"))["volume__sum"]
+                if wellmatchqueryset.exists() and totalvolumeavailable >= volume:
+                    return True
+                else:
+                    return False
+        else:
+            return False
+        
+    except Exception as e:
+        logger.info(inspect.stack()[0][3] + " yielded error: {}".format(e))
+        print(e)
 
 def checkPreviousReactionProducts(reaction_id: int, smiles: str) -> bool:
     """Checks if any previous reactions had a product matching the smiles

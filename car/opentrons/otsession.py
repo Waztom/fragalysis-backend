@@ -14,10 +14,10 @@ from pandas.core.frame import DataFrame
 
 from car.utils import (
     getProductSmiles,
+    checkCustomSMExists,
     checkPreviousReactionProducts,
     getReactionQuerySet,
     getProduct,
-    getReaction,
     getChemicalName,
     getInchiKey,
     wellIndexToWellName,
@@ -57,6 +57,7 @@ class CreateOTSession(object):
         reactionstep: int,
         otbatchprotocolobj: OTBatchProtocol,
         actionsessionqueryset: QuerySet[ActionSession],
+        customsSMplatepath: str = None,
     ):
         """Initiates a CreateOTSession
 
@@ -70,12 +71,15 @@ class CreateOTSession(object):
         actionsession: QuerySet[ActionSession]
             The action sessions being executed on the OT for a type eg. reaction,
             stir, analayse
-        groupreactionqueryset: QuerySet[Reaction]
-            The reactions the session needs to execute the actions for
+        customSMplatepath: str
+            Path to custom plate csv
         """
         self.reactionstep = reactionstep
         self.otbatchprotocolobj = otbatchprotocolobj
         self.actionsessionqueryset = actionsessionqueryset
+        self.customSMplatepath = customsSMplatepath
+        if self.customsSMplatepath:
+            self.createCustomStartingPlate()
         self.actionsessionnumber = actionsessionqueryset.values_list(
             "sessionnumber", flat=True
         )[0]
@@ -1124,6 +1128,14 @@ class CreateOTSession(object):
                 "molecularweight": "first",
             }
         )
+        materialsdf["customSMexists"] = materialsdf.apply(
+            lambda row: checkCustomSMExists(
+                otsessionobj=self.otsessionobj, volume=row["volume"], smiles=row["smiles"], concentration=row["concentration"], solvent=row["solvent"]
+            ),
+            axis=1,
+        )
+        materialsdf = materialsdf[~materialsdf["customSMexists"]]
+
         materialsdf["productexists"] = materialsdf.apply(
             lambda row: checkPreviousReactionProducts(
                 reaction_id=row["reaction_id_id"], smiles=row["smiles"]
@@ -1526,6 +1538,30 @@ class CreateOTSession(object):
             columnobj.otsession_id = self.otsessionobj
             columnobj.save()
 
+    def createCustomStartingPlate(self):
+        """Reads a custom starting materials (SM) plate for a reaction"""
+        customSMplatedf = pd.read_csv(
+            self.customSMplatepath, encoding="utf-8", engine="python"
+        )
+        groupedplateID = customSMplatedf.groupby(["plateID"])
+        for plateID, plategroup in groupedplateID:
+            plateobj = self.createPlateModel(
+                platetype="startingmaterial",
+                platename="Startingplate",
+                labwaretype=plategroup["labwaretype"].values[0],
+            )
+            for index, row in plategroup.iterrows():
+                self.createWellModel(
+                    plateobj=plateobj,
+                    welltype="startingmaterial",
+                    wellindex=row["wellindex"],
+                    volume=row["volume"],
+                    smiles=row["smiles"],
+                    concentration=row["concentration"],
+                    solvent=row["solvent"],
+                )
+
+
     def createReactionStartingPlate(self):
         """Creates the starting material plate/s for executing a reaction's add actions"""
         startingmaterialsdf = self.getAddActionsMaterialDataFrame(productexists=False)
@@ -1547,7 +1583,6 @@ class CreateOTSession(object):
                 totalvolume = startingmaterialsdf.at[i, "volume"] + extraerrorvolume
                 if totalvolume > maxwellvolume:
                     nowellsneededratio = totalvolume / (maxwellvolume - deadvolume)
-
                     frac, whole = math.modf(nowellsneededratio)
                     volumestoadd = [maxwellvolume for i in range(int(whole))]
                     volumestoadd.append(frac * maxwellvolume + deadvolume)
@@ -1614,9 +1649,9 @@ class CreateOTSession(object):
 
                     wellobj = self.createWellModel(
                         plateobj=plateobj,
-                        reactionobj=getReaction(
-                            reaction_id=startingmaterialsdf.at[i, "reaction_id_id"]
-                        ),
+                        # reactionobj=getReaction(
+                        #     reaction_id=startingmaterialsdf.at[i, "reaction_id_id"]
+                        # ),
                         welltype="startingmaterial",
                         wellindex=indexwellavailable,
                         volume=volumetoadd,
