@@ -754,15 +754,16 @@ class Plate(models.Model):
         startingmaterial = "startingmaterial"
         solvent = "solvent"
 
+    project_id = models.ForeignKey(Project, on_delete=models.CASCADE, null=True)
     otbatchprotocol_id = models.ForeignKey(
-        OTBatchProtocol, related_name="otplates", on_delete=models.CASCADE
+        OTBatchProtocol, related_name="otplates", on_delete=models.CASCADE, null=True
     )
     otsession_id = models.ForeignKey(
         OTSession,
         on_delete=models.CASCADE,
         null=True,
     )
-    deck_id = models.ForeignKey(Deck, on_delete=models.CASCADE)
+    deck_id = models.ForeignKey(Deck, on_delete=models.CASCADE, null=True)
     labware = models.CharField(max_length=255)
     index = models.IntegerField()
     name = models.CharField(max_length=255, null=True)

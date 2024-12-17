@@ -15,6 +15,7 @@ import csv
 import datetime
 
 from car.models import (
+    Project,
     ActionSession,
     Batch,
     Method,
@@ -25,9 +26,12 @@ from car.models import (
     Reaction,
     Target,
     Plate,
+    Column,
+    Well,
 )
 
 from car.recipebuilder.encodedrecipes import encoded_recipes
+from opentrons.labwareavailable import labware_plates
 
 logger = logging.getLogger(__name__)
 
@@ -1281,6 +1285,140 @@ def createReactionSVGString(smarts: str) -> str:
     except Exception as e:
         logger.info(inspect.stack()[0][3] + " yielded error: {}".format(e))
         print(e)
+
+
+def createCustomSMPlateModel(project_id: Project, platename: str, labwaretype: str):
+    """Creates custom starting material plate associated with a project
+
+    Parameters
+    ----------
+    project_id: int
+        The project id to create the custom plate for
+    platename: str
+        The plate name eg. enamine-plate-1
+    labwaretype: str
+        The labware type (see labwareavailable.py) to create the plate
+        eg. paradox_96_wellplate_961ul
+    """
+    try:
+        numberwellsincolumn = labware_plates[labwaretype]["no_wells_in_column"]
+        maxwellvolume = labware_plates[labwaretype]["volume_well"]
+        numberwells = labware_plates[labwaretype]["no_wells"]
+        numbercolumns = labware_plates[labwaretype]["no_columns"]
+        plateobj = Plate()
+        plateobj.project_id = project_id
+        plateobj.name = platename
+        plateobj.labware = labwaretype
+        plateobj.type = "startingmaterial"
+        plateobj.maxwellvolume = maxwellvolume
+        plateobj.numberwells = numberwells
+        plateobj.numberwellsincolumn = numberwellsincolumn
+        plateobj.numbercolumns = numbercolumns
+        plateobj.save()
+        print("Created custom starting material plate with ID: {}".format(plateobj.id))
+    except Exception as e:
+        logger.info(inspect.stack()[0][3] + " yielded error: {}".format(e))
+        print(e)
+
+
+def createCustomWellModel(
+    plateobj: Plate,
+    welltype: str,
+    wellindex: int,
+    volume: float = None,
+    reactionobj: Reaction = None,
+    columnobj: Column = None,
+    smiles: str = None,
+    concentration: float = None,
+    solvent: str = None,
+    reactantfornextstep: bool = False,
+) -> Well:
+    """Creates a well object
+
+    Parameters
+    ----------
+    plateobj: Plate
+        The plate that the well is linked to
+    welltype: str
+        The well type eg. reaction, analyse
+    wellindex: int
+        The index of the well in the plate eg. 0, 1, 2, 3 etc
+    wellname: str
+        The name of the well eg. A1, B1, C1 etc
+    volume: float = None
+        The optional volume of the well contents
+    reactionobj: Reaction = None
+        The optional reaction the well is linked to
+    columnobj: Column = None
+        The optional column object the well is linked to
+    smiles: str = None
+        The optional contents of the well
+    concentration: float = None
+        The optional cocentration of the well contents
+    solvent: str = None
+        The optional solvent used to prepare the content of the well
+    reactantfornextstep: bool = False
+        The optional setting if the contents of the well are
+        used in any proceeding reactions
+
+    Returns
+    -------
+    wellobj: Well
+        The well created
+    """
+    wellobj = Well()
+    wellobj.plate_id = plateobj
+    if reactionobj:
+        wellobj.reaction_id = reactionobj
+        wellobj.method_id = reactionobj.method_id
+    if columnobj:
+        wellobj.column_id = columnobj
+    wellobj.type = welltype
+    wellobj.index = wellindex
+    wellobj.name = wellIndexToWellName(
+        wellindex=wellindex, platesize=plateobj.numberwells
+    )
+    wellobj.volume = volume
+    wellobj.smiles = smiles
+    wellobj.concentration = concentration
+    wellobj.solvent = solvent
+    wellobj.reactantfornextstep = reactantfornextstep
+    wellobj.save()
+    print("Created WellModel with ID: {}".format(wellobj.id))
+
+
+def createCustomSMPlate(project_id: int, filepath: str, platename: str):
+    """Reads a custom starting materials (SM) .csv and creates
+       a plate for a Project
+
+    Parameters
+    ----------
+    project_id: int
+        The project id to create the custom starting materials plate for
+    filepath: str
+        The path to the custom starting materials plate csv
+    platename: str
+        The name of the custom starting materials plate eg. enamine-plate-1
+    """
+    customSMplatedf = pd.read_csv(filepath, encoding="utf-8", engine="python")
+    groupedplateID = customSMplatedf.groupby(["plateID"])
+    for plateID, plategroup in groupedplateID:
+        plateobj = createCustomSMPlateModel(
+            project_id=project_id,
+            platetype="startingmaterial",
+            platename=platename,
+            labwaretype=plategroup["labwaretype"].values[0],
+        )
+        for index, row in plategroup.iterrows():
+            createCustomWellModel(
+                plateobj=plateobj,
+                welltype="startingmaterial",
+                wellindex=row["wellindex"],
+                volume=row["volume"],
+                smiles=row["smiles"],
+                concentration=row["concentration"],
+                solvent=row["solvent"],
+            )
 
 
 def getAddtionOrder(

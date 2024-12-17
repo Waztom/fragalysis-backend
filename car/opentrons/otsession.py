@@ -57,7 +57,6 @@ class CreateOTSession(object):
         reactionstep: int,
         otbatchprotocolobj: OTBatchProtocol,
         actionsessionqueryset: QuerySet[ActionSession],
-        customsSMplatepath: str = None,
     ):
         """Initiates a CreateOTSession
 
@@ -71,15 +70,10 @@ class CreateOTSession(object):
         actionsession: QuerySet[ActionSession]
             The action sessions being executed on the OT for a type eg. reaction,
             stir, analayse
-        customSMplatepath: str
-            Path to custom plate csv
         """
         self.reactionstep = reactionstep
         self.otbatchprotocolobj = otbatchprotocolobj
         self.actionsessionqueryset = actionsessionqueryset
-        self.customSMplatepath = customsSMplatepath
-        if self.customsSMplatepath:
-            self.createCustomStartingPlate()
         self.actionsessionnumber = actionsessionqueryset.values_list(
             "sessionnumber", flat=True
         )[0]
@@ -195,7 +189,6 @@ class CreateOTSession(object):
         self.solventmaterialsdf = self.getAddActionsMaterialDataFrame(
             productexists=False
         )
-        print("Creating solvent plates for workup")
         self.createSolventPlate(materialsdf=self.solventmaterialsdf)
         self.workupplatesneeded = self.getUniqueToPlates(
             actionsessionqueryset=self.actionsessionqueryset,
@@ -254,8 +247,9 @@ class CreateOTSession(object):
         self, searchsmiles: list, reaction_ids: list = None
     ) -> list[Plate]:
         """Gets plates, created in previous reaction and workup
-        sessions with reaction products that are required as
-        reactants in current reaction session
+        sessions with reaction products or from custom input starting
+        material plates that are required as reactants in current
+        reaction session
 
         Parameters
         ----------
@@ -293,6 +287,26 @@ class CreateOTSession(object):
             for plateobj in otbatchprotocolplatequeryset:
                 wellmatchqueryset = plateobj.well_set.all().filter(
                     criterion1 & criterion2 & criterion3 & criterion4
+                )
+                if wellmatchqueryset:
+                    inputplatesneeded.append(plateobj)
+
+        customSMplatequeryset = Plate.objects.filter(
+            project_id=self.otbatchprotocolobj.otproject_id.project_id
+        )
+        criterion5 = Q(
+            concentration__in=self.addactionqueryset.values_list(
+                "concentration", flat=True
+            )
+        )
+        criterion6 = Q(
+            solvent__in=self.addactionqueryset.values_list("solvent", flat=True)
+        )
+        criterion7 = Q(type="startingmaterial")
+        if customSMplatequeryset:
+            for plateobj in customSMplatequeryset:
+                wellmatchqueryset = plateobj.well_set.all().filter(
+                    criterion3 & criterion5 & criterion6 & criterion7
                 )
                 if wellmatchqueryset:
                     inputplatesneeded.append(plateobj)
@@ -344,9 +358,13 @@ class CreateOTSession(object):
                     plateobj.labware = "plateone_96_wellplate_2500ul"
                 plateobj.index = indexslot
                 plateobj.save()
-                self.updateColumnOTSessionIDs(
-                    columnqueryset=columnqueryset, plateobj=plateobj
-                )
+                if columnqueryset:
+                    self.updateColumnOTSessionIDs(
+                        columnqueryset=columnqueryset, plateobj=plateobj
+                    )
+                # self.updateColumnOTSessionIDs(
+                #     columnqueryset=columnqueryset, plateobj=plateobj
+                # )
                 self.updateWellOTSessionIDs(
                     wellqueryset=wellqueryset, plateobj=plateobj
                 )
@@ -1148,7 +1166,6 @@ class CreateOTSession(object):
         )
         if productexists:
             materialsdf = materialsdf[materialsdf["productexists"]]
-
         if not productexists:
             materialsdf = materialsdf[~materialsdf["productexists"]]
 
@@ -1541,29 +1558,6 @@ class CreateOTSession(object):
             columnobj.plate_id = plateobj
             columnobj.otsession_id = self.otsessionobj
             columnobj.save()
-
-    def createCustomStartingPlate(self):
-        """Reads a custom starting materials (SM) plate for a reaction"""
-        customSMplatedf = pd.read_csv(
-            self.customSMplatepath, encoding="utf-8", engine="python"
-        )
-        groupedplateID = customSMplatedf.groupby(["plateID"])
-        for plateID, plategroup in groupedplateID:
-            plateobj = self.createPlateModel(
-                platetype="startingmaterial",
-                platename="Startingplate",
-                labwaretype=plategroup["labwaretype"].values[0],
-            )
-            for index, row in plategroup.iterrows():
-                self.createWellModel(
-                    plateobj=plateobj,
-                    welltype="startingmaterial",
-                    wellindex=row["wellindex"],
-                    volume=row["volume"],
-                    smiles=row["smiles"],
-                    concentration=row["concentration"],
-                    solvent=row["solvent"],
-                )
 
     def createReactionStartingPlate(self):
         """Creates the starting material plate/s for executing a reaction's add actions"""
