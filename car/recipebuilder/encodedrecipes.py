@@ -58330,7 +58330,7 @@ encoded_recipes = {
                                         "material": {
                                             "SMARTS": "[#7;H3,H2,H1]",
                                             "SMILES": None,
-                                            "quantity": {"value": 1.1, "unit": "moleq"},
+                                            "quantity": {"value": 1.0, "unit": "moleq"},
                                             "solvent": "DMF",
                                             "concentration": 0.5,
                                         },
@@ -122441,6 +122441,95 @@ encoded_recipes = {
                     #         },
                     #     ],
                     # },
+                ],
+            },
+            "EV71A2A-P0039": {
+                "yield": 77,
+                "reactionSMARTS": [
+                    "[#6:1]-[#8;H:2].[#6:3]-[Cl,Br,I]>>[#6:1]-[#8:2]-[#6:3]"
+                ],
+                "references": "WE reaction that uses Wet NaOH",
+                "actionsessions": [
+                    {
+                        "type": "reaction",
+                        "driver": "robot",
+                        "sessionnumber": 1,
+                        "continuation": True,
+                        "intermolecular": {
+                            "actions": [
+                                {
+                                    "type": "add",
+                                    "actionnumber": 1,
+                                    "content": {
+                                        "plates": {
+                                            "fromplatetype": "startingmaterial",
+                                            "toplatetype": "reaction",
+                                        },
+                                        "material": {
+                                            "SMARTS": "[#6:1]-[#8;H:2]",
+                                            "SMILES": None,
+                                            "quantity": {"value": 1.0, "unit": "moleq"},
+                                            "solvent": "DMF",
+                                            "concentration": 0.5,
+                                        },
+                                    },
+                                },
+                                {
+                                    "type": "add",
+                                    "actionnumber": 2,
+                                    "content": {
+                                        "plates": {
+                                            "fromplatetype": "startingmaterial",
+                                            "toplatetype": "reaction",
+                                        },
+                                        "material": {
+                                            "SMARTS": "[#6:3]-[Cl,Br,I]",
+                                            "SMILES": None,
+                                            "quantity": {"value": 5.0, "unit": "moleq"},
+                                            "solvent": "DMA",
+                                            "concentration": 0.625,
+                                        },
+                                    },
+                                },
+                                {
+                                    "type": "add",
+                                    "actionnumber": 3,
+                                    "content": {
+                                        "plates": {
+                                            "fromplatetype": "startingmaterial",
+                                            "toplatetype": "reaction",
+                                        },
+                                        "material": {
+                                            "SMARTS": None,
+                                            "SMILES": "[OH-].[Na+]",
+                                            "quantity": {"value": 3.0, "unit": "moleq"},
+                                            "solvent": "water",
+                                            "concentration": 2,
+                                        },
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        "type": "stir",
+                        "driver": "human",
+                        "sessionnumber": 2,
+                        "actions": [
+                            {
+                                "type": "stir",
+                                "actionnumber": 4,
+                                "content": {
+                                    "platetype": "reaction",
+                                    "temperature": {
+                                        "value": 50,
+                                        "unit": "degC",
+                                    },
+                                    "duration": {"value": 12, "unit": "hours"},
+                                },
+                            },
+                        ],
+                    },
                 ],
             },
             "SHIP1-WE-OPT": {
