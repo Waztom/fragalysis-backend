@@ -122454,7 +122454,6 @@ encoded_recipes = {
                         "type": "reaction",
                         "driver": "robot",
                         "sessionnumber": 1,
-                        "continuation": True,
                         "intermolecular": {
                             "actions": [
                                 {
@@ -122574,7 +122573,7 @@ encoded_recipes = {
                                             "SMARTS": "[#6:3]-[Cl,Br,I]",
                                             "SMILES": None,
                                             "quantity": {"value": 5.0, "unit": "moleq"},
-                                            "solvent": "DMA",
+                                            "solvent": "DMF",
                                             "concentration": 0.625,
                                         },
                                     },

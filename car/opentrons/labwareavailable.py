@@ -102,4 +102,15 @@ labware_plates = {
         "aspirateheightconversion-m": 0.02865,
         "aspirateheightconversion-c": -0.4040,
     },
+    # "paradox_96_wellplate_240ul": {
+    #     "type": ["reaction"],
+    #     "no_wells_in_column": 8,
+    #     "no_wells": 96,
+    #     "no_columns": 12,
+    #     "volume_well": 240,
+    #     "max_temp": 250,
+    #     "reflux": True,
+    #     "aspirateheightconversion-m": 0.02865,
+    #     "aspirateheightconversion-c": -0.4040,
+    # },
 }
